@@ -1,0 +1,9 @@
+# Testing
+
+Фреймворк от Yandex интеграционного тестирования веб-приложений: [https://github.com/gemini-testing/hermione](https://github.com/gemini-testing/hermione)
+
+Nightwatch – NodeJS фреймворк для тестирования веб-приложений (на базе Selenium)
+
+Allure — построение отчетов по результатам тестов (Java?). Упрощает анализ тестов. Может использоваться для Android-приложений.
+
+Espresso — тестирование UI в Android приложениях
