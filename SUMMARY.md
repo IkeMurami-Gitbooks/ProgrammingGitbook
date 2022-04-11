@@ -257,6 +257,7 @@
   * [Интроспекция .Net решения](ppc-langs/.net/introspekciya-.net-resheniya.md)
 * [SQL](ppc-langs/sql/README.md)
   * [Create table](ppc-langs/sql/create-table.md)
+  * [WITH operator](ppc-langs/sql/with-operator.md)
   * [Time sleep](ppc-langs/sql/time-sleep.md)
 * [Backend](ppc-langs/backend/README.md)
   * [JVM](ppc-langs/backend/jvm/README.md)
