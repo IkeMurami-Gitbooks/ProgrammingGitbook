@@ -13,3 +13,5 @@ Link: [https://github.com/fastify/fastify](https://github.com/fastify/fastify)
 ### Prototype Poisoning
 
 Как и любое JavaScript приложение, Fastify подвержен Prototype Poisoning атаке: использовать `JSON.parse` для внешних объектов — потенциальный риск.
+
+Подробнее про Prototype Poisoning в Fastify: [https://www.fastify.io/docs/latest/Guides/Prototype-Poisoning/](https://www.fastify.io/docs/latest/Guides/Prototype-Poisoning/)
