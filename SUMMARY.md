@@ -395,6 +395,7 @@
         * [Electron.js](ppc-langs/frontend/js-ts/frameworks/frameworks/electron.js.md)
         * [Koa.js](ppc-langs/frontend/js-ts/frameworks/frameworks/koa.js.md)
         * [Next.js](ppc-langs/frontend/js-ts/frameworks/frameworks/next.js.md)
+        * [Gatsby](ppc-langs/frontend/js-ts/frameworks/frameworks/gatsby.md)
         * [Meteor](ppc-langs/frontend/js-ts/frameworks/frameworks/meteor.md)
         * [Nuxt.js](ppc-langs/frontend/js-ts/frameworks/frameworks/nuxt.js.md)
         * [SvelteJS](ppc-langs/frontend/js-ts/frameworks/frameworks/sveltejs.md)
