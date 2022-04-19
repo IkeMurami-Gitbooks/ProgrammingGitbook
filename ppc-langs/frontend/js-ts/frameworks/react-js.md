@@ -50,3 +50,19 @@ npm start
 
 React Flow — построение графов — [https://reactflow.dev/](https://reactflow.dev)
 
+## Security
+
+### XSS
+
+В ReactJS встроена защита, от разного рода XSS инъекций. Однако, для разработчиков оставили способ отрисовать html+js в динамике, если это действительно необходимо:
+
+```javascript
+function createMarkup() {
+  return {__html: 'First &middot; Second'};
+}
+
+function MyComponent() {
+  return <div dangerouslySetInnerHTML={createMarkup()} />;
+}
+```
+
