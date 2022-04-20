@@ -23,10 +23,11 @@ Inside that directory, you can run several commands:
   
 We suggest that you begin by typing:
 
-  cd test-app
+  cd test-project-name
   yarn start
   
-$ 
+$ cd test-project-name
+$ yarn start (or npm start)
 ```
 
 ## Структура проекта
@@ -54,7 +55,31 @@ React Flow — построение графов — [https://reactflow.dev/](ht
 
 ### XSS
 
-В ReactJS встроена защита, от разного рода XSS инъекций. Однако, для разработчиков оставили способ отрисовать html+js в динамике, если это действительно необходимо:
+В ReactJS встроена защита, от разного рода XSS инъекций (auto escaping):
+
+```jsx
+import './App.css';
+
+function App() {
+  let XSS_PAYLOAD = "<img src=x onerror='alert(123)'/>";
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div>STRING {XSS_PAYLOAD} ESCAPED</div>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+И выглядит это так:
+
+<img src="../../../../.gitbook/assets/image.png" alt="" data-size="original">
+
+Однако, для разработчиков оставили способ отрисовать html+js в динамике, если это действительно необходимо:
 
 ```javascript
 function createMarkup() {
