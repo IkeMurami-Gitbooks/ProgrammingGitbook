@@ -61,6 +61,7 @@
     * [Kuma](tech/arkhitektura-servisov/service-mesh/kuma.md)
     * [Istio](tech/arkhitektura-servisov/service-mesh/istio.md)
     * [Hashicorp Consul](tech/arkhitektura-servisov/service-mesh/consul.md)
+  * [Zero Trust](tech/arkhitektura-servisov/zero-trust.md)
 * [Визуализация информации](tech/vizualizaciya-informacii/README.md)
   * [Работа с графами](tech/vizualizaciya-informacii/rabota-s-grafami.md)
   * [Куда заливать видео](tech/vizualizaciya-informacii/kuda-zalivat-video.md)
