@@ -91,6 +91,16 @@ function MyComponent() {
 }
 ```
 
+PS:  Ну и всякие documentWrite остаются, конечно:
+
+```javascript
+const contentWindow = iframe.contentWindow || iframe.contentDocument.document || iframe.contentDocument
+
+contentWindow.document.open()
+contentWindow.document.write(htmlBody)
+contentWindow.document.close()
+```
+
 ### Props Injections
 
 В React есть возможность передать в компонент массив с переопределенными атрибутами. Если атакующий может контролировать этот массив, то он сможет определить ключ атрибута `dangerouslySetInnerHTML` и добавить туда свою нагрузку:
