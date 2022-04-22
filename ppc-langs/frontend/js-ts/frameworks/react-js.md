@@ -116,6 +116,10 @@ function App() {
 export default App;
 ```
 
+Один только нюанс: это сработает только в том случае, если в `PROPS_INJ_PAYLOAD` не содержится других ключей, иначе React/Webpack выведут ошибку:&#x20;
+
+![](<../../../../.gitbook/assets/image (1).png>)
+
 ### Injectable Attributes
 
 ```jsx
