@@ -1,5 +1,21 @@
 # HTTP запросы и обработка ответов из JS
 
+## axios
+
+[axios](https://github.com/axios/axios) — promise based HTTP client for the browser and node.js
+
+Примеры см в документации или на github (там просто)
+
+```typescript
+import axios from 'axios'
+
+const instance = axios.create({ withCredentials: true })
+const response = await axios.post(`${endpointUrl}/login`, { username, password })
+let data = response.data
+```
+
+## Встроенный механизм fetch
+
 Есть такой встроенный механизм fetch - очень удобно!
 
 ```javascript
