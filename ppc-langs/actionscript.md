@@ -12,6 +12,8 @@
 
 Как установить ActionScript SDK (я выбрал Feathers SDK) — [инструкция](https://github.com/BowlerHatLLC/vscode-as3mxml/wiki/Choose-an-ActionScript-SDK-for-the-current-workspace-in-Visual-Studio-Code).
 
+Другой вариант (более распространенный) — [Apache Flex](https://flex.apache.org/installer.html).
+
 Выбираем [расширение](https://marketplace.visualstudio.com/items?itemName=bowlerhatllc.vscode-as3mxml) для VSCode — ActionScript & MXML.
 
 ## Create Project
