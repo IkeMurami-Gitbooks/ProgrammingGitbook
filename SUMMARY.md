@@ -54,6 +54,7 @@
   * [Тестирование](tech/arkhitektura-servisov/testirovanie/README.md)
     * [Pytest](tech/arkhitektura-servisov/testirovanie/pytest-1.md)
   * [Трассировка сервисов](tech/arkhitektura-servisov/trassirovka-servisov.md)
+  * [Логирование](tech/arkhitektura-servisov/logirovanie.md)
   * [Автоматизация сборок](tech/arkhitektura-servisov/avtomatizaciya-sborok/README.md)
     * [Makefile](tech/arkhitektura-servisov/avtomatizaciya-sborok/makefile.md)
   * [Service Mesh](tech/arkhitektura-servisov/service-mesh/README.md)
