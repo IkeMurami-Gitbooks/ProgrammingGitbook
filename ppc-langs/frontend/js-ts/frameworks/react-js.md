@@ -157,6 +157,8 @@ export default App;
 ```jsx
 ```
 
+Короч есть какая-та возможность делать css injection. Но я не разобрался. Надо лезть в документацию и смотреть разницу между class и className (один из них безопасный, другой — нет) и как делать Attribute Injection в эти поля.
+
 ### Eval-based Injections
 
 If you can control a string that is dynamically evaluated, you have hit the jackpot and may proceed to inject arbitrary code of your choosing. This should be a rare occurrence.
