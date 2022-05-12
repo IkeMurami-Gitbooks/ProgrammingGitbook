@@ -49,3 +49,6 @@ package main
 
 На этапе сборки проекта будет запущен скрипт соответствующий (до go build).
 
+## go cmd
+
+Документация по go cli: [https://pkg.go.dev/cmd/go](https://pkg.go.dev/cmd/go)
