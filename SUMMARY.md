@@ -265,6 +265,7 @@
   * [Create table](ppc-langs/sql/create-table.md)
   * [WITH operator](ppc-langs/sql/with-operator.md)
   * [Time sleep](ppc-langs/sql/time-sleep.md)
+* [Swift](ppc-langs/swift.md)
 * [ActionScript](ppc-langs/actionscript.md)
 * [Backend](ppc-langs/backend/README.md)
   * [JVM](ppc-langs/backend/jvm/README.md)
