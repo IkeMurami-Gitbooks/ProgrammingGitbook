@@ -29,7 +29,7 @@
 ## Technologies <a href="#tech" id="tech"></a>
 
 * [WEB](tech/web/README.md)
-  * [Modern Web Application Architecture](tech/web/web-arch.md)
+  * [Modern Web Application Architecture](tech/web/arkhitektura.md)
   * [API](tech/web/api/README.md)
     * [gRPC](tech/web/api/grpc.md)
     * [DOM API & элементы веб-браузера](tech/web/api/dom-api-and-elementy-veb-brauzera.md)
@@ -49,7 +49,7 @@
   * [Cases](tech/web/cases.md)
 * [Архитектура сервисов](tech/arkhitektura-servisov/README.md)
   * [Телеметрия](tech/arkhitektura-servisov/telemetriya.md)
-  * [Testing](tech/arkhitektura-servisov/testing.md)
+  * [Testing](tech/testing.md)
   * [Трассировка сервисов](tech/arkhitektura-servisov/trassirovka-servisov.md)
   * [Брокеры сообщений](tech/arkhitektura-servisov/brokery-soobshenii/README.md)
     * [Why?](tech/arkhitektura-servisov/brokery-soobshenii/why.md)
