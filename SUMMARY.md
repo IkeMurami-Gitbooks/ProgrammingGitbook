@@ -169,6 +169,7 @@
     * [Файлы](ppc-langs/go/primery/faily.md)
     * [HTTP-сервер](ppc-langs/go/primery/http-server.md)
     * [Test HTTP Request](ppc-langs/go/primery/http-request.md)
+    * [RabbitMQ with Go](ppc-langs/go/primery/rabbitmq-with-go.md)
   * [Проблемы](ppc-langs/go/problemy/README.md)
     * [\_cgo\_export.c:3:10: fatal error: 'stdlib.h' file not found](ppc-langs/go/problemy/\_cgo\_export.c-3-10-fatal-error-stdlib.h-file-not-found.md)
   * [Tools Powered on Go](ppc-langs/go/tools-powered-on-go.md)

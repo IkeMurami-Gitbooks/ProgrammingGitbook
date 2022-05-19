@@ -1,3 +1,3 @@
-# Modern Web Application Architecture
+# Архитектура
 
 ![](<../../.gitbook/assets/изображение (5).png>)
