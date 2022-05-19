@@ -1,0 +1,3 @@
+# RabbitMQ
+
+Написан на Erlang

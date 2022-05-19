@@ -7,3 +7,5 @@ Nightwatch – NodeJS фреймворк для тестирования веб-
 Allure — построение отчетов по результатам тестов (Java?). Упрощает анализ тестов. Может использоваться для Android-приложений.
 
 Espresso — тестирование UI в Android приложениях
+
+Pytest — тестирование API сервисов, например: [https://github.com/nEST-Projects/ex-pytest-example](https://github.com/nEST-Projects/ex-pytest-example)

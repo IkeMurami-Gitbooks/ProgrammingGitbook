@@ -1,6 +1,6 @@
 # TODO: Webpack
 
-site: [https://webpack.js.org/](https://webpack.js.org)&#x20;
+site: [https://webpack.js.org/](https://webpack.js.org/)&#x20;
 
 video course (Владилен Минин "Webpack — Полный курс за 3 часа"): [https://youtu.be/eSaF8NXeNsA](https://youtu.be/eSaF8NXeNsA)
 

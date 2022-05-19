@@ -2,7 +2,7 @@
 
 ## About
 
-site: [https://getbootstrap.com/](https://getbootstrap.com)
+site: [https://getbootstrap.com/](https://getbootstrap.com/)
 
 Bootstrap — свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения.
 

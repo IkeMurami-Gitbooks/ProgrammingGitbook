@@ -10,11 +10,11 @@
 
 ## Бесплатные
 
-Storybook — это фреймворк для разработчиков компонент и библиотек, который помогает делать Readme и описывать состояния компонентов и что-то еще. Используется в крупных проектах: [https://storybook.js.org/](https://storybook.js.org)
+Storybook — это фреймворк для разработчиков компонент и библиотек, который помогает делать Readme и описывать состояния компонентов и что-то еще. Используется в крупных проектах: [https://storybook.js.org/](https://storybook.js.org/)
 
 Построение графов, диаграмм (в том числе и mindmap'ы можно): [https://swimlane.github.io/ngx-graph/](https://swimlane.github.io/ngx-graph/)
 
-У этого же разработчика есть и другие проекты (см на github). А еще Swimlane ([https://www.swimlane.com/](https://www.swimlane.com)) разработчики SOAR системы (для SOCов). Выглядит симпотно))
+У этого же разработчика есть и другие проекты (см на github). А еще Swimlane ([https://www.swimlane.com/](https://www.swimlane.com/)) разработчики SOAR системы (для SOCов). Выглядит симпотно))
 
 Swimlane — набор UI компонентов: [https://swimlane.github.io/ngx-ui](https://swimlane.github.io/ngx-ui)
 
