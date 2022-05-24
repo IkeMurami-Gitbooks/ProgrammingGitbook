@@ -8,7 +8,7 @@ Site: [https://www.sencha.com/products/extjs/thankyou/?mac](https://www.sencha.c
 
 ```
 $ npm install -g @sencha/ext-gen
-$ ext-get app -a
+$ ext-gen app -a
 $ cd ./my-app
 $ npm start
 ```
