@@ -417,6 +417,7 @@
         * [Nuxt.js](ppc-langs/frontend/js-ts/frameworks/frameworks/nuxt.js.md)
         * [SvelteJS](ppc-langs/frontend/js-ts/frameworks/frameworks/sveltejs.md)
         * [AngularJS](ppc-langs/frontend/js-ts/frameworks/frameworks/angularjs.md)
+        * [Ext JS / Sencha](ppc-langs/frontend/js-ts/frameworks/frameworks/ext-js-sencha.md)
     * [TODO: RxJs](ppc-langs/frontend/js-ts/rxjs.md)
   * [CMS](ppc-langs/frontend/cms.md)
   * [Особенности WebStorm IDE](ppc-langs/frontend/osobennosti-webstorm-ide.md)
