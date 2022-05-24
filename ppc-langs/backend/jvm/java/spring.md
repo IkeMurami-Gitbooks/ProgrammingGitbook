@@ -11,3 +11,14 @@ Spring Boot Actuator — на сколько понял, это инструме
 Actuator API: [https://docs.spring.io/spring-boot/docs/2.0.x/actuator-api/html/](https://docs.spring.io/spring-boot/docs/2.0.x/actuator-api/html/)
 
 В зависимости от данных, за это могут накинуть порядочно: [https://hackerone.com/reports/1022048](https://hackerone.com/reports/1022048)
+
+В общем, если в actuator включено все, конечно, это можно запавнить, но по умолчанию это все отключено. Пример небезопасной конфигурации в `application.properties`:
+
+```
+management.endpoint.env.post.enabled=true
+management.endpoint.restart.enabled=true
+endpoints.sensitive=true
+endpoints.actuator.enabled=true
+management.security.enabled=false 
+management.endpoints.web.exposure.include=*
+```

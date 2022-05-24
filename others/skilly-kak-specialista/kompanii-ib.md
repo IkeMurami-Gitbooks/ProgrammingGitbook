@@ -1,6 +1,6 @@
 # Компании ИБ
 
-DeteAct ([https://deteact.com/](https://deteact.com/)) \
+DeteAct ([https://deteact.com/](https://deteact.com)) \
 ИнформЗащита \
 ИнфоЗащита \
 Digital Security \

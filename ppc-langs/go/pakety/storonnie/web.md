@@ -37,7 +37,7 @@ https://github.com/chromedp/chromedp](https://github.com/chromedp/chromedp)\
 
 ## Генератор сайтов
 
-hugo (\~300 шаблонов в коробке): [https://gohugo.io/](https://gohugo.io/)
+hugo (\~300 шаблонов в коробке): [https://gohugo.io/](https://gohugo.io)
 
 ## JOSE standarts (JWE, JWS, JWT)
 

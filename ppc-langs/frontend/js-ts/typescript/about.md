@@ -2,9 +2,9 @@
 
 TypeScript — статически типизированный JS. Под капотом компилируется в JavaScript.
 
-site: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
+site: [https://www.typescriptlang.org/](https://www.typescriptlang.org)
 
-IDE online: [https://www.typescriptlang.org/play/?ssl=2\&ssc=26\&pln=2\&pc=48#](https://www.typescriptlang.org/play/?ssl=2\&ssc=26\&pln=2\&pc=48)
+IDE online: [https://www.typescriptlang.org/play/?ssl=2\&ssc=26\&pln=2\&pc=48#](https://www.typescriptlang.org/play/?ssl=2\&ssc=26\&pln=2\&pc=48#)
 
 Неплохой видеокурс на русскком языке: [https://youtube.com/playlist?list=PLqKQF2ojwm3nW-cQeSER79xdpK3vL5c-g](https://youtube.com/playlist?list=PLqKQF2ojwm3nW-cQeSER79xdpK3vL5c-g)
 

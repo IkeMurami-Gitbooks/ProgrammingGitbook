@@ -2,7 +2,7 @@
 
 ## Главное
 
-Как это использовать в старых браузерах: [https://babeljs.io/](https://babeljs.io/)
+Как это использовать в старых браузерах: [https://babeljs.io/](https://babeljs.io)
 
 ## Синхронный JS
 
