@@ -1,6 +1,6 @@
 # Online IDE
 
-IDEOne: [https://ideone.com/](https://ideone.com)
+IDEOne: [https://ideone.com/](https://ideone.com/)
 
-REPL: [https://repl.it/](https://repl.it)
+REPL: [https://repl.it/](https://repl.it/)
 
