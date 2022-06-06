@@ -346,6 +346,7 @@
         * [MobX](ppc-langs/frontend/js-ts/javascript-1/libraries/mobx.md)
         * [Redux](ppc-langs/frontend/js-ts/javascript-1/libraries/redux.md)
         * [jQuery](ppc-langs/frontend/js-ts/javascript-1/libraries/jquery.md)
+        * [i18n: Format.JS](ppc-langs/frontend/js-ts/javascript-1/libraries/i18n-format.js.md)
       * [Расширения JS и диалекты](ppc-langs/frontend/js-ts/javascript-1/javascript/README.md)
         * [JSX](ppc-langs/frontend/js-ts/javascript-1/javascript/jsx.md)
         * [JSFuck](ppc-langs/frontend/js-ts/javascript-1/javascript/jsfuck.md)
