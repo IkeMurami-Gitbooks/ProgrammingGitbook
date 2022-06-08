@@ -1,4 +1,4 @@
-# Kotlin
+# Intro
 
 Getting started: [https://kotlinlang.org/docs/getting-started.html](https://kotlinlang.org/docs/getting-started.html)
 

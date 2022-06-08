@@ -1,6 +1,6 @@
 # Material Design Support
 
-Версия для angular: [https://material.angular.io/](https://material.angular.io)
+Версия для angular: [https://material.angular.io/](https://material.angular.io/)
 
 
 

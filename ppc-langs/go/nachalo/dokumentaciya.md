@@ -2,7 +2,7 @@
 
 ## Оф документация
 
-Оф веб-сайт: [https://golang.org/](https://golang.org)&#x20;
+Оф веб-сайт: [https://golang.org/](https://golang.org/)&#x20;
 
 Структура сайта
 
