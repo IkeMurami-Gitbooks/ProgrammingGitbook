@@ -92,9 +92,13 @@ fun String.spaceToCamelCase() { return }
 "Convert this to camelcase".spaceToCamelCase()
 ```
 
+### Возвращение нескольких типов данных из функций
+
+Создавать sealed классы: [https://kotlinlang.org/docs/reference/sealed-classes.html](https://kotlinlang.org/docs/reference/sealed-classes.html)
+
+Если надо ветвить логику - на исключениях
+
 ## Strings
-
-
 
 ### Шаблоны
 
@@ -313,6 +317,15 @@ textView.text = filteredText // 92016
 val filteredText = string.filterNot { it.isDigit() }
 ```
 
+### String -> Hex String
+
+```kotlin
+fun ByteArray.toHexString() = joinToString("") { "%02x".format(it) }
+
+var someString = "test"
+val result = someString.toByteArray().toHexString()
+```
+
 ## Циклы, ветвления, групповые операции
 
 ```kotlin
@@ -494,3 +507,16 @@ object Resource {
 }
 */
 ```
+
+## Reflection
+
+Получить Type или Class
+
+```kotlin
+val type = object : TypeToken<MyErrorData>(){}.type
+val klass = MyErrorData::class
+где-то еще такое видел:
+val klass = MyErrorData::class.java
+val klass = MyErrorData.class
+```
+

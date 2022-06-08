@@ -279,7 +279,7 @@
       * [Build and Run Simple Script](ppc-langs/jvm/java/build-and-run-simple-script.md)
       * [jshell & jrunscript](ppc-langs/jvm/java/jshell-and-jrunscript.md)
     * [Scala](ppc-langs/backend/jvm/scala.md)
-    * [Kotlin](ppc-langs/backend/jvm/kotlin/README.md)
+    * [Kotlin](ppc-langs/jvm/kotlin.md)
       * [Intro](ppc-langs/backend/jvm/kotlin/intro.md)
       * [Basics](ppc-langs/backend/jvm/kotlin/basics.md)
     * [Build](ppc-langs/backend/jvm/java/build/README.md)
