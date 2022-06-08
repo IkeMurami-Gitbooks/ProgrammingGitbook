@@ -49,7 +49,7 @@ npm start
 
 ## Интересные пакеты
 
-React Flow — построение графов — [https://reactflow.dev/](https://reactflow.dev)
+React Flow — построение графов — [https://reactflow.dev/](https://reactflow.dev/)
 
 ## Security
 
@@ -77,7 +77,7 @@ export default App;
 
 И выглядит это так:
 
-<img src="../../../../.gitbook/assets/image.png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (1).png" alt="" data-size="original">
 
 Однако, для разработчиков оставили способ отрисовать html+js в динамике, если это действительно необходимо:
 
@@ -128,7 +128,7 @@ export default App;
 
 Один только нюанс: это сработает только в том случае, если в `PROPS_INJ_PAYLOAD` не содержится других ключей, иначе React/Webpack выведут ошибку:&#x20;
 
-![](<../../../../.gitbook/assets/image (1).png>)
+![](<../../../../.gitbook/assets/image (1) (1).png>)
 
 ### Injectable Attributes
 

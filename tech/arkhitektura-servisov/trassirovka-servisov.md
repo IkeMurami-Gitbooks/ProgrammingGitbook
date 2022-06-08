@@ -37,5 +37,5 @@
 ## Примеры
 
 * zipkin
-* jaeger (есть web panel, и все все все; [https://www.jaegertracing.io/](https://www.jaegertracing.io))
+* jaeger (есть web panel, и все все все; [https://www.jaegertracing.io/](https://www.jaegertracing.io/))
 * OpenTracing

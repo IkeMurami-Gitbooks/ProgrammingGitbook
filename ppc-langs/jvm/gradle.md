@@ -278,6 +278,8 @@ project
 * `google()` (Google Maven)
 * `mavenCentral()`
 * приватные Maven-репозитории
+* Ivy
+* локальная файловая система
 
 Посмотреть, какие версии доступны в публичных репозиториях можно по ссылке:
 
@@ -286,6 +288,81 @@ https://mvnrepository.com/artifact/<package-root>/<package-name>
 ```
 
 Например, для пакета `org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version` узнать информацию о доступных версиях в открытых репозиториях можно по ссылке: [https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-gradle-plugin](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-gradle-plugin)
+
+* Репозитории можно добавлять к build-скрипту или к проектам: первые будут использоваться для плагинов во время фазы конфигурации (они нужны gradle), вторые — во время получения зависимостей проекта (они нужны нашему проекту)
+* В качестве транспорта можно указывать различные протоколы
+* Лучше не прописывать все репозитории через allprojects, чтобы не увеличивать время конфигурации
+
+## Dependencies
+
+* Указывается в проектах и для build-скрипта
+* Зависимости от внешних модулей:\
+  `implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4")`
+* Проектные зависимости:\
+  `implementation project(":core")`
+* Файловые зависимости:\
+  `implementation fileTree(dir: 'libs', include: ['*.jar'])`
+* Дерево зависимостей можно получить вызовом специально таски dependencies — `./gradlew dependencies [--configuration implementation]`.
+
+### Modules
+
+Пример именования:
+
+```
+org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4
+
+<group>:<name>:<version>
+```
+
+### Configurations
+
+* Каждая зависимость должна применяться к определенному скоупу: например, какие-то зависимости должны быть только во время компиляции, только во время тестов, только в runtime и т.д.
+* Для управления скоупами в gradle используются конфигурации, которые хранятся в ConfigurationContainer
+* По сути конфигурация — это контейнер для зависимостей
+* Конфигурации можно создавать и наследоваться от других конфигураций через метод extendsFrom()
+* Дочерние конфигурации наследуют все зависимости от своих родителей
+* Обычно конфигурации создаются плагинами
+
+Конфигурации, которые gradle создает по умолчанию (compile и runtime — deprecated) для java gradle plugin:&#x20;
+
+### ![](../../.gitbook/assets/image.png)
+
+В java library plugin еще появляется конфигурация `api`. Ее отличие от `implementation` в том, что она открывает доступ ко всем зависимым модулям (раньше `compile` так делал — он открывал доступ ко всем дочерним зависимостям, `implementation` так не делает).&#x20;
+
+### Resolution strategy
+
+* Между зависимостями могут встречаться конфликты
+* Для каждой конфигурации можно настраивать поведение gradle при конфликтах — через resolution strategy
+* Поведение по-умолчанию — gradle выбирает последнюю версию библиотеки
+
+```
+configurations.all {
+    resolutionStrategy.failOnVersionConflict()
+}
+```
+
+Что можно делать через resolution strategy
+
+* заменять зависимости (dependencySubstitution)
+* указать конкретную версию (force)
+* выбирать проектные зависимости вместо бинарных (preferProjectModules)
+* падать при конфликтах (failOnVersionConflict)
+* менять параметры кэширования модулей, которые могут измениться (snapshot)
+
+### Transitive dependencies
+
+* Транзитивные зависимости — это дочерние зависимости прямой зависимости
+* У конфигураций есть флаг isTransitive(), если он возвращает true, то будут разрешаться дочерние зависимости
+* Такой же флаг есть у отдельных модулей
+* По-умолчанию значение isTransitive()=true, но можно его поменять
+
+```
+dependencies {
+    implementation('com.google.guava:guava:23.0') {
+        transitive = false
+    }
+}
+```
 
 ## Flavors & BuildTypes
 

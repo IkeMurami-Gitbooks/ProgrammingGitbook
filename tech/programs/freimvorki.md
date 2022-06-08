@@ -7,7 +7,7 @@ Voximplant - VoIP телефония - работа с аудио, видео и
 
 Agora.io — VoIP телефония (используется в clubhouse) [https://www.agora.io/en/](https://www.agora.io/en/)
 
-PubNub — типо firebase? решения лдя обмена событиями в реальном времени: [https://www.pubnub.com/](https://www.pubnub.com)\
+PubNub — типо firebase? решения лдя обмена событиями в реальном времени: [https://www.pubnub.com/](https://www.pubnub.com/)\
 
 
 &#x20;
