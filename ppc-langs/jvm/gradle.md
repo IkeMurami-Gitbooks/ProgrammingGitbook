@@ -364,7 +364,98 @@ dependencies {
 }
 ```
 
+Это значит, что мы не подтягиваем зависимости guava к себе в проект, а укажем их вручную.
+
+### Dependency constraints
+
+Можно указать ограничения для версий модулей через constraints, включая транзитивные зависимости.
+
+```
+dependencies {
+    implementation 'org.apache.httpcomponents:httpclient'
+    constraints {
+        implementation('org.apache.httpcomponents:httpclient:4.5.3')
+        implementation('commons-codec:commons-codec:1.11')
+    }
+}
+```
+
+В примере выше `httpclient` зависит от `commons-codec`, и мы через constraints механизм фиксируем версию транзитивной зависимости.
+
+### Excluding transitive dependencies
+
+Можно убрать транзитивные зависимости через exclude (например, у нас две библиотеки тянут одинаковые зависимости; мы можем спокойно убрать из одной копии зависимостей и все будет спокойно собираться):
+
+```
+dependencies {
+    implementation('log4j:log4j:1.2.15') {
+        exclude group: 'javax.jms', module: 'jms'
+        exclude group: 'com.sun.jdmx', module: 'jmxtools'
+        exclude group: 'com.sun.jmx', module: 'jmxri'
+    }
+}
+```
+
+### Because
+
+Вместо комментариев к зависимостям, можно использовать специальное свойство because. При выводе дерева зависимостей, этот комментарий отобразится в консоли :)&#x20;
+
+```
+implementation('log4j:log4j:1.2.15') {
+    because "We love log4j"
+}
+```
+
+## Plugins
+
+* могут быть написаны скриптом или подключаться как jar
+* Добавляют таски, свойства, зависимости, конфигурации
+* Расширяют DSL и доменную модель
+* В общем, позволяют делать все, что угодно
+
+Есть встроенные плагины, которые поставляются вместе с gradle. Например, java plugin, java library plugin.
+
+Пример подключения скриптового плагина:
+
+```
+apply from: 'other.gradle'
+```
+
+Binary plugins имеют уникальный идентификатор, доступны из репозитория и подключаются через старый синтаксис `"apply plugin"` или блок `plugins{}` (всегда лучше использовать его).
+
+## SourceSets
+
+* Java Plugin (или Kotlin Plugin) вносит в доменную модель Gradle такое понятие как source set
+* Source Sets позволяют группировать ресурсы и исходные файлы в логические группы
+* Java Plugin создает для каждого Source Set соответствующий таск compile_SourceSet_Java и несколько конфигураций (для Source Set "main" имя опускается — compileJava)
+* Аналогично для ресурсов создаются таски process_SourceSet_Resources.
+
+Пример:
+
+```
+// Groovy DSL
+sourceSets {
+    main {
+        java {
+            srcDirs = [
+                "src/main/java",
+                "${protobuf.generatedFilesBaseDir}/main/javalite"
+            ]
+            exclude 'some/unwanted/package/**'
+        }
+    }
+}
+```
+
 ## Flavors & BuildTypes
+
+* Build types — типы сборок, по умолчанию создаются только release и debug, обязательно наличие хотя бы одного типа
+* Product flavors — разграничивают сборки по фичам (например, платная версия и с урезанной функциональностью)
+* Build variants — все комбинации между Build types и Product flavors
+* В доменной модели представлены соответствующими классами: BuildType, ProductFlavor и BaseVariant (содержит BuildType и ProductFlavor)
+* BuildType и ProductFlavor наследуются от BaseConfigImpl
+
+Для всех них создаются source set'ы и соответствующие таски.
 
 `flavor dimension` - под этим можно понимать категорию переменных, некоторый переменный набор. Пример:&#x20;
 
