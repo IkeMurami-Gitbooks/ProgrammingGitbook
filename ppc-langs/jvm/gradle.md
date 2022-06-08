@@ -95,7 +95,13 @@ include("sub-project-2:one-more-sub-project")
 
 ```kotlin
 tasks.register("hello") {
+    doFirst {
+        // Some actions — будет выполнено при запуске таска
+        println("Hello world!")
+    }
+    println("Action in Configuration State") // Это действие будет выполнено только на стадии конфигурации
     doLast {
+        // Some actions — будет выполнено при запуске таска
         println("Hello world!")
     }
 }
@@ -130,8 +136,95 @@ tasks.register("hello") {
   * произошел StopExecutionException
   * у таска есть предикат onlyIf {}, который вернул false
 * FROM-CACHE
+  * Означает, что результат выполнения task'а был взят из кэша
+  * Чтобы gradle мог кэшировать task, надо его явно пометить аннотацией @CacheableTask
+  * Gradle на основе имени класса, входных и выходных данных и других параметров сам вычисляет ключ
+  * Кэш может быть не только локальным, но и удаленным, и использоваться несколькими машинами
 * UP-TO-DATE
-* (no label) or EXECUTED
+  * старый механизм в gradle, придуманный до кэша
+  * Task имеет входные и выходные данные, которые не изменились
+  * Task явно указал gradle, что его выходные данные не изменились (через лямбду, переданную в outputs.upToDateWhen{})
+  * У task'а нет action'ов и он зависит от других task'ов, которые UP-TO-DATE, SKIPPED или FROM\_CACHE
+  * У task'а нет ни action'ов, ни зависимостей
+* (no label) or EXECUTED — Task и его зависимости были запущены
+
+#### Как управлять зависимостями между тасками
+
+1
+
+`dependsOn()` — Используется, когда Task не может начать работу, пока не завершится один или несколько других task'ов (можно указать список)
+
+```
+// Groovy DSL
+task TaskA {
+    doFirst { println "running TaskA" }
+}
+
+task TaskB {
+    dependsOn "TaskA"
+    doFirst { println "running TaskB" }
+}
+```
+
+2
+
+`finalizedBy()` — Указывает, какой после текущего должен выполнится таск. Finalized task выполнится, даже если тот, от которого он зависит, завершится неудачей.
+
+```
+// Groovy DSL
+task TaskC {
+    doFirst { println "running TaskC" }
+}
+
+task TaskB {
+    finlizedBy "TaskC"
+    doLast { 
+        println "running TaskB" 
+        throw new RuntimeException("WTF")
+    }
+}
+```
+
+3
+
+`shouldRunAfter()` и `mustRunAfter()` — Задают порядок выполнения тасков без явных зависимостей между ними. Главное отличие от `dependsOn` в том, что методы никак не влияют на запуск тасков, а ТОЛЬКО на порядок.
+
+```
+// Groovy DSL
+task TaskA {
+    doFirst { println "running TaskA" }
+}
+
+task TaskB {
+    doLast { println "running TaskB" }
+}
+
+TaskA.mustRunAfter TaskB // можно запустить TaskA без TaskB и наоборот (то есть в отдельности)
+```
+
+`shouldRunAfter()` — порядок может быть не выполнен (если получился циклический порядок или при параллельном выполнении)
+
+`mustRunAfter()` — порядок тасков должен выполнятся всегда
+
+4
+
+Inputs and Outputs
+
+* Обычно, если task зависит от другого, то он ждет на вход данные, которые порождает другой task.
+* В gradle можно связать входные данные одного таска с выходными данными другого, при этом можно явно не указывать зависимости через `dependsOn`.
+
+В коде это выглядит примерно так
+
+```
+def producer = tasks.register("producer", Producer)
+def consumer = tasks.register("consumer", Consumer)
+
+// Связываем входной и выходной файл разных тасков
+// Зависимости между тасками будут выставлены автоматически
+consumer.confugire {
+    inputFile = producer.flatMap { it.outputFile }
+}
+```
 
 ### Фазы сборки Gradle
 
@@ -151,7 +244,34 @@ tasks.register("hello") {
 * В api есть возможность сделать что-то до или после конфигурации: методы beforeEvaluate() и afterEvaluate() у проектов
 * Эти методы обычно используются из корневого проекта, чтобы сделать какую-то дополнительную конфигурацию у дочерних проектов
 
-### Репозитории библиотек
+### gradle.properties
+
+* Файл, лежащий в корневом проекте (а еще в `GRADLE_USER_HOME` и в директории gradle для глобальных свойств).
+* можно указывать параметры JVM для запуска gradle (например, `org.gradle.jvmargs=-Xmx4096m`)
+* можно указывать параметры самого Gradle
+* можно писать свои свойства, которые будут доступны из gradle скриптов
+* вместо использования gradle.properties, свойства можно передавать через командную строку через параметр `-p` (удобно для ключей, логинов и паролей)
+
+### Extra properties
+
+Многие объекты из доменной модели Gradle (в том числе Task и Project) могут содержать дополнительные свойства в виде ключ-значение. Ключ — это строка, а значение — это класс Object.
+
+```
+project.ext.test = "Test"   // Groovy DSL
+
+// or
+
+project.extra["test"] = "Test"   // Kotlin DSL
+
+// or
+
+project
+    .getExtensions()
+    .getExtraProperties()
+    .set("test", "Test")
+```
+
+## Репозитории библиотек
 
 Все пакеты публикуются в репозитории, чтобы каждый мог их себе подтянуть. Раньше были популярны JCenter и Google Maven, однако JCenter объявлен как deprecated и сейчас есть три варианта репозиториев:
 
@@ -167,7 +287,7 @@ https://mvnrepository.com/artifact/<package-root>/<package-name>
 
 Например, для пакета `org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version` узнать информацию о доступных версиях в открытых репозиториях можно по ссылке: [https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-gradle-plugin](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-gradle-plugin)
 
-### Flavors & BuildTypes
+## Flavors & BuildTypes
 
 `flavor dimension` - под этим можно понимать категорию переменных, некоторый переменный набор. Пример:&#x20;
 
@@ -205,7 +325,7 @@ productFlavors {
 
 Далее, эти значения используется в определении buildTypes (каким образом?)
 
-### Kotlin & Groovy DSL
+## Kotlin & Groovy DSL
 
 Gradle Kotlin DSL Usage: [https://github.com/IkeMurami/AndroidAppExamples/tree/main/KotlinDSLUsage](https://github.com/IkeMurami/AndroidAppExamples/tree/main/KotlinDSLUsage)
 
