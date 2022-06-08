@@ -7,7 +7,7 @@ Django&#x20;
 
 Создание своих асинхронных сервисов/API\
 FastAPI: [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)\
-uvicorn: [http://www.uvicorn.org/](http://www.uvicorn.org/) (http2 not supported)\
+uvicorn: [http://www.uvicorn.org/](http://www.uvicorn.org) (http2 not supported)\
 hypercorn [https://pgjones.gitlab.io/hypercorn/](https://pgjones.gitlab.io/hypercorn/) (http2 support)\
 tornado: [https://www.tornadoweb.org/en/stable/](https://www.tornadoweb.org/en/stable/)\
 gunicorn - сервер на Python (for unix)
