@@ -6,6 +6,8 @@
 
 Youtube запись от Redmadrobot: [https://www.youtube.com/watch?v=WOBok2u-SL8](https://www.youtube.com/watch?v=WOBok2u-SL8)
 
+Документация от Kotlin по использованию Gradle для сборки kotlin-приложения: [https://kotlinlang.org/docs/gradle.html](https://kotlinlang.org/docs/gradle.html)
+
 ## Install
 
 releases: [https://gradle.org/releases/](https://gradle.org/releases/)
