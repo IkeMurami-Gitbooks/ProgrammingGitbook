@@ -286,6 +286,7 @@
       * [Логирование](ppc-langs/backend/jvm/kotlin/logirovanie.md)
       * [Frameworks](ppc-langs/backend/jvm/kotlin/frameworks/README.md)
         * [HTTP](ppc-langs/backend/jvm/kotlin/frameworks/http.md)
+        * [Documentation](ppc-langs/backend/jvm/kotlin/frameworks/documentation.md)
     * [Build & Distribution](ppc-langs/backend/jvm/java/build/README.md)
       * [Maven](ppc-langs/backend/jvm/java/build/maven.md)
       * [Gradle](ppc-langs/jvm/gradle.md)
