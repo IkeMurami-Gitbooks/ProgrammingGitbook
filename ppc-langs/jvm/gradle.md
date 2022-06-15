@@ -6,6 +6,10 @@
 
 Youtube запись от Redmadrobot: [https://www.youtube.com/watch?v=WOBok2u-SL8](https://www.youtube.com/watch?v=WOBok2u-SL8)
 
+Документация от Kotlin по использованию Gradle для сборки kotlin-приложения: [https://kotlinlang.org/docs/gradle.html](https://kotlinlang.org/docs/gradle.html)
+
+Мой проект, в котором я собирал kotlin multiplatform библиотеку для веб-сервера и андроид приложения с использованием паттерна buildSrc и синтаксиса Kotlin DSL для gradle: [https://github.com/IkeMurami/KotlinMultiplatformExample](https://github.com/IkeMurami/KotlinMultiplatformExample)
+
 ## Install
 
 releases: [https://gradle.org/releases/](https://gradle.org/releases/)
@@ -329,6 +333,8 @@ org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4
 
 В java library plugin еще появляется конфигурация `api`. Ее отличие от `implementation` в том, что она открывает доступ ко всем зависимым модулям (раньше `compile` так делал — он открывал доступ ко всем дочерним зависимостям, `implementation` так не делает).&#x20;
 
+`compileOnly` — конфигурация подгружает модуль только на этап конфигурации (когда модуль не нужен в runtime). `implementation` подгружает модуль в runtime. Грамотное разделение модулей между `compileOnly` и `implementation` помогает ускорить время сборки проекта.
+
 ### Resolution strategy
 
 * Между зависимостями могут встречаться конфликты
@@ -408,7 +414,7 @@ implementation('log4j:log4j:1.2.15') {
 
 ## Plugins
 
-* могут быть написаны скриптом или подключаться как jar
+* могут быть написаны скриптом, подключаться как jar (отдельный проект) или быть определены в buildSrc
 * Добавляют таски, свойства, зависимости, конфигурации
 * Расширяют DSL и доменную модель
 * В общем, позволяют делать все, что угодно
@@ -505,3 +511,4 @@ Gradle Kotlin DSL Usage: [https://github.com/IkeMurami/AndroidAppExamples/tree/m
 * внешние зависимости и версии
 * имена проектов и модулей
 * таски для сборки
+* плагины для сборки
