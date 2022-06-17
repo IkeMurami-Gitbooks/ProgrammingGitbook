@@ -10,6 +10,8 @@ Youtube запись от Redmadrobot: [https://www.youtube.com/watch?v=WOBok2u-
 
 Мой проект, в котором я собирал kotlin multiplatform библиотеку для веб-сервера и андроид приложения с использованием паттерна buildSrc и синтаксиса Kotlin DSL для gradle: [https://github.com/IkeMurami/KotlinMultiplatformExample](https://github.com/IkeMurami/KotlinMultiplatformExample)
 
+Примеры multiplatform проектов: [https://kotlinlang.org/docs/multiplatform-mobile-samples.html](https://kotlinlang.org/docs/multiplatform-mobile-samples.html)
+
 ## Install
 
 releases: [https://gradle.org/releases/](https://gradle.org/releases/)
