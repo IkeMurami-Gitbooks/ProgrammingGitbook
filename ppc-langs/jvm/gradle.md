@@ -505,7 +505,7 @@ productFlavors {
 
 Gradle Kotlin DSL Usage: [https://github.com/IkeMurami/AndroidAppExamples/tree/main/KotlinDSLUsage](https://github.com/IkeMurami/AndroidAppExamples/tree/main/KotlinDSLUsage)
 
-## buildSrc
+## buildSrc & Version Catalog
 
 Особая директория Gradle, в которую выносятся:
 
