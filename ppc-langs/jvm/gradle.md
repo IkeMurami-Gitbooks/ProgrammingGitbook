@@ -514,3 +514,13 @@ Gradle Kotlin DSL Usage: [https://github.com/IkeMurami/AndroidAppExamples/tree/m
 * имена проектов и модулей
 * таски для сборки
 * плагины для сборки
+
+Альтернатива этому — использовать Version Catalog (появился в 7-й версии Gradle и работает только с Kotlin DSL) как единое место хранение информации о версиях библиотек. Почитать подробнее: [https://habr.com/ru/post/560868/](https://habr.com/ru/post/560868/)
+
+Для подключения этой фичи, добавляем в `settings.gradle.kts`:
+
+```kotlin
+enableFeaturePreview("VERSION_CATALOGS")
+```
+
+и в папке gradle помещаем **toml**-файл `libs.versions.toml`.
