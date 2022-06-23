@@ -1,6 +1,19 @@
 # Vue.js
 
-Структура проекта
+## Create and build Vue.js project
+
+```
+// Установка vue.js и запуск команды vue-create
+$ npm init vue@latest
+// Установка зависимостей и запуск dev стенда
+$ cd vue-project
+$ npm install
+$ npm run dev
+```
+
+
+
+## Структура проекта
 
 ```
 .
@@ -36,3 +49,4 @@ store (optional) - \
 translations (optional) - локаль \
 utils (optional) \
 views -
+
