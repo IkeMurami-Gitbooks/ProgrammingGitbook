@@ -159,49 +159,6 @@ export default App;
 
 Короч есть какая-та возможность делать css injection. Но я не разобрался. Надо лезть в документацию и смотреть разницу между class и className (один из них безопасный, другой — нет) и как делать Attribute Injection в эти поля.
 
-### Eval-based Injections
-
-If you can control a string that is dynamically evaluated, you have hit the jackpot and may proceed to inject arbitrary code of your choosing. This should be a rare occurrence.
-
-```jsx
-function antiPattern() {
-  eval(this.state.attacker_supplied);
-}
-// Or even crazier
-fn = new Function("..." + attacker_supplied + "...");
-fn();
-
-// Example
-const addition = new Function(‘a’, ‘b’, ‘return a+b’);
-addition(1, 1)
-
-// Так же нельзя допускать, чтобы строки попадали 
-// в setInterval() или setTimeout() как аргумент
-setTimeout(“console.log(1+1)”, 1000);
-
-```
-
-Соответственно, ищем использование:
-
-```jsx
-eval()
-new Function()
-setTimeout()
-setInterval()
-```
-
-### Serialization
-
-```jsx
-// Это всегда плохо (почти)
-Ищем JSON.stringify
-Ищем YAML, XML, Markdown,...
-```
-
-### Incorrect work with location
-
-Ищем по коду работу с `window.location`. Здесь могут быть и не так обработанные параметры, и Open Redirect и CSRF и тп.
-
 ### Чем вообще могут помочь инъекции в стили
 
 #### Password stealing
