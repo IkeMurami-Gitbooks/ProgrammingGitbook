@@ -47,5 +47,5 @@ with open(wordlist, "rb") as wordlist:
 
 `pydantic` - валидация данных
 
-
+[Click](https://click.palletsprojects.com/en/8.1.x/) — альтернатива argparser для создания интерфейса CLI.
 
