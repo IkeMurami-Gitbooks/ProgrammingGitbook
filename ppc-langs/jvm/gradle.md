@@ -8,7 +8,7 @@ Youtube запись от Redmadrobot: [https://www.youtube.com/watch?v=WOBok2u-
 
 Документация от Kotlin по использованию Gradle для сборки kotlin-приложения: [https://kotlinlang.org/docs/gradle.html](https://kotlinlang.org/docs/gradle.html)
 
-Мой проект, в котором я собирал kotlin multiplatform библиотеку для веб-сервера и андроид приложения с использованием паттерна buildSrc и синтаксиса Kotlin DSL для gradle: [https://github.com/IkeMurami/KotlinMultiplatformExample](https://github.com/IkeMurami/KotlinMultiplatformExample)
+Мой проект, в котором я собирал kotlin multiplatform библиотеку для веб-сервера и андроид приложения с использованием паттерна buildSrc и синтаксиса Kotlin DSL для gradle: [https://github.com/IkeMurami-Examples/KotlinMultiplatformExample](https://github.com/IkeMurami-Examples/KotlinMultiplatformExample)
 
 Примеры multiplatform проектов: [https://kotlinlang.org/docs/multiplatform-mobile-samples.html](https://kotlinlang.org/docs/multiplatform-mobile-samples.html)
 
@@ -503,7 +503,8 @@ productFlavors {
 
 ## Kotlin & Groovy DSL
 
-Gradle Kotlin DSL Usage: [https://github.com/IkeMurami/AndroidAppExamples/tree/main/KotlinDSLUsage](https://github.com/IkeMurami/AndroidAppExamples/tree/main/KotlinDSLUsage)
+Gradle Kotlin DSL Usage: \
+[https://github.com/IkeMurami-Examples/AndroidAppExamples/tree/main/KotlinDSLUsage](https://github.com/IkeMurami-Examples/AndroidAppExamples/tree/main/KotlinDSLUsage)
 
 ## buildSrc & Version Catalog
 
@@ -515,7 +516,7 @@ Gradle Kotlin DSL Usage: [https://github.com/IkeMurami/AndroidAppExamples/tree/m
 * таски для сборки
 * плагины для сборки
 
-Пример: [https://github.com/IkeMurami/KotlinMultiplatformExample](https://github.com/IkeMurami/KotlinMultiplatformExample)
+Пример: [https://github.com/IkeMurami-Examples/KotlinMultiplatformExample](https://github.com/IkeMurami-Examples/KotlinMultiplatformExample)
 
 Альтернатива этому — использовать Version Catalog (появился в 7-й версии Gradle и работает только с Kotlin DSL) как единое место хранение информации о версиях библиотек. Почитать подробнее: [https://habr.com/ru/post/560868/](https://habr.com/ru/post/560868/)
 
