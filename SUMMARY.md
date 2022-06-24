@@ -92,6 +92,7 @@
   * [Browsers](tech/programs/browsers.md)
 * [Библиотеки](tech/biblioteki/README.md)
   * [Полнотекстовой поиск](tech/biblioteki/polnotekstovoi-poisk.md)
+  * [Регулярные выражения](tech/biblioteki/regulyarnye-vyrazheniya.md)
 * [Machine Learning](tech/machine-learning.md)
 * [Разработка игр](tech/razrabotka-igr.md)
 
