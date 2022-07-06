@@ -385,6 +385,7 @@
       * [Вспомогательные операторы](ppc-langs/frontend/js-ts/typescript/vspomogatelnye-operatory.md)
       * [Дополнительные инструменты](ppc-langs/frontend/js-ts/typescript/dopolnitelnye-instrumenty.md)
       * [Разные соглашения](ppc-langs/frontend/js-ts/typescript/raznye-soglasheniya.md)
+    * [deno](ppc-langs/frontend/js-ts/deno.md)
     * [Node.js](ppc-langs/frontend/js-ts/node.js.md)
     * [Frameworks](ppc-langs/frontend/js-ts/frameworks/README.md)
       * [Angular](ppc-langs/frontend/js-ts/frameworks/angular/README.md)
