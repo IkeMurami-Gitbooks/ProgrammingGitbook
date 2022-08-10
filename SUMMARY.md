@@ -311,6 +311,7 @@
     * [Заметки по языку](ppc-langs/backend/ruby-on-rails/zametki-po-yazyku.md)
     * [require and require\_relative](ppc-langs/backend/ruby-on-rails/require-and-require\_relative.md)
     * [WebSocket Server](ppc-langs/backend/ruby-on-rails/websocket-server.md)
+    * [Ruby Security](ppc-langs/backend/ruby-on-rails/ruby-security.md)
   * [Python](ppc-langs/backend/python/README.md)
     * [Django](ppc-langs/backend/python/django.md)
     * [Flask](ppc-langs/backend/python/flask.md)
