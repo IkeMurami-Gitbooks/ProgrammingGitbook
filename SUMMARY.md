@@ -316,7 +316,7 @@
       * [require and require\_relative](ppc-langs/backend/ruby/ruby-on-rails/require-and-require\_relative.md)
       * [WebSocket Server](ppc-langs/backend/ruby/ruby-on-rails/websocket-server.md)
   * [Python](ppc-langs/backend/python/README.md)
-    * [Django](ppc-langs/backend/python/django/README.md)
+    * [Django](ppc-langs/backend/python/django.md)
       * [Security](ppc-langs/backend/python/django/security.md)
     * [Flask](ppc-langs/backend/python/flask.md)
   * [ASP.NET](ppc-langs/backend/asp.net/README.md)
