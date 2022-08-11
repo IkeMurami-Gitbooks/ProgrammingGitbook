@@ -208,6 +208,7 @@
   * [cmake](ppc-langs/c-c++/cmake.md)
   * [Как подключить .Lib/.h статическую библиотеку в свой проект VS/C/C++](ppc-langs/c-c++/kak-podklyuchit-.lib-.h-staticheskuyu-biblioteku-v-svoi-proekt-vs-c-c++.md)
   * [Disable stdafx and other features in VS](ppc-langs/c-c++/disable-stdafx-and-other-features-in-vs.md)
+  * [Если не компилируются стандартные библиотеки в Visual Studio 2015](ppc-langs/c-c++/esli-ne-kompiliruyutsya-standartnye-biblioteki-v-visual-studio-2015.md)
 * [Python](ppc-langs/python/README.md)
   * [Install (debian)](ppc-langs/python/install-debian.md)
   * [Заметки](ppc-langs/python/zametki.md)
