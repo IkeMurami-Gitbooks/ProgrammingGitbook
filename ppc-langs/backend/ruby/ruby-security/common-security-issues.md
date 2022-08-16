@@ -194,10 +194,48 @@ url = "http:/../../../../../../../etc/passwd"
 
 Mitigation: переходить на `openURI`.
 
-## SSTI
+## Unsafe Jobs
+
+delayed jobs (e.g. ActiveJob, delayed\_job) whose classes accept sensitive data via a `perform` or `initialize` method. Jobs are serialized in plaintext, so any sensitive data they accept will be accessible in plaintext to everyone with database access. Instead, consider passing ActiveRecord instances that appropriately handle sensitive data (e.g. encrypted at rest and decrypted when the data is needed) or avoid passing in this data entirely.
+
+```ruby
+class RegistrationJob < ApplicationJob
+  def perform(user:, password:, authorization_token:)
+    # do something to the user with the password and authorization_token
+  end
+end
+```
+
+When a `RegistrationJob` gets queued, this job will get serialized, leaving both `password` and `authorization_token`accessible in plaintext. `Betterment/UnsafeJob` can be configured to flag parameters like these to discourage their use. Some ways to remediate this might be to stop passing in `password`, and to encrypt `authorization_token` and storing it alongside the user object. For example:
+
+```ruby
+class RegistrationJob < ApplicationJob
+  def perform(user:)
+    authorization_token = user.authorization_token.decrypt
+    # do something with the authorization_token
+  end
+end
+```
+
+By default, this job will look at classes whose name ends with `Job` but this can be replaced with any regex.
+
+## Macros & Regexp -> Dinamic Params
+
+```ruby
+%w(one two three)
+%i(one two three)
+%r{(\w+)-(\d+)}
+"#{p}_name"
+```
+
+## Render / SSTI
 
 ```ruby
 render <user_input>
+ERB: <%= 7 * 7 %>
+SLIM: #{ 7 * 7 }
+
+Ищем raw, html_safe, safe_concat
 ```
 
 SSTI: [https://github.com/swisskyrepo/PayloadsAllTheThings/blob/6bcd2e8a6a39d26a547a70d83dfebef4c2c6f801/Server%20Side%20Template%20Injection/README.md#ruby---basic-injections](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/6bcd2e8a6a39d26a547a70d83dfebef4c2c6f801/Server%20Side%20Template%20Injection/README.md#ruby---basic-injections)
