@@ -2,6 +2,8 @@
 
 ## Deserializations
 
+md на github: [https://github.com/httpvoid/writeups/blob/main/Ruby-deserialization-gadget-on-rails.md](https://github.com/httpvoid/writeups/blob/main/Ruby-deserialization-gadget-on-rails.md)
+
 ### Marshal.load(\<user\_input>) = RCE
 
 Ruby Marshal+Base64 RCE payload playground/generator: [https://repl.it/@allyshka/Ruby-RCE-with-Marshalload](https://repl.it/@allyshka/Ruby-RCE-with-Marshalload)
