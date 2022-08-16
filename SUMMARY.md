@@ -311,6 +311,7 @@
     * [Ruby Security](ppc-langs/backend/ruby/ruby-security.md)
       * [Common Security Issues](ppc-langs/backend/ruby/ruby-security/common-security-issues.md)
       * [Ruby CVEs](ppc-langs/backend/ruby/ruby-security/ruby-cves.md)
+      * [Security Tools](ppc-langs/backend/ruby/ruby-security/security-tools.md)
       * [Papers](ppc-langs/backend/ruby/ruby-security/papers.md)
     * [Sinatra](ppc-langs/backend/ruby/sinatra.md)
     * [Padrino](ppc-langs/backend/ruby/padrino.md)
