@@ -1,46 +1,16 @@
 # Ruby Security
 
-## CVE-2020-8165 Deserialization
+## Deserializations
 
-Описание: [https://hackerone.com/reports/413388](https://hackerone.com/reports/413388)
-
-Проверка: ищем в коде `raw: true`
-
-CVE-2020-8165 - десер в Ruby on Rails. Test Lab: [https://github.com/masahiro331/CVE-2020-8165](https://github.com/masahiro331/CVE-2020-8165)
-
-## CVE-2019-5418 File Read
-
-link: [https://github.com/mpgn/CVE-2019-5418](https://github.com/mpgn/CVE-2019-5418)
-
-Analys: [https://blog.pentesterlab.com/cve-2019-5418-on-waf-bypass-and-caching-10e93f9a1981](https://blog.pentesterlab.com/cve-2019-5418-on-waf-bypass-and-caching-10e93f9a1981)
-
-Суть: в Accept ставим:&#x20;
-
-```
-Accept: ../../../../../../../../etc/passwd{{
-```
-
-## CVE-2019-5420 Active Storage RCE Deser
-
-Active Storage — механизм в Rails, облегчающий загрузку файлов в облачные хранилища данных (Amazon S3, Google Cloud Storage).
-
-Доступен по URL'ам `/rails/active_storage/*`
-
-Например: `/rails/active_storage/disk/<base64-message>--<sign>`
-
-PoC: [https://github.com/knqyf263/CVE-2019-5420](https://github.com/knqyf263/CVE-2019-5420)
-
-Полное описание: [https://www.zerodayinitiative.com/blog/2019/6/20/remote-code-execution-via-ruby-on-rails-active-storage-insecure-deserialization](https://www.zerodayinitiative.com/blog/2019/6/20/remote-code-execution-via-ruby-on-rails-active-storage-insecure-deserialization)
-
-## Marshal.load(\<user\_input>) = RCE
+### Marshal.load(\<user\_input>) = RCE
 
 Ruby Marshal+Base64 RCE payload playground/generator: [https://repl.it/@allyshka/Ruby-RCE-with-Marshalload](https://repl.it/@allyshka/Ruby-RCE-with-Marshalload)
 
 Other guide: [https://www.elttam.com/blog/ruby-deserialization/](https://www.elttam.com/blog/ruby-deserialization/)
 
-## YAML.load(\<user\_input>) = RCE
+### YAML.load(\<user\_input>) = RCE
 
-## Rails 5.1.4 YAML unsafe deserialization RCE payload
+### Rails 5.1.4 YAML unsafe deserialization RCE payload
 
 Example: [https://gist.github.com/niklasb/df9dba3097df536820888aeb4de3284f](https://gist.github.com/niklasb/df9dba3097df536820888aeb4de3284f)
 
@@ -103,7 +73,9 @@ res = Net::HTTP.start(url.host, url.port) {|http|
 /user_data/2341.json --> 200 OK
 ```
 
-## SQLi in ORDER BY
+## SQL Injections
+
+### SQLi in ORDER BY
 
 Только посмотрите, как круто в коде `RubyOnRails` выглядит `SQLi` в ORDER BY:\
 `Client.order(:first_name)`\
@@ -114,7 +86,7 @@ res = Net::HTTP.start(url.host, url.port) {|http|
 P.S. Почему это круто?!\
 Потому что разработчики, когда пишет код, даже не подозревает, что вызов вроде `Client.order(:first_name)` приведет к `SQLi`. Тут ничего не режет глаз, нет конкатенации, нет опасных функций, казалось бы и пр.
 
-## SQLi: Active Record — Rails ORM
+### SQLi: Active Record — Rails ORM
 
 Как выглядит в коде SQLi
 
@@ -237,3 +209,5 @@ Attacking Ruby on Rails Applications: [http://phrack.org/issues/69/12.html](http
 OWASP Ruby on Rails Cheatsheet: [https://cheatsheetseries.owasp.org/cheatsheets/Ruby\_on\_Rails\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Ruby\_on\_Rails\_Cheat\_Sheet.html)
 
 RoR Security Guide: [http://rusrails.ru/ruby-on-rails-security-guide](http://rusrails.ru/ruby-on-rails-security-guide)
+
+Доклад про историю развития Security in RoR: [https://github.com/presidentbeef/rails-security-history](https://github.com/presidentbeef/rails-security-history)
