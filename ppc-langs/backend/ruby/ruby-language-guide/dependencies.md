@@ -1,4 +1,4 @@
-# require and require\_relative
+# Dependencies
 
 ```ruby
 require 'full/path/script'
