@@ -70,3 +70,23 @@ $ gem env home
 // 3. Install needed gem (we don't need sudo permissions for that)
 $ gem install bundler
 ```
+
+## Run Ruby Code
+
+irb console:
+
+```
+$ irb
+irb(main):001:0> puts 'Hello Ruby'
+Hello Ruby
+=> nil
+irb(main):002:0>
+```
+
+ruby:
+
+```
+$ ruby -e 'print "Hello Ruby!\n"' -e '1+1'
+$ ruby hello.rb
+$ ./hello.rb
+```
