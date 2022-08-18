@@ -1,4 +1,4 @@
-# Web: Padrino
+# Padrino
 
 About: [https://github.com/padrino/padrino-framework](https://github.com/padrino/padrino-framework)
 
