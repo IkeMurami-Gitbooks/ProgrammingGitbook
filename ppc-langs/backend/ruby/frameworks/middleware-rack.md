@@ -12,3 +12,5 @@
 ![](<../../../../.gitbook/assets/image (3).png>)
 
 [rack-attack](https://github.com/rack/rack-attack) — прослойка для блокирования и тротлинга
+
+Rails on Rack: [https://guides.rubyonrails.org/rails\_on\_rack.html](https://guides.rubyonrails.org/rails\_on\_rack.html)

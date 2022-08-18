@@ -19,3 +19,5 @@
 ```
 ./bin/rails routes
 ```
+
+Routing to Rack: [https://guides.rubyonrails.org/routing.html#routing-to-rack-applications](https://guides.rubyonrails.org/routing.html#routing-to-rack-applications)
