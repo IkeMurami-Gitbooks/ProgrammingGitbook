@@ -325,6 +325,7 @@
       * [Web: Sinatra](ppc-langs/backend/ruby/sinatra.md)
       * [Web: Padrino](ppc-langs/backend/ruby/padrino.md)
       * [Web: Ruby on Rails](ppc-langs/backend/ruby/frameworks/ruby-on-rails.md)
+      * [Middleware: Rack](ppc-langs/backend/ruby/frameworks/middleware-rack.md)
       * [Test: RSpec](ppc-langs/backend/ruby/frameworks/test-rspec.md)
     * [Ruby Security](ppc-langs/backend/ruby/ruby-security.md)
       * [Common Security Issues](ppc-langs/backend/ruby/ruby-security/common-security-issues/README.md)
