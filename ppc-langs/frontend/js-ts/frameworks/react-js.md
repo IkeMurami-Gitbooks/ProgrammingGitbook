@@ -135,7 +135,7 @@ export default App;
 
 И выглядит это так:
 
-<img src="../../../../.gitbook/assets/image (1) (2).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (1).png" alt="" data-size="original">
 
 Однако, для разработчиков оставили способ отрисовать html+js в динамике, если это действительно необходимо:
 
