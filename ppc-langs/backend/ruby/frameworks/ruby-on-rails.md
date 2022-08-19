@@ -102,3 +102,43 @@ Rails.application.routes.draw do
     
 end
 ```
+
+#### namespaces
+
+Позволяет организовывать роуты в группы:
+
+```ruby
+=begin
+  /admin/articles[/...]
+  /admin/comments[/...]
+=end
+namespace :admin do
+  resources :articles, :comments
+end
+```
+
+#### scope
+
+Если мы не хотим, чтобы в пути был /admin, но хотим, чтобы существовала логическая группа — используем директиву scope:
+
+```ruby
+scope module: 'admin' do
+  resources :articles, :comments
+end
+
+# or
+
+resources :articles, module: 'admin'
+```
+
+If instead you want to route `/admin/articles` to `ArticlesController` (without the `Admin::` module prefix), you can specify the path with a `scope` block:
+
+```ruby
+scope '/admin' do
+  resources :articles, :comments
+end
+
+# or
+
+resources :articles, path: '/admin/articles'
+```
