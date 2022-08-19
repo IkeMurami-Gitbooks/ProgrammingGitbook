@@ -7,3 +7,9 @@ OWASP Ruby on Rails Cheatsheet: [https://cheatsheetseries.owasp.org/cheatsheets/
 RoR Security Guide: [http://rusrails.ru/ruby-on-rails-security-guide](http://rusrails.ru/ruby-on-rails-security-guide)
 
 Доклад про историю развития Security in RoR: [https://github.com/presidentbeef/rails-security-history](https://github.com/presidentbeef/rails-security-history)
+
+Раздел о разработке безопасных приложений на ruby on rails: [https://guides.rubyonrails.org/security.html](https://guides.rubyonrails.org/security.html)
+
+Сайт, посвещенной безопасности ruby on rails (из книги о разработке на rails): [https://rorsecurity.info/](https://rorsecurity.info/)
+
+Ruby on Rails Security Google Group: [https://groups.google.com/g/rubyonrails-security](https://groups.google.com/g/rubyonrails-security)
