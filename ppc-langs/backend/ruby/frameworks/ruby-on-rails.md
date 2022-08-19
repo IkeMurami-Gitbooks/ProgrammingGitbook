@@ -142,3 +142,28 @@ end
 
 resources :articles, path: '/admin/articles'
 ```
+
+#### concern
+
+Директива позволяет определять роуты, которые могут быть переиспользованы в других роутах. Позволяет писать меньше кода тем самым
+
+```ruby
+concern :image_attachable do
+  resources :images, only: :index
+end
+
+resources :articles, concerns: :image_attachable
+resources :messages, concerns: :image_attachable
+
+# Это аналог вот этой записи:
+
+resources :articles do
+  resources :images, only: :index
+end
+resources :messages do
+  resources :images, only: :index
+end
+```
+
+Использовать это можно где угодно (например и в namespaces)
+
