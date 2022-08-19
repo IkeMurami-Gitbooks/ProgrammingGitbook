@@ -116,7 +116,7 @@ a = fred.new
 puts a.method
 ```
 
-## Public and private methods
+## Public, private and protected methods
 
 Можно через self определять приватные методы
 
@@ -157,6 +157,12 @@ class PrivateMethod
 
     def pub
         "Public"
+    end
+    
+    protected
+    
+    def protected_method
+        "Protected"
     end
 
     private
