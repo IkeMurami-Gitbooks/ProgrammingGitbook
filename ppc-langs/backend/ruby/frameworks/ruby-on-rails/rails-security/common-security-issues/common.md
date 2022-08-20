@@ -9,7 +9,19 @@
 /user_data/2341.json --> 200 OK
 ```
 
-## Command Injection
+## Redirections
+
+Обращать внимание на `redirect_to`. Пользовательский ввод не должен попадать сюда.
+
+? Этот URL приведет к отрисовке формочки в Firefox и Opera:
+
+```ruby
+data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K
+```
+
+## RCE Flows
+
+### Command Injection
 
 ```ruby
 eval("ruby code here")
@@ -19,7 +31,7 @@ exec("os command here")
 open("\| os command here")
 ```
 
-## Code Execution
+### Code Execution
 
 ```ruby
 class_eval <<-RUBY, __FILE__, __LINE__ + 1
@@ -29,7 +41,7 @@ class_eval <<-RUBY, __FILE__, __LINE__ + 1
 RUBY
 ```
 
-## open-uri
+### open-uri
 
 Если используется в коде этот пакет, то есть возможность исполнить код на стороне сервера (так как используется внутри [Kernel.open](https://ruby-doc.org/core-2.2.0/Kernel.html#method-i-open))
 
