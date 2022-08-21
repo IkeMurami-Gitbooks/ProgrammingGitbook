@@ -161,3 +161,42 @@ end
 
 Использовать это можно где угодно (например и в namespaces)
 
+### draw
+
+Это применяется для создания макросов. Для тех случаев, когда мы хотим вынести группу маршрутов в отдельный файл, например:
+
+```ruby
+# config/routes/admin.rb
+MyApplication::Application.routes.draw do
+    root to: 'index#index'
+end
+```
+
+А так он будет подключен в главном route-конфиге:
+
+```ruby
+# config/route.rb
+Rails.application.routes.draw do
+    def draw(routes_name)
+        instance_eval(File.read(Rails.root.join("config/routes/#{routes_name}.rb")))
+    end
+    
+    draw :admin
+end
+```
+
+Или по другому без оборота в routes.draw (как мне кажется это проще)
+
+```ruby
+# config/routes/admin.rb
+# Здесь не надо оборачивать в Rails.application.routes.draw
+# admin.rb может быть определен в любой подпапке config/routes/...
+namespace :admin do
+  resources :comments
+end
+
+# config/route.rb
+Rails.application.routes.draw do
+  draw(:admin)
+end
+```
