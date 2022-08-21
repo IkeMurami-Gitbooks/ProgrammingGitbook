@@ -328,6 +328,7 @@
         * [Getting Started](ppc-langs/backend/ruby/frameworks/ruby-on-rails/getting-started.md)
         * [Routes](ppc-langs/backend/ruby/frameworks/ruby-on-rails/routes.md)
         * [Controllers](ppc-langs/backend/ruby/frameworks/ruby-on-rails/controllers.md)
+        * [Modules](ppc-langs/backend/ruby/frameworks/ruby-on-rails/modules.md)
         * [Rails Security](ppc-langs/backend/ruby/frameworks/ruby-on-rails/rails-security/README.md)
           * [Common Security Issues](ppc-langs/backend/ruby/frameworks/ruby-on-rails/rails-security/common-security-issues/README.md)
             * [Common](ppc-langs/backend/ruby/frameworks/ruby-on-rails/rails-security/common-security-issues/common.md)
