@@ -9,3 +9,5 @@ Allure — построение отчетов по результатам те�
 Espresso — тестирование UI в Android приложениях
 
 Pytest — тестирование API сервисов, например: [https://github.com/nEST-Projects/ex-pytest-example](https://github.com/nEST-Projects/ex-pytest-example)
+
+Karate — упрощение написания тестов: [https://github.com/karatelabs/karate](https://github.com/karatelabs/karate)
