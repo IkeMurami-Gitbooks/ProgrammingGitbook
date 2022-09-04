@@ -28,7 +28,7 @@ fetch("https://example.com/prepare.xsl", {method: 'GET'})
 
 * Нельзя делать запросы к локальным  ресурсам (если cors?) и к файлам. Надо попробовать через CORS proxy: [https://github.com/Rob--W/cors-anywhere/](https://github.com/Rob--W/cors-anywhere/). По сути: бэкенд-серверу похер на корсы, это только фронту важно (что б нельзя было подделывать запросы от имени пользователя).&#x20;
 
-POST:
+### Example of POST request (JSON)
 
 ```javascript
 data = {}
@@ -48,7 +48,39 @@ fetch("https://example.com/" {
 })
 ```
 
-Оборачивание в async/await:
+### Example of POST request (url encoded)
+
+```javascript
+let data = {
+    email: 'test@gmail.com',
+    password: 'password'
+};
+fetch("https://server.net/login", {
+    method: 'POST',
+    mode: 'no-cors',
+    cache: 'no-cache',
+    body: new URLSearchParams(data),
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    redirect: 'follow'
+});
+```
+
+### Add custom cookies
+
+Этот запрос к основным куки добавит еще и ваши
+
+```javascript
+fetch("https://server.net/", {
+    credentials: 'include',
+    headers: {
+        Cookie: 'session=123;'
+    }
+});
+```
+
+### Оборачивание в async/await
 
 ```javascript
 async function postData(url = '', data = {}) {
