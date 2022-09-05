@@ -468,6 +468,7 @@
         * [AngularJS](ppc-langs/frontend/js-ts/frameworks/frameworks/angularjs.md)
         * [Ext JS / Sencha](ppc-langs/frontend/js-ts/frameworks/frameworks/ext-js-sencha.md)
     * [TODO: RxJs](ppc-langs/frontend/js-ts/rxjs.md)
+    * [Other projects](ppc-langs/frontend/js-ts/other-projects.md)
   * [CMS](ppc-langs/frontend/cms.md)
   * [Особенности WebStorm IDE](ppc-langs/frontend/osobennosti-webstorm-ide.md)
   * [Dart/Flutter](ppc-langs/frontend/dart-flutter/README.md)
