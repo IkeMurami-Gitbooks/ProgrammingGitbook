@@ -153,6 +153,7 @@
     * [Frameworks](ppc-langs/backend/jvm/frameworks/README.md)
       * [Spring Framework](ppc-langs/backend/jvm/frameworks/spring-framework/README.md)
         * [About](ppc-langs/backend/jvm/frameworks/spring-framework/about.md)
+        * [Spring IoC](ppc-langs/backend/jvm/frameworks/spring-framework/spring-ioc.md)
         * [Spring MVC](ppc-langs/backend/jvm/frameworks/spring-framework/spring-mvc.md)
         * [Spring Boot](ppc-langs/backend/jvm/frameworks/spring-framework/spring.md)
     * [Build & Distribution](ppc-langs/backend/jvm/java/build/README.md)
