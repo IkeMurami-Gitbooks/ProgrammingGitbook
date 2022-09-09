@@ -50,6 +50,7 @@
 * [Архитектура сервисов](tech/arkhitektura-servisov/README.md)
   * [Телеметрия](tech/arkhitektura-servisov/telemetriya.md)
   * [Testing](tech/testing.md)
+  * [Построение админок](tech/arkhitektura-servisov/postroenie-adminok.md)
   * [Трассировка сервисов](tech/arkhitektura-servisov/trassirovka-servisov.md)
   * [Брокеры сообщений](tech/arkhitektura-servisov/brokery-soobshenii/README.md)
     * [Why?](tech/arkhitektura-servisov/brokery-soobshenii/why.md)
