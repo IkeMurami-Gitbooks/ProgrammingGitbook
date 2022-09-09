@@ -6,7 +6,7 @@
 
 ## Элементы веб-браузера
 
-![](<../../../.gitbook/assets/изображение (4) (1).png>)
+![](<../../../.gitbook/assets/изображение (4).png>)
 
 * Окно - это вкладка браузера, в которую загружается веб-страница; это представлено в JavaScript объектом [`Window`](https://developer.mozilla.org/ru/docs/Web/API/Window). Используя методы, доступные для этого объекта, вы можете делать такие вещи, как возврат размера окна (см. [`Window.innerWidth`](https://developer.mozilla.org/ru/docs/Web/API/Window/innerWidth) и [`Window.innerHeight`](https://developer.mozilla.org/ru/docs/Web/API/Window/innerHeight)), манипулировать документом, загруженным в этот window, хранить данные, специфичные для этого документа на стороне клиента (например, используя локальную базу данных или другой механизм хранения), присоединить обработчик событий ([event handler](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building\_blocks/Events#A\_series\_of\_fortunate\_events)) к текущему окну и многое другое.
 * Навигатор представляет состояние и идентификатор браузера (т. е. пользовательский агент), как он существует в Интернете. В JavaScript это представлено объектом [`Navigator`](https://developer.mozilla.org/ru/docs/Web/API/Navigator). Вы можете использовать этот объект для извлечения таких вещей, как геолокационная информация, предпочтительный язык пользователя, медиапоток с веб-камеры пользователя и т. д.

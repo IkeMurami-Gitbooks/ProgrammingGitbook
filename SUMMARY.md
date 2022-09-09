@@ -100,6 +100,7 @@
 
 ## Programming Languages <a href="#ppc-langs" id="ppc-langs"></a>
 
+* [Security Coding Styles](ppc-langs/security-coding-styles.md)
 * [Proto](ppc-langs/proto.md)
 * [Perl](ppc-langs/perl/README.md)
   * [cpan](ppc-langs/perl/cpan.md)
@@ -162,6 +163,7 @@
       * [Gradle](ppc-langs/jvm/gradle.md)
       * [Fastlane](ppc-langs/backend/jvm/build/fastlane.md)
       * [Apache Ant](ppc-langs/backend/jvm/build/apache-ant.md)
+    * [Security](ppc-langs/backend/jvm/security.md)
   * [JS/TS](ppc-langs/backend/js-ts/README.md)
     * [Lerna](ppc-langs/backend/js-ts/lerna.md)
     * [Gulp](ppc-langs/backend/js-ts/gulp.md)
@@ -250,6 +252,7 @@
     * [Проблемы](ppc-langs/backend/go/problemy/README.md)
       * [\_cgo\_export.c:3:10: fatal error: 'stdlib.h' file not found](ppc-langs/backend/go/problemy/\_cgo\_export.c-3-10-fatal-error-stdlib.h-file-not-found.md)
     * [Tools Powered on Go](ppc-langs/backend/go/tools-powered-on-go.md)
+    * [Go Security](ppc-langs/backend/go/go-security.md)
   * [Ruby](ppc-langs/backend/ruby/README.md)
     * [Getting Started](ppc-langs/backend/ruby/getting-started.md)
     * [Ruby Language Guide](ppc-langs/backend/ruby/ruby-language-guide/README.md)
@@ -373,6 +376,7 @@
     * [CodeIgniter](ppc-langs/backend/php/codeigniter.md)
     * [Moodle](ppc-langs/backend/php/moodle.md)
     * [Пакеты](ppc-langs/backend/php/pakety.md)
+    * [Security](ppc-langs/backend/php/security.md)
     * [examples](ppc-langs/backend/php/examples/README.md)
       * [Usefull small examples](ppc-langs/backend/php/examples/usefull-small-examples.md)
       * [Поднять инфру для разработки](ppc-langs/backend/php/examples/podnyat-infru-dlya-razrabotki.md)

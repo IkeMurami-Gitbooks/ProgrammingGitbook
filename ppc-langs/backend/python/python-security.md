@@ -39,7 +39,7 @@ str_Somestring = func.__code__.co_varnames[0]
 
 Интерпретатору python все равно на unicode символы, он их попытается привести к ascii:
 
-![](<../../../.gitbook/assets/изображение (5).png>)
+![](../../../.gitbook/assets/изображение.png)
 
 ### Работа с типами
 
