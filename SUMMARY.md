@@ -347,6 +347,7 @@
       * [Django](ppc-langs/backend/python/web-frameworks/django/README.md)
         * [Security](ppc-langs/backend/python/web-frameworks/django/security.md)
     * [Papers & Books](ppc-langs/backend/python/papers-and-books.md)
+    * [Python Security](ppc-langs/backend/python/python-security.md)
   * [.Net](ppc-langs/backend/.net/README.md)
     * [dotnet](ppc-langs/backend/.net/dotnet.md)
     * [NuGet](ppc-langs/backend/.net/nuget.md)

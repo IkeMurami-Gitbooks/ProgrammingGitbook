@@ -44,6 +44,6 @@ http://victim.com/(A(ABCD))/admin - 200
 
 Если знаем первые 6 символов директории или файла, то оставшуюся можем заменить на `~1`
 
-![](<../../../.gitbook/assets/изображение (1).png>)
+![](<../../../.gitbook/assets/изображение (4).png>)
 
 Сканер для IIS: [https://github.com/irsdl/iis-shortname-scanner](https://github.com/irsdl/iis-shortname-scanner)
