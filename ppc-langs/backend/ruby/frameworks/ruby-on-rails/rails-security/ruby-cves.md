@@ -1,5 +1,7 @@
 # Ruby CVEs
 
+Список CVEs: [https://www.ruby-lang.org/ru/security/](https://www.ruby-lang.org/ru/security/)
+
 ## Deserialization
 
 ### CVE-2020-8165 Deserialization
