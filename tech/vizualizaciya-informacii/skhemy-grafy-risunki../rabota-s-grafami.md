@@ -2,7 +2,16 @@
 
 Есть очень популярная спецификация — [Graphviz](https://graphviz.org/resources/).
 
-У этой спецификации есть байдинги на множество языков (в том числе Python и Go).&#x20;
+У этой спецификации есть байдинги на множество языков (в том числе Python и Go). Под капотом они дергают бинарь `dot` (который является частью graphviz).
+
+```
+brew install graphviz
+cat graph.dot | dot -Tpng -o graph.png
+cat graph.dot | dot -Tsvg -o graph.svg
+cat graph.dot | dot -Tjson -o graph.json
+
+// На больших графах он у меня повис
+```
 
 А так же программы-визуализаторы под разные платформы (в тч онлайн).
 
