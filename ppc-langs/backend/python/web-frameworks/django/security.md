@@ -38,3 +38,9 @@ Content-Length: 3093
  
 csrfmiddlewaretoken=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&x=&x=&x=&x=[..1000 раз..]&x=&x=&x=
 ```
+
+## CVEs
+
+### CVE-2022-34265
+
+PoC & Description: [https://github.com/aeyesec/CVE-2022-34265](https://github.com/aeyesec/CVE-2022-34265)
