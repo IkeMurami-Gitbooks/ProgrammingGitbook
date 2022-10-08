@@ -176,6 +176,25 @@ if __name__ == '__main__':
 
 `operator` - базовая библиотека для переопределения базовых функций, а так же геттеров и сеттеров: [https://docs.python.org/3/library/operator.html](https://docs.python.org/3/library/operator.html)
 
+### socket
+
+1 Узнать свой IP
+
+```python
+import socket
+ip_v4 = socket.gethostbyname(socket.gethostname())
+```
+
+2 Узнать, открыт ли порт:
+
+```python
+import socket
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+  res = sock.connect_ex(('localhost', 12345))
+  if res == 0:
+      print("port is open")
+```
+
 ### timeit
 
 `timeit` стандартный пакет для измерений времени выполнения команд
@@ -192,3 +211,19 @@ print(
     )
 )
 ```
+
+### venv
+
+Создание виртуального окружения (чтобы не мусорить в глобальные зависимости). Обязательный подход при программировании на Python.
+
+<pre><code>// Создание виртуального окружения
+$ python3 -m venv .venv
+
+<strong>// Активация
+</strong>$ source .venv/bin/activate
+
+// Далее работаем все отсюда: устанавливаем зависимости, запускаем код
+
+// Деактивация — выход из виртуального окружения
+$ deactivate</code></pre>
+
