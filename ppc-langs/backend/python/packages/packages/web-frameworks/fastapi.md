@@ -1,4 +1,4 @@
-# About
+# FastAPI
 
 FastAPI — создание своих асинхронных сервисов/API
 
@@ -22,4 +22,3 @@ Main Page: [https://fastapi.tiangolo.com](https://fastapi.tiangolo.com)
 │   ├── requirements.txt
 │   ├── README.md
 ```
-
