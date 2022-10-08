@@ -1,4 +1,6 @@
-# Install (debian)
+# Install
+
+## Debian
 
 ```
 apt update
