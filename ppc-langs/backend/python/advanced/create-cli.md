@@ -35,3 +35,18 @@ if __name__ == '__main__':
 ## Click
 
 [Click](https://click.palletsprojects.com/en/8.1.x/) — альтернатива argparser для создания интерфейса CLI.
+
+Пример
+
+```python
+import click
+
+@click.command()
+@click.option('--count', default=1, help='Number of greetings.')
+@click.option('--name', prompt='Your name', help='The person to greet.')
+def hello(count, name):
+    print(f'{name} {count}')
+
+if __name__ == '__main__':
+    hello()
+```
