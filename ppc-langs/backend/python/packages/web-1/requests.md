@@ -1,13 +1,10 @@
 # requests
 
-обертка для http-запросов
-
-## Cases
-
-### File Upload (multipart)
+## File Upload (multipart)
 
 ```python
 import requests
+
 
 zipfile = open('my.zip', 'rb')
 
@@ -30,7 +27,7 @@ r = requests.post(
 )
 ```
 
-### Set Proxy
+## Set Proxy
 
 Начиная с последних версий либ requests/urllib3
 
