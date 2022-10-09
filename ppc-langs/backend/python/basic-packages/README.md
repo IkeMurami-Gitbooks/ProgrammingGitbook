@@ -176,6 +176,39 @@ if __name__ == '__main__':
 
 `operator` - базовая библиотека для переопределения базовых функций, а так же геттеров и сеттеров: [https://docs.python.org/3/library/operator.html](https://docs.python.org/3/library/operator.html)
 
+### pathlib: работа с файловой системой
+
+Правильно работать с библиотекой `pathlib`, а не с `os` напрямую. Это удобно и безопасно.
+
+#### Создание директорий
+
+```python
+from pathlib import Path
+Path("/my/directory").mkdir(parents=True, exist_ok=True)
+```
+
+#### Write/Read file
+
+```python
+from pathlib import Path
+with Path("/my/directory").open(mode="w") as out_stream:  # default: mode='r'
+    out_stream.write("test")
+```
+
+#### Список всех файлов в подкаталогах
+
+```python
+from pathlib import Path
+
+path = Path('/some/path')
+
+if path.is_dir():
+    p = path.glob('**/*')
+    files = [x for x in p if x.is_file()]
+    for f in files:
+        print(f)
+```
+
 ### socket
 
 1 Узнать свой IP

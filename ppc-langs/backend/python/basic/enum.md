@@ -1,4 +1,6 @@
-# Default value for Enum
+# Enum
+
+## Default Value for Enum
 
 ```python
 from enum import Enum
@@ -23,5 +25,4 @@ class MyEnum(Enum):
 
 MyEnum.HEADER.name == 'HEADER'
 MyEnum.HEADER.value == 'Test'
-
 ```
