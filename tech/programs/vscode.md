@@ -31,3 +31,19 @@ code --add my-folder-1 my-folder-2
 ```
 
 Есть другие команды, например, сравнить два файла.
+
+## Useful extensions
+
+* [Compare Folders](https://marketplace.visualstudio.com/items?itemName=moshfeu.compare-folders)
+* Для работы с Docker контейнерами
+  * [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+  * [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+* Для разработки
+  * [React](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+  * [React Native Tools](https://marketplace.visualstudio.com/items?itemName=msjsdiag.vscode-react-native)
+  * [Graphviz](https://marketplace.visualstudio.com/items?itemName=joaompinto.vscode-graphviz) для поддержки синтаксиса dot
+  * [Kotlin](https://marketplace.visualstudio.com/items?itemName=fwcd.kotlin)
+  * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+  * [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+* [New Relic Code Stream](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream)
+* [VSCode PDF Support](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
