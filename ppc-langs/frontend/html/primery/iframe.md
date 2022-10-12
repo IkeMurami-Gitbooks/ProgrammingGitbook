@@ -20,6 +20,12 @@
 <iframe src="https://example.com"></iframe>
 ```
 
+Общение происходит по [postMessage](https://developer.mozilla.org/ru/docs/Web/API/Window/postMessage)&#x20;
+
+Родитель отправляет: `$(iframe).postMessage`&#x20;
+
+Дочерний iframe отправляет: `window.parent.postMessage`
+
 ## iframe security
 
 Атрибуты у iframe связанные с ИБ
