@@ -514,6 +514,7 @@
   * [Сборщик JS/TS приложений](ppc-langs/frontend/sborshik-js-ts-prilozhenii/README.md)
     * [TODO: Webpack](ppc-langs/frontend/sborshik-js-ts-prilozhenii/webpack.md)
     * [TODO: Parcel](ppc-langs/frontend/sborshik-js-ts-prilozhenii/todo-parcel.md)
+    * [TODO: Rollup](ppc-langs/frontend/sborshik-js-ts-prilozhenii/todo-rollup.md)
   * [Компиляторы](ppc-langs/frontend/kompilyatory/README.md)
     * [Babel](ppc-langs/frontend/kompilyatory/babel.md)
   * [CSS](ppc-langs/frontend/css/README.md)
