@@ -544,6 +544,7 @@
 
 ## Others
 
+* [Правила версионирования](others/pravila-versionirovaniya.md)
 * [Стили именования переменных и классов](others/stili-imenovaniya-peremennykh-i-klassov.md)
 * [Language for IoT dev — TOIT](others/language-for-iot-dev-toit.md)
 * [Online IDE](others/online-ide.md)
