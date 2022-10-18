@@ -116,24 +116,6 @@ public class LessonsConfiguration {
 }
 ```
 
-### @Profile и @Conditional
-
-Это способ сказать SpringBoot, какой из бинов подгрузить при определенных условиях. Подробнее [в статье](https://habr.com/ru/post/487980/) с Хабра.
-
-Реализуя интерфейс Condition, можно настроить свои правила определения бинов, например, зарегистрировать один бин, если еще не зарегистрирован другой:
-
-```java
-public class UserDAOBeanNotPresentsCondition implements Condition
-{
-    @Override
-    public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata metadata)
-    {
-         UserDAO userDAO = conditionContext.getBeanFactory().getBean(UserDAO.class);
-         return (userDAO == null);
-    }
-}
-```
-
 ### XML конфигурации
 
 Классы с аннотацией `@Configuration` не стремятся на 100% заменить конфигурации на XML, при этом, если вам удобно или имеется какая-то необходимость в использовании XML конфигурации, то к вашей Java-конфигурации необходимо добавить аннотацию `@ImportResource`, в параметрах которой необходимо указать нужное вам количество XML-конфигураций. Выглядит это следующим способом:
