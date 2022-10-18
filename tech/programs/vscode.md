@@ -45,5 +45,6 @@ code --add my-folder-1 my-folder-2
   * [Kotlin](https://marketplace.visualstudio.com/items?itemName=fwcd.kotlin)
   * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
   * [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+  * [JSON crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode) для визуализации JSON структуры
 * [New Relic Code Stream](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream)
 * [VSCode PDF Support](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
