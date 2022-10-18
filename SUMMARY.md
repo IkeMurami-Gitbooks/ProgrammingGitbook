@@ -511,6 +511,7 @@
       * [Packages](ppc-langs/frontend/dart-flutter/flutter/packages.md)
       * [Distribution](ppc-langs/frontend/dart-flutter/flutter/distribution.md)
     * [Dart & Flutter Playground](ppc-langs/frontend/dart-flutter/dart-and-flutter-playground.md)
+    * [Кто использует Flutter](ppc-langs/frontend/dart-flutter/kto-ispolzuet-flutter.md)
   * [Сборщик JS/TS приложений](ppc-langs/frontend/sborshik-js-ts-prilozhenii/README.md)
     * [TODO: Webpack](ppc-langs/frontend/sborshik-js-ts-prilozhenii/webpack.md)
     * [TODO: Parcel](ppc-langs/frontend/sborshik-js-ts-prilozhenii/todo-parcel.md)
