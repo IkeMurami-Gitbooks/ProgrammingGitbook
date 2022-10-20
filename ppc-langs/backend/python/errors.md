@@ -1,4 +1,4 @@
-# Errors
+# Ошибки
 
 ## Об ошибке: `CERTIFICATE_VERIFY_FAILED`
 
@@ -23,7 +23,3 @@ brew link --force openssl\
 # -*- coding: utf-8 -*-
 print('Теперь можно писать с utf8')
 ```
-
-## Проблема при чтении HTML по кодировке UTF8
-
-Попробовать считать кодировкой "ISO-8859-1"

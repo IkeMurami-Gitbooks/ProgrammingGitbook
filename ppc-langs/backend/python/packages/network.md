@@ -1,14 +1,6 @@
-# Network
+# Network & Protocols
 
-## aiortc
-
-Пакет для работы с WebRTC (передача видео/аудио в режиме реального времени - стримы)
-
-Link: [https://aiortc.readthedocs.io/en/latest/](https://aiortc.readthedocs.io/en/latest/)
-
-## dnspython
-
-Работа с DNS\
+`dnspython` - Работа с DNS\
 Примеры: [https://www.programcreek.com/python/example/82642/dns.resolver](https://www.programcreek.com/python/example/82642/dns.resolver)
 
 ```python
@@ -37,28 +29,21 @@ def ip(domain: str):
 res = ip("example.com")
 ```
 
-## paramiko \[SSH]
-
-### scp
-
-Для работы с SSH
-
-```
-pip3 install scp
-```
-
-### paramiko
-
-### sshtunnel
-
-Построение туннелей через SSH
-
-## service\_identity
-
+`service_identity` - [https://service-identity.readthedocs.io/en/stable/](https://service-identity.readthedocs.io/en/stable/)\
 Проверка сертов по DNS или ip
 
-Link: [https://service-identity.readthedocs.io/en/stable/](https://service-identity.readthedocs.io/en/stable/)
+`twisted` - событийно-ориентированный фреймворк для работы с сетью. Поддерживает множество сетевых протоколов
 
-## twisted
+SSH: \
+`scp` - pip3 install scp - для работы с SSH\
+`paramiko` - работа с SSH\
+`sshtunnel` - построение туннелей через SSH
 
-Событийно-ориентированный фреймворк для работы с сетью. Поддерживает множество сетевых протоколов
+`aiortc` [https://aiortc.readthedocs.io/en/latest/](https://aiortc.readthedocs.io/en/latest/) - Пакет для работы с webrtc (передача видео/аудио в режиме реального времени - стримы)
+
+`requests` - обертка для http-запросов
+
+`zeep` - [https://docs.python-zeep.org/en/master/](https://docs.python-zeep.org/en/master/) - SOAP-клиент. Читает wsdl-файл и можем работать с SOAP-сервером.
+
+
+
