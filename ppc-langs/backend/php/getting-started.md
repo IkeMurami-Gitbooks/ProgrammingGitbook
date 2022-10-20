@@ -7,6 +7,8 @@ brew install php
 docker run --rm -it php
 ```
 
+Пример настроенного в Docker окружения: [https://github.com/IkeMurami/zdocker-env/tree/master/PHP/Laravel%20Ignition%20Empty](https://github.com/IkeMurami/zdocker-env/tree/master/PHP/Laravel%20Ignition%20Empty)
+
 ## Package Manager
 
 Один из самых распространенных — [Composer](https://getcomposer.org/).
