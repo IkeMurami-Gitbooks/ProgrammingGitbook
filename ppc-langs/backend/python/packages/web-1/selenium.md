@@ -1,4 +1,4 @@
-# Selenium
+# selenium
 
 ## Start Web Driver
 
@@ -78,3 +78,7 @@ driver.quit()
 ```
 self.webdriver.quit()
 ```
+
+## Papers
+
+Пример: [https://heapspray.io/automating-pentests-with-webdriver.html](https://heapspray.io/automating-pentests-with-webdriver.html)
