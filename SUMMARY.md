@@ -146,6 +146,7 @@
     * [Java](ppc-langs/backend/jvm/java/README.md)
       * [Build and Run Simple Script](ppc-langs/jvm/java/build-and-run-simple-script.md)
       * [jshell & jrunscript](ppc-langs/jvm/java/jshell-and-jrunscript.md)
+      * [Basic Serialization and Deserialization Java Object](ppc-langs/backend/jvm/java/basic-serialization-and-deserialization-java-object.md)
     * [Scala](ppc-langs/backend/jvm/scala.md)
     * [Kotlin](ppc-langs/jvm/kotlin.md)
       * [Intro](ppc-langs/backend/jvm/kotlin/intro.md)
