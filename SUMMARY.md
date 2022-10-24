@@ -99,6 +99,7 @@
   * [Полнотекстовой поиск](tech/biblioteki/polnotekstovoi-poisk.md)
   * [Регулярные выражения](tech/biblioteki/regulyarnye-vyrazheniya.md)
   * [Решение практических проблем ML](tech/biblioteki/reshenie-prakticheskikh-problem-ml.md)
+  * [Chrome Cast](tech/biblioteki/chrome-cast.md)
 * [Machine Learning](tech/machine-learning.md)
 * [Разработка игр](tech/razrabotka-igr.md)
 
