@@ -224,6 +224,7 @@
       * [Observer / PubSub](ppc-langs/backend/go/patterns/observer-pubsub.md)
       * [Retry](ppc-langs/backend/go/patterns/retry.md)
       * [Circuit Breaker](ppc-langs/backend/go/patterns/circuit-breaker.md)
+    * [Debugging](ppc-langs/backend/go/debugging.md)
     * [Testing](ppc-langs/backend/go/testing.md)
     * [Diagnostics](ppc-langs/backend/go/diagnostics.md)
     * [Godoc](ppc-langs/backend/go/godoc.md)
