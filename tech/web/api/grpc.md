@@ -35,3 +35,9 @@ python -m grpc_tools.protoc -I /full/path/to/proto/root/directory --python_out=.
 $ python greeter_server.py
 $ python greeter_client.py
 ```
+
+## gRPC клиенты
+
+Достаточно сложно тестировать gRPC API, не имея исходных proto-файлов.
+
+На сколько этот gRPC клиент универсален? [https://github.com/ktr0731/evans](https://github.com/ktr0731/evans)
