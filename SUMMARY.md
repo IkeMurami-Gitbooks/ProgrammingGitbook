@@ -69,6 +69,7 @@
     * [Kuma](tech/arkhitektura-servisov/service-mesh/kuma.md)
     * [Istio](tech/arkhitektura-servisov/service-mesh/istio.md)
     * [Hashicorp Consul](tech/arkhitektura-servisov/service-mesh/consul.md)
+  * [Платформы для запуска и исполнения произвольных процессов и вычислений](tech/arkhitektura-servisov/platformy-dlya-zapuska-i-ispolneniya-proizvolnykh-processov-i-vychislenii.md)
   * [Zero Trust](tech/arkhitektura-servisov/zero-trust.md)
 * [Визуализация информации](tech/vizualizaciya-informacii/README.md)
   * [Design/Совместная разработка интерфейсов](tech/vizualizaciya-informacii/sovmestnaya-razrabotka-interfeisov.md)
