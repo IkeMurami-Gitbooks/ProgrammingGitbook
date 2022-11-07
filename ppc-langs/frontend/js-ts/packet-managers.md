@@ -82,9 +82,3 @@ $ yarn -v
 Запуск проекта
     yarn develop
 ```
-
-## pnpm
-
-Пакетный менеджер, есть предположение, что работает быстрее npm/yarn. Подтягивает зависимости не в node\_modules, а в целом, во внешнюю папку
-
-Link: [https://github.com/pnpm/pnpm](https://github.com/pnpm/pnpm)
