@@ -373,6 +373,7 @@
   * [PHP](ppc-langs/backend/php/README.md)
     * [Getting Started](ppc-langs/backend/php/getting-started.md)
     * [Basic](ppc-langs/backend/php/basic.md)
+    * [Magic Methods](ppc-langs/backend/php/magic-methods.md)
     * [Examples](ppc-langs/backend/php/examples/README.md)
       * [Usefull small examples](ppc-langs/backend/php/examples/usefull-small-examples.md)
       * [Поднять инфру для разработки](ppc-langs/backend/php/examples/podnyat-infru-dlya-razrabotki.md)
