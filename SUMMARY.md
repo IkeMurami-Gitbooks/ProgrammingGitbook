@@ -375,6 +375,8 @@
     * [Basic](ppc-langs/backend/php/basic.md)
     * [Magic Methods](ppc-langs/backend/php/magic-methods.md)
     * [Examples](ppc-langs/backend/php/examples/README.md)
+      * [Phar](ppc-langs/backend/php/examples/phar.md)
+      * [Работа с файлами](ppc-langs/backend/php/examples/rabota-s-failami.md)
       * [Usefull small examples](ppc-langs/backend/php/examples/usefull-small-examples.md)
       * [Поднять инфру для разработки](ppc-langs/backend/php/examples/podnyat-infru-dlya-razrabotki.md)
       * [Simple page with GET param](ppc-langs/backend/php/examples/simple-page-with-get-param.md)
