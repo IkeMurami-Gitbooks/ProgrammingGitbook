@@ -211,14 +211,14 @@ if path.is_dir():
 
 ### socket
 
-1 Узнать свой IP
+#### 1 Узнать свой IP
 
 ```python
 import socket
 ip_v4 = socket.gethostbyname(socket.gethostname())
 ```
 
-2 Узнать, открыт ли порт:
+#### 2 Узнать, открыт ли порт:
 
 ```python
 import socket
@@ -228,7 +228,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
       print("port is open")
 ```
 
-3 Raw http request
+#### 3 Raw http request
 
 ```python
 import socket
@@ -285,7 +285,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
         print(f'Response: {response}')
 ```
 
-4 Raw http request (TLS)
+#### 4 Raw http request (TLS)
 
 ```python
 import socket
