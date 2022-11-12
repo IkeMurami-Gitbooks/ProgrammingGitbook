@@ -228,6 +228,126 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
       print("port is open")
 ```
 
+3 Raw http request
+
+```python
+import socket
+
+TARGET_HOST = 'www.example.com'
+TARGET_PORT = 80
+
+
+CONNECTION_TIMEOUT = 10
+CHUNK_SIZE = 1024
+HTTP_VERSION = 1.1
+CRLF = '\r\n'
+
+socket.setdefaulttimeout(CONNECTION_TIMEOUT)
+
+
+def receive_all(sock, chunk_size=CHUNK_SIZE):
+    """
+    Gather all the data from a request.
+    """
+    chunks = []
+    while True:
+        try:
+            chunk = sock.recv(int(chunk_size))
+            if chunk:
+                chunks.append(chunk)
+            else:
+                break
+        except socket.timeout:
+            break
+
+    return b''.join(chunks)
+
+
+# create a socket object
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
+    res = client.connect_ex((TARGET_HOST, TARGET_PORT))
+    client.settimeout(0.5)
+
+    if res == 0:
+        print("port is open")
+        # send some data
+        request = f'GET / HTTP/{HTTP_VERSION}{CRLF}' \
+                + f'Host: {TARGET_HOST}{CRLF}' \
+                + f'{CRLF}'
+        client.sendall(request.encode())
+        print(f'Send request: \n{request}')
+
+        response = receive_all(client, CHUNK_SIZE)
+
+        client.shutdown(socket.SHUT_RDWR)
+        client.close()
+
+        print(f'Response: {response}')
+```
+
+4 Raw http request (TLS)
+
+```python
+import socket
+import ssl
+
+
+TARGET_HOST = '0aef0025046a4bdec019f0ad00cb00f6.web-security-academy.net'
+TARGET_PORT = 443
+
+
+CONNECTION_TIMEOUT = 10
+CHUNK_SIZE = 1024
+HTTP_VERSION = 1.1
+CRLF = '\r\n'
+
+socket.setdefaulttimeout(CONNECTION_TIMEOUT)
+context = ssl.create_default_context()
+
+
+def receive_all(sock, chunk_size=CHUNK_SIZE):
+    """
+    Gather all the data from a request.
+    """
+    chunks = []
+    while True:
+        try:
+            chunk = sock.recv(int(chunk_size))
+            if chunk:
+                chunks.append(chunk)
+            else:
+                break
+        except socket.timeout:
+            break
+
+    return b''.join(chunks)
+
+
+# create a socket object
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
+    # TLS/SSL
+    with context.wrap_socket(client, server_hostname=TARGET_HOST) as secure_client:
+        # connect the secure_client
+        res = secure_client.connect_ex((TARGET_HOST, TARGET_PORT))
+        secure_client.settimeout(0.5)
+
+        if res == 0:
+            print("port is open")
+            # send some data
+            request = f'GET / HTTP/{HTTP_VERSION}{CRLF}' \
+                    + f'Host: {TARGET_HOST}{CRLF}' \
+                    + f'{CRLF}'
+            secure_client.sendall(request.encode())
+            print(f'Send request: \n{request}')
+
+            response = receive_all(secure_client, CHUNK_SIZE)
+
+            secure_client.shutdown(socket.SHUT_RDWR)
+            secure_client.close()
+
+            print(f'Response: {response}')
+```
+
 ### timeit
 
 `timeit` стандартный пакет для измерений времени выполнения команд
