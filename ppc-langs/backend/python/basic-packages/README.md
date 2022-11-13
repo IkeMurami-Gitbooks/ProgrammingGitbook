@@ -291,61 +291,82 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
 import socket
 import ssl
 
-
-TARGET_HOST = '0aef0025046a4bdec019f0ad00cb00f6.web-security-academy.net'
-TARGET_PORT = 443
-
-
-CONNECTION_TIMEOUT = 10
-CHUNK_SIZE = 1024
-HTTP_VERSION = 1.1
 CRLF = '\r\n'
 
-socket.setdefaulttimeout(CONNECTION_TIMEOUT)
-context = ssl.create_default_context()
 
+class RawHTTPClient:
+    TARGET_HOST: str
+    TARGET_PORT: int
 
-def receive_all(sock, chunk_size=CHUNK_SIZE):
-    """
-    Gather all the data from a request.
-    """
-    chunks = []
-    while True:
-        try:
-            chunk = sock.recv(int(chunk_size))
-            if chunk:
-                chunks.append(chunk)
-            else:
+    CONNECTION_TIMEOUT = 10
+    CHUNK_SIZE = 1024
+    HTTP_VERSION: str = '1.1'
+
+    def __init__(self, host: str, port: int, http_version: str = '1.1'):
+        self.TARGET_HOST = host
+        self.TARGET_PORT = port
+        self.HTTP_VERSION = http_version
+
+        socket.setdefaulttimeout(self.CONNECTION_TIMEOUT)
+        self.ssl_context = ssl.create_default_context()
+
+    def request(self, raw_request: str) -> str:
+        # create a socket object
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as http_client:
+            # TLS/SSL
+            with self.ssl_context.wrap_socket(http_client, server_hostname=self.TARGET_HOST) as secure_http_client:
+                # connect the secure_client
+                res = secure_http_client.connect_ex((self.TARGET_HOST, self.TARGET_PORT))
+                secure_http_client.settimeout(0.5)
+
+                if res == 0:
+                    print("port is open")
+                else:
+                    return ""
+
+                # send request
+                secure_http_client.sendall(raw_request.encode())
+                # receive response
+                response = RawHTTPClient.receive_all(secure_http_client, self.CHUNK_SIZE)
+                response = response.decode()
+
+                # close connection
+                secure_http_client.shutdown(socket.SHUT_RDWR)
+                secure_http_client.close()
+
+                # return result
+                return response
+
+    @staticmethod
+    def receive_all(sock, chunk_size=CHUNK_SIZE):
+        """
+        Gather all the data from a request.
+        """
+        chunks = []
+        while True:
+            try:
+                chunk = sock.recv(int(chunk_size))
+                if chunk:
+                    chunks.append(chunk)
+                else:
+                    break
+            except socket.timeout:
                 break
-        except socket.timeout:
-            break
 
-    return b''.join(chunks)
+        return b''.join(chunks)
 
 
-# create a socket object
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
-    # TLS/SSL
-    with context.wrap_socket(client, server_hostname=TARGET_HOST) as secure_client:
-        # connect the secure_client
-        res = secure_client.connect_ex((TARGET_HOST, TARGET_PORT))
-        secure_client.settimeout(0.5)
+if __name__ == '__main__':
+    client = RawHTTPClient('www.example.com', 443)
+    request = [
+        'GET / HTTP/1.1',
+        'Host: www.example.com'
+    ]
+    request = CRLF.join(request) + CRLF * 2
 
-        if res == 0:
-            print("port is open")
-            # send some data
-            request = f'GET / HTTP/{HTTP_VERSION}{CRLF}' \
-                    + f'Host: {TARGET_HOST}{CRLF}' \
-                    + f'{CRLF}'
-            secure_client.sendall(request.encode())
-            print(f'Send request: \n{request}')
+    response = client.request(request)
 
-            response = receive_all(secure_client, CHUNK_SIZE)
-
-            secure_client.shutdown(socket.SHUT_RDWR)
-            secure_client.close()
-
-            print(f'Response: {response}')
+    print('Response:', response)
 ```
 
 ### timeit
