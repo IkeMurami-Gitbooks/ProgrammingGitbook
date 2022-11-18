@@ -7,6 +7,8 @@
 Структура сайта
 
 * Packages: документация ко всем пакетам из стандартной библиотеки Go
+* Tour of Go: Basic examples [https://tour.golang.org/](https://tour.golang.org/)
+* How to write Go code: [https://golang.org/doc/code.html](https://golang.org/doc/code.html)
 * References->Command Documentation: документация к программам, распространяемым вместе с Go (компиляторы, инструменты сборки и др)
 * References->Language Specification: неоф и весьма полная спецификация языка
 * Documents->Effective Go: документ, описывающий многие приемы программирования на Go
