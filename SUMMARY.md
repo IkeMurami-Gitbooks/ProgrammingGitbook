@@ -231,6 +231,7 @@
     * [Godoc](ppc-langs/backend/go/godoc.md)
     * [Пакеты](ppc-langs/backend/go/pakety/README.md)
       * [Установка пакетов](ppc-langs/backend/go/pakety/ustanovka-paketov.md)
+      * [Пакетные менеджеры](ppc-langs/backend/go/pakety/paketnye-menedzhery.md)
       * [Импортирование локальных пакетов](ppc-langs/backend/go/pakety/importirovanie-lokalnykh-paketov.md)
       * [Базовые](ppc-langs/backend/go/pakety/bazovye.md)
       * [Сторонние](ppc-langs/backend/go/pakety/storonnie/README.md)
