@@ -44,7 +44,7 @@ int main()
 
 Жмем run и выбираем `cl.exe`.
 
-### tasks.json
+### Run configuration: tasks.json
 
 После первого запуска VS Code создаст файл `tasks.json`:&#x20;
 
@@ -113,3 +113,59 @@ int main()
     "version": "2.0.0"
 }
 ```
+
+### Debug configuration: launch.json
+
+Мы смогли запустить код, теперь как подправить конфиг по умолчанию для дебага: жмем на шестеренку сверху справа и выбираем ранее созданную конфигурацию на запуск — создастся файл `launch.json`:
+
+```json
+{
+    "configurations": [
+        
+        {
+            "name": "C/C++: cl.exe сборка и отладка активного файла",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\bin\\debug\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "My Debug"
+        }
+    ],
+    "version": "2.0.0"
+}
+```
+
+### C/C++ Configurations
+
+Если хотим больше контроля над C/C++, создайте конфиг `c_cpp_properties.json`. Это позволит нам менять путь до компилятора, библиотек, выбрать стандарт C++ (по умолчанию это C++17). Жмем `Ctrl+Shift-P` (command palette) и выбираем `C/C++: Edit configurations (UI)`.
+
+### Run VS Code outside Developer Command Prompt
+
+Чтобы не запускать VS Code (code .) из специальной оболочки VS 2022, можно в tasks.json настроить ее автоматическое открытие:
+
+```json
+{
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "cmd.exe",
+                "args": [
+                    "/C",
+                    // The path to VsDevCmd.bat depends on the version of Visual Studio you have installed.
+                    "\"C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/Tools/VsDevCmd.bat\"",
+                    "&&"
+                ]
+            }
+        }
+    },
+    "tasks": [
+        // ...
+    ]
+}
+```
+
+И добавляем `cl.exe` в `PATH`.
