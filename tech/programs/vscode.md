@@ -4,8 +4,6 @@ Vscode (VNote для ценителей Вим) + mermaid/flowchart
 
 У VSCode есть CLI, который позволяет удобно управлять Workspace'ми
 
-`Ctrl+Shift-P` — открыть Command Palette — консоль управления VS Code.
-
 ## VSCode CLI
 
 Открыть текущую папку (откроется новое окно)

@@ -169,3 +169,7 @@ int main()
 ```
 
 И добавляем `cl.exe` в `PATH`.
+
+\+ надо добавить библиотеки [https://qna.habr.com/q/475262](https://qna.habr.com/q/475262)
+
+И я не справился: легче запускать VS Code из Developer Command Prompt
