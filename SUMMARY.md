@@ -132,6 +132,7 @@
     * [Simple HTTP Server](ppc-langs/powershell/primery/simple-http-server.md)
 * [C/C++](ppc-langs/c-c++/README.md)
   * [Security](ppc-langs/c-c++/security.md)
+  * [IDE](ppc-langs/c-c++/ide.md)
   * [Build](ppc-langs/c-c++/build/README.md)
     * [Compilers](ppc-langs/c-c++/build/compilers/README.md)
       * [GCC](ppc-langs/c-c++/build/compilers/gcc.md)
