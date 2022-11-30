@@ -169,6 +169,7 @@
         * [HTTP](ppc-langs/backend/jvm/kotlin/frameworks/http.md)
         * [Documentation](ppc-langs/backend/jvm/kotlin/frameworks/documentation.md)
     * [Frameworks](ppc-langs/backend/jvm/frameworks/README.md)
+      * [Jersey Rest API](ppc-langs/backend/jvm/frameworks/jersey-rest-api.md)
       * [Spring Framework](ppc-langs/backend/jvm/frameworks/spring-framework/README.md)
         * [About](ppc-langs/backend/jvm/frameworks/spring-framework/about.md)
         * [Spring Boot AutoConfiguration](ppc-langs/backend/jvm/frameworks/spring-framework/spring-boot-autoconfiguration.md)
