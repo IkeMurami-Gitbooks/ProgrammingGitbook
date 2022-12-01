@@ -567,6 +567,7 @@
       * [Элементы, которые могут содержать ссылки](ppc-langs/frontend/html/primery/elementy-kotorye-mogut-soderzhat-ssylki.md)
       * [GET-запрос](ppc-langs/frontend/html/primery/get-zapros.md)
       * [Форматирование: оборачивание входного текста в блок (например при чтении локально файла или кода)](ppc-langs/frontend/html/primery/oborachivanie-vkhodnogo-teksta-v-blok-naprimer-pri-chtenii-lokalno-faila.md)
+  * [Learn materials](ppc-langs/frontend/learn-materials.md)
 
 ## Others
 
