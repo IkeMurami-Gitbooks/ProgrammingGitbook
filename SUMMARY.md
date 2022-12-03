@@ -46,6 +46,7 @@
     * [LAMP](tech/web/steki-tekhnologii/lamp.md)
     * [MEAN](tech/web/steki-tekhnologii/mean.md)
     * [MERN](tech/web/steki-tekhnologii/mern.md)
+  * [The World Wide Web Consortium (W3C)](tech/web/the-world-wide-web-consortium-w3c.md)
   * [Cases](tech/web/cases.md)
 * [Архитектура сервисов](tech/arch-services/README.md)
   * [Телеметрия](tech/arch-services/telemetriya.md)
