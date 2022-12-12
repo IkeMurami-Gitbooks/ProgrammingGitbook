@@ -196,6 +196,7 @@
     * [Get Started](ppc-langs/backend/go/nachalo/README.md)
       * [Basic](ppc-langs/backend/go/nachalo/sozdanie-proekta.md)
       * [Golang документация](ppc-langs/backend/go/nachalo/dokumentaciya.md)
+      * [Golang VSCode IDE](ppc-langs/backend/go/get-started/golang-vscode-ide.md)
       * [GOPATH and GOROOT](ppc-langs/backend/go/nachalo/peremennye-okruzheniya.md)
       * [Сценарии на Go](ppc-langs/backend/go/nachalo/scenarii-na-go.md)
     * [Общее](ppc-langs/backend/go/obshee/README.md)
