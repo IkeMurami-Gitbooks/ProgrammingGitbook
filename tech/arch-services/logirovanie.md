@@ -1,4 +1,4 @@
-# Логирование
+# Logs collect
 
 Сбор падений —  Firebase Crashlytics, Sentry.io
 
