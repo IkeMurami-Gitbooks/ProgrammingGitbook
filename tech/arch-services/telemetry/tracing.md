@@ -1,32 +1,4 @@
-# Telemetry
-
-Поддерживалось два open source проекта для сбора телеметрии с сервисов — [OpenCencus](https://opencensus.io) (Google Open Source community project) и [OpenTracing](https://opentracing.io/) (CNCF project). Сейчас эти проекты соединили в один — [OpenTelemetry](https://opentelemetry.io) (OTeL) и развивать будут его, другие архивированы.
-
-## OpenTelemetry Concepts
-
-### Dev
-
-Link: [https://opentelemetry.io/docs/getting-started/dev/](https://opentelemetry.io/docs/getting-started/dev/)
-
-С переходом от монолитов к микросервисам количество событий увеличивается и все труднее следить за взаимодействием компонентов. Основная цель — увеличить **Observability** для разработчиков и администраторов.&#x20;
-
-Для этого нам надо собирать:
-
-* Трейсы
-* Метрики
-* Логи
-
-Все эти данные мы шлем на Observability Backend: от self-hosted решений (например, [Jaeger](https://www.jaegertracing.io/) и [Zipkin](https://zipkin.io/), [Prometheus](https://prometheus.io/)) до коммерческих SaaS предложений.
-
-### Ops
-
-Link: [https://opentelemetry.io/docs/getting-started/ops/](https://opentelemetry.io/docs/getting-started/ops/)
-
-## \[Deprecated] Трассировка сервиса
-
-### About
-
-источник: [https://habr.com/ru/company/srg/blog/446752/](https://habr.com/ru/company/srg/blog/446752/)
+# Tracing
 
 При возникновении узких мест в производительности достаточно много времени тратится на мониторинг и разбор логов. При логировании таймингов отдельных операций в лог-файл, как правило, сложно понять что привело к вызову этих операций, отследить последовательность действий или смещение во времени одной операции относительно другой в разных сервисах.
 
@@ -42,7 +14,7 @@ Link: [https://opentelemetry.io/docs/getting-started/ops/](https://opentelemetry
    * Участки кода, которые не нужны для получения конечного результата и могут быть удалены, либо запущены отложенно.
 2. Наглядно понять в какой последовательности что вызывается и что происходит когда выполняется операция.
 
-![](<../../.gitbook/assets/изображение (6) (1).png>)
+![](<../../../.gitbook/assets/изображение (6) (1).png>)
 
 Видно что, например, Запрос пришел в сервис WS -> сервис WS дополнил данные через сервис R -> дальше отправил запрос в сервис V -> сервис V загрузил много данных из сервиса R -> сходил в сервис P -> сервис Р еще раз сходил в сервис R -> сервис V проигнорировал результат и пошел в сервис J -> и только потом вернул ответ в сервис WS, при этом продолжая в фоне вычислять что-то еще.\
 \
@@ -57,9 +29,3 @@ Link: [https://opentelemetry.io/docs/getting-started/ops/](https://opentelemetry
 * Лог или ошибка исполнения
 
 Превращение трейсов в подмножество метрик и дальнейший анализ уже в виде метрик.
-
-### Примеры
-
-* zipkin
-* jaeger (есть web panel, и все все все; [https://www.jaegertracing.io/](https://www.jaegertracing.io/))
-* OpenTracing
