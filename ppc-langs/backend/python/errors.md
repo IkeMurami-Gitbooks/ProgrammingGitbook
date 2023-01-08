@@ -1,5 +1,9 @@
 # Errors
 
+## VSCode не подсвечивает локальные пакеты и пути
+
+В Pylance простовать путь до extrapath (тем самым добавляем/меняем root path — путь, по которому находится проект в VSCode Workspace (по умолчанию — src)): [https://stackoverflow.com/a/64103291](https://stackoverflow.com/a/64103291)
+
 ## Об ошибке: `CERTIFICATE_VERIFY_FAILED`
 
 Возникает при обращении к https сайтам (с попыткой что-то скачать)\
