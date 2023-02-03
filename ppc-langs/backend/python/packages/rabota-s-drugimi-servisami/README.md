@@ -33,6 +33,35 @@ Git in Python: [https://www.pygit2.org/](https://www.pygit2.org/)
 
 Link: [https://github.com/mitmproxy/mitmproxy](https://github.com/mitmproxy/mitmproxy)
 
+## MongoDB
+
+```python
+# pip install pymongo
+import pymongo
+
+SERVER = 'server.localhost'
+PORT = '27017'
+DATABASE = 'database_name'
+USER = 'database_user'
+PASSWORD = 'database_password'
+
+client = pymongo.MongoClient(f"mongodb://{USER}:{PASSWORD}@{SERVER}:{PORT}")
+mydb = client[DATABASE]
+
+# Надо проверить будет этот код на чем-то реальном
+try: 
+    # don't require auth
+    res = client.admin.command('ping')
+    print('PING', res)
+    # require password
+    res = mydb.command("serverStatus")
+    print('STATUS', res)
+except Exception as e: print(e)
+else: print("You are connected!")
+client.close()
+hon
+```
+
 ## nmap
 
 * `python-libnmap` — обёртка над `nmap`, на сколько хороша - хз
