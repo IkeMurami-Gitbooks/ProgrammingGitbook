@@ -18,3 +18,9 @@ cat graph.dot | dot -Tjson -o graph.json
 Такие графы можно импортировать/экспортировать (имеют расширение `.dot`).
 
 Пример использования в Go: [https://github.com/ofabry/go-callvis](https://github.com/ofabry/go-callvis)
+
+## G6 Graph vizualization engine
+
+Библиотека для визуализации графов в React, Angular, Vue, ...
+
+Site: [https://antv-g6.gitee.io/en](https://antv-g6.gitee.io/en)
