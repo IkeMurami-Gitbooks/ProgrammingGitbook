@@ -12,6 +12,11 @@ MongoDB official driver: `go get go.mongodb.org/mongo-driver`
 
 Tarantool DB driver: [https://github.com/tarantool/go-tarantool](https://github.com/tarantool/go-tarantool)
 
+Можно использовать в связке:
+
+* Построение SQL-запросов с Prepared Statement: [https://github.com/Masterminds/squirrel](https://github.com/Masterminds/squirrel)
+* Выполнение SQL-запросов к базам: [https://github.com/jmoiron/sqlx](https://github.com/jmoiron/sqlx)
+
 ### Работа с различными файлами
 
 xml parse\&create: [https://github.com/beevik/etree](https://github.com/beevik/etree)
