@@ -373,4 +373,95 @@ First.seconds.remove(somechild)
 
 ## Паттерн Provider -> Repository -> Database
 
+Есть популярный паттерн организации кода при работе с базой (из джавы, на сколько его правильно применять в Python — хз, но так понятнее что происходит). Суть в отделении бизнес-логики (это Provider), CRUD-операций (это Repository) и работы с базой (это Database).
+
+Пример:
+
+### database.py
+
+```python
+import databases
+import sqlalchemy
+import logging
+from pydantic import BaseSettings
+
+
+class DatabaseWrapper(object):
+    database: databases.Database
+    logger: logging.Logger
+
+    def __init__(self, config: BaseSettings) -> None:
+        self.logger = logging.getLogger(config.LOGGER_NAME)
+        self.database = databases.Database(config.DATABASE_URL)
+
+        self._engine = sqlalchemy.create_engine(
+            config.DATABASE_URL,
+        )
+        
+    async def connect(self):
+        await self.database.connect()
+        self.logger.debug(f'Connect to database')
+
+    async def disconnect(self):
+        await self.database.disconnect()
+        self.logger.debug(f'Disconnect from database')
+```
+
+### repository.py
+
+```python
+class CompanyRepository(object):
+    def __init__(self, database: DatabaseWrapper) -> None:
+        self.database = database
+        self.logger = database.logger
+
+    async def create(self, company_info: CompanyInfo, status: Status) -> Company:
+        
+        query = (
+            insert(CompanyTable).
+            values(
+                status_id=status.id, 
+                link=company_info.link, 
+                name=company_info.name
+            ).
+            returning(CompanyTable.id, CompanyTable.link, CompanyTable.name, CompanyTable.status_id)
+        )
+        company_id = await self.database.execute(query)
+        created_company = await self.read(company_id)
+
+        return created_company
+```
+
+### provider.py
+
+```python
+class CompanyProvider(object):
+   def __init__(self, database: DatabaseWrapper):
+      self.company_repository = CompanyRepository(database)
+      
+   async def new_company(self, company_info: CompanyInfo) -> Company:
+      status_new = await self.status_repository.create()
+      created_company = await self.company_repository.create(company_info, status_new)
+      
+      return created_company
+```
+
 ## Подсоединяемся к базе
+
+Выполнение запросов к базе делаем через пакет databases. Только схему базы в бд создаем через sqlalchemy (из объекта Base).&#x20;
+
+```python
+import databases
+import sqlalchemy
+
+from base import Base  # from sqlalchemy.orm import declarative_base
+                       # Base = declarative_base()
+
+database = databases.Database(DATABASE_URL)
+engine = sqlalchemy.create_engine(DATABASE_URL)
+Base.metadata.create_all(engine)
+
+database.connect()
+# ...
+database.disconnect()
+```
