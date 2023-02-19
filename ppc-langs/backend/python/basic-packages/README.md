@@ -4,11 +4,65 @@
 
 python3: [https://docs.python.org/3/library/](https://docs.python.org/3/library/)
 
-## Notes
+## Работа с контекстом
 
 ### contextlib
 
-contextmanager — создание with-совместимых функций - [https://docs.python.org/3/library/contextlib.html](https://docs.python.org/3/library/contextlib.html)
+Создание **with**-совместимых функций — [https://docs.python.org/3/library/contextlib.html](https://docs.python.org/3/library/contextlib.html)
+
+Определяет два абстрактных класса — `AbstractContextManager` и `AbstractAsyncContextManager`. Они обязывают реализовать функции `object.__enter__()` и `object.__exit__()` (или их асинхронные аналоги `object.__aenter__()` и `object.__aexit__()`).
+
+```python
+import contextlib
+
+
+```
+
+### contextvars
+
+Link: [https://docs.python.org/3/library/contextvars.html](https://docs.python.org/3/library/contextvars.html)
+
+```python
+from contextvars import ContextVar
+
+var: ContextVar[int] = contextvars.ContextVar('var', default=42)
+
+value = var.get()
+var.set(1234)
+```
+
+## Работа с текстом
+
+```python
+import textwrap
+
+wrapper = TextWrapper(initial_indent="* ")
+# Грубо говоря будет оборачивать текст с надстройками
+```
+
+## Работа с числами
+
+```python
+import decimal
+import math
+```
+
+## Работа с объектами
+
+### copy
+
+Позволяет [создавать ](https://docs.python.org/3/library/copy.html)копии (shallow) объектов и полные (deep) копии объектов.&#x20;
+
+```python
+import copy
+
+copy.copy(x)
+copy.deepcopy(x[, memo])
+```
+
+
+
+## Notes
 
 ### functools
 
@@ -399,5 +453,6 @@ $ python3 -m venv .venv
 // Далее работаем все отсюда: устанавливаем зависимости, запускаем код
 
 // Деактивация — выход из виртуального окружения
-$ deactivate</code></pre>
+$ deactivate
+</code></pre>
 
