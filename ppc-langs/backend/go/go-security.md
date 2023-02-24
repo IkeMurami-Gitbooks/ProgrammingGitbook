@@ -15,3 +15,5 @@ gosec включен в semgrep: `semgrep --config "p/gosec"`
 [Not-going -anywhere](https://github.com/trailofbits/not-going-anywhere/) - набор уязвимых программ на Golang для выявления распространенных уязвимостей.
 
 [OnEdge](https://github.com/trailofbits/on-edge) - библиотека для обнаружения неправильного использования паттернов Defer, Panic, Recover.
+
+Golang Code Review: [https://www.elttam.com/blog/golang-codereview/](https://www.elttam.com/blog/golang-codereview/)
