@@ -64,6 +64,9 @@ iter = itertools.product(basic1, repeat=4)  # product(basic1, basic1, basic1, ba
 # Все перестановки заданной длины
 iter = itertools.permutations(basic1, r=3)  # r=None <=> r=len(basic1)
 
+# Все комбинации из r элементов (разница от предыдущего в том, что AB=BA).
+iter = itertools.combinations(basic1, r=2)
+
 # Подпоследовательность
 iter = itertools.islice(iter1, stop=4)  # Первые 4
     # islice('ABCDEFG', 2) --> A B
