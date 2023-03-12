@@ -6,34 +6,6 @@ python3: [https://docs.python.org/3/library/](https://docs.python.org/3/library/
 
 ## Notes
 
-### functools
-
-`functools` - офигенная библиотека для работы с функциями
-
-#### wraps
-
-необходим для проброса описания хелперов и аргументов для декораторов
-
-```python
-from functools import wraps
-
-def based_on(base_func):
-    def _based_on_func(ext_func):
-        @wraps(base_func)
-        def _wrapper(*args, **kwargs):
-            return ext_func(base_func(*args, **kwargs))
-        return _wrapper
-    return _based_on_func
-    
-
-def _upload(name, content, *, test=False, **options):
-    ...
-    
-@based_on(_upload)
-def upload(resp):
-    ...
-```
-
 ### io
 
 Пакет io - работа со стримами. Это способ писать логи в переменные, а не в файлы или вывод.
@@ -167,10 +139,6 @@ if __name__ == '__main__':
 
 
 ```
-
-### operator
-
-`operator` - базовая библиотека для переопределения базовых функций, а так же геттеров и сеттеров: [https://docs.python.org/3/library/operator.html](https://docs.python.org/3/library/operator.html)
 
 ### pathlib: работа с файловой системой
 
