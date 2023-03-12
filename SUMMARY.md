@@ -342,6 +342,7 @@
         * [Web](ppc-langs/backend/python/packages/web-1/README.md)
           * [Simple HTTP Server](ppc-langs/backend/python/cases/http-server.md)
           * [ASGI Python Web Servers](ppc-langs/backend/python/packages/packages/web/asgi.md)
+          * [Http Client](ppc-langs/backend/python/packages/packages/web/http-client.md)
           * [requests](ppc-langs/backend/python/packages/web-1/requests.md)
           * [selenium](ppc-langs/backend/python/packages/web-1/selenium.md)
           * [zeep \[SOAP\]](ppc-langs/backend/python/packages/packages/web/zeep-soap.md)

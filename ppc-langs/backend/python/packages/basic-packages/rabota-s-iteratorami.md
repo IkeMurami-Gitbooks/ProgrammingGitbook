@@ -15,3 +15,20 @@ itertools.count(start[, step])  # start, start + step, start + 2 * step, ...
 itertools.cycle([1, 2, 3, 4])  # 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, ...
 itertools.repeat(1)  # 1, 1, 1, 1, ...
 ```
+
+## Производные последовательности
+
+Создаются над другими конечными последовательностями
+
+```python
+import itertools
+
+basic1 = [1, 2, 3, 4]
+basic2 = ['a', 'b', 'c']
+
+selector = itertools.cycle([1, 0, 0, 1])
+
+
+
+
+```
