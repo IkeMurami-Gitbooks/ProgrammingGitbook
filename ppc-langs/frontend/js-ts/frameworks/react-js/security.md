@@ -1,113 +1,4 @@
-# React JS
-
-## Создать проект
-
-```
-$ npx create-react-app test-project-name
-...
-Success! Created test-app at /Users/user/JsProjects/test-app
-Inside that directory, you can run several commands:
-
-    yarn start
-      Starts the development server.
-  
-    yarn build
-      Bundles the app into static files for production.
-  
-    yarn test
-      Starts the test runner.
-  
-    yarn eject
-      Removes this tool and copies build dependencies, configuration files
-      and scripts into the app directory. If you do this, you can’t go back!
-  
-We suggest that you begin by typing:
-
-  cd test-project-name
-  yarn start
-  
-$ cd test-project-name
-$ yarn start (or npm start)
-```
-
-## Структура проекта
-
-```
-/node_modules — зависимости
-/public/index.html — главный html документ (по сути ввсе приложение отрисовывается в компонент с id=root)
-package.json — описание зависимостей
-index.js — по сути главный исполняемый файл, который отрисовывает компонент App и кладет в root
-App.js — внутри видим html-подобный код — это JSX.
-
-Так же в index.js видим в узле scripts команды объяленные: запуск приложения (можно и через yarn) 
-npm start
-```
-
-Еще про структуру проекта и директории:
-
-* /src/components — описывает все UI компоненты
-* /src/css — стили
-* /src/img — изображения
-* /src/test — тесты
-* /src/public — главный html документ и скрипт
-* /config/ — конфиги
-* /src/actions ....
-
-## Разработка
-
-У React компонентный подход: то есть создаем отдельные компоненты, а потом их комбинируем
-
-## Build
-
-Запихиваем в папку deploy
-
-Dockerfile
-
-```docker
-ARG NODE_VERSION=15.12.0-alpine3.10
-
-FROM node:${NODE_VERSION} AS creater
-
-WORKDIR /source
-
-COPY . .
-
-RUN npm i
-RUN npm run build
-
-FROM node:${NODE_VERSION} AS starter
-
-WORKDIR /app
-
-COPY --from=creater /source/build /app
-
-RUN npm i -g serve
-
-ENTRYPOINT [ "serve" ]
-```
-
-Docker compose
-
-```yaml
-version: '3'
-
-services:
-  app:
-    build: 
-      context: ..
-      dockerfile: ./deploy/Dockerfile
-    container_name: reactjs-app
-    restart: always
-    tty: true
-    ports:
-      - 9091:3000
-
-
-```
-
-## Интересные пакеты
-
-React Flow — построение графов — [https://reactflow.dev/](https://reactflow.dev/)
+# Security
 
 ## Security
 
@@ -135,7 +26,7 @@ export default App;
 
 И выглядит это так:
 
-<img src="../../../../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (1).png" alt="" data-size="original">
 
 Однако, для разработчиков оставили способ отрисовать html+js в динамике, если это действительно необходимо:
 
@@ -186,7 +77,7 @@ export default App;
 
 Один только нюанс: это сработает только в том случае, если в `PROPS_INJ_PAYLOAD` не содержится других ключей, иначе React/Webpack выведут ошибку:&#x20;
 
-![](<../../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (1) (1).png>)
 
 ### Injectable Attributes
 
