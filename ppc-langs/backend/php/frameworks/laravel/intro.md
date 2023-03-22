@@ -1,4 +1,4 @@
-# Laravel About
+# Intro
 
 Laravel - бесплатный фреймворк, для построения бэка для веб-приложений
 
@@ -7,4 +7,4 @@ artisan - это консольная утилита, часть laravel, для
 twill.io - это модуль laravel, можно использовать как админку: [https://github.com/area17/twill](https://github.com/area17/twill)\
 Выглядит вот так:&#x20;
 
-![](<../../../../.gitbook/assets/изображение (2).png>)
+![](<../../../../../.gitbook/assets/изображение (2).png>)
