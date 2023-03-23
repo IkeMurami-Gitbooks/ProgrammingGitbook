@@ -42,7 +42,7 @@ if __name__ == '__main__':
 import click
 
 @click.command()
-@click.option('--count', default=1, help='Number of greetings.')
+@click.option('--count', default=1, multiple=True, help='Number of greetings.')
 @click.option('--name', prompt='Your name', help='The person to greet.')
 @click.argument('test')
 def hello(count, name):
@@ -50,6 +50,6 @@ def hello(count, name):
 
 if __name__ == '__main__':
     hello()
-    # $ python example.py --count 1 --name SomeName Hello
-    # > SomeName 1 — Hello
+    # $ python example.py --count 1 --count 2 --count 3 --name SomeName Hello
+    # > SomeName [1, 2, 3] — Hello
 ```
