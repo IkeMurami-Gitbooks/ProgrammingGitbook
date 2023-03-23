@@ -1,4 +1,4 @@
-# Create CLI
+# Создание CLI
 
 ## argparser
 
@@ -44,9 +44,12 @@ import click
 @click.command()
 @click.option('--count', default=1, help='Number of greetings.')
 @click.option('--name', prompt='Your name', help='The person to greet.')
+@click.argument('test')
 def hello(count, name):
-    print(f'{name} {count}')
+    print(f'> {name} {count} — {test}')
 
 if __name__ == '__main__':
     hello()
+    # $ python example.py --count 1 --name SomeName Hello
+    # > SomeName 1 — Hello
 ```
