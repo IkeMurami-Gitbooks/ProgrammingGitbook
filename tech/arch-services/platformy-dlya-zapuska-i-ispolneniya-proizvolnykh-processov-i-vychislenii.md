@@ -8,3 +8,4 @@
 
 * Pipedream — код на Python, Go, JS + куча готовых воркеров для разных сервисов (тг, гугл, дискорд, ...) [https://pipedream.com/](https://pipedream.com/)
 * Tempolar – пишем воркеры, а они исполняются в облаке: [https://temporal.io/](https://temporal.io/)
+* Budibase (open source) — строим внутренние сервисы (как Pipedream): [https://budibase.com](https://budibase.com)
