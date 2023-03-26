@@ -54,7 +54,7 @@ $ rbenv whence gem
 
 ## Gems
 
-Gem — сторонний пакет / библиотека Ruby.
+Gem — сторонний пакет / библиотека Ruby. Работа с зависимостями
 
 ```
 // 1. Check target version of your project
@@ -69,6 +69,27 @@ $ gem env home
 
 // 3. Install needed gem (we don't need sudo permissions for that)
 $ gem install bundler
+```
+
+## Bundler
+
+Все зависимости лучше устанавливать и контролировать через Bundler (например, fastlane)
+
+```
+// Install Bundler
+$ gem install bundler
+
+// Update dependencies (Будут созданы ./Gemfile и ./Gemfile.lock)
+$ bundle update
+
+// Add & Install dependencies
+$ bundle add fastlane
+
+// Install Dependencies
+$ bundle install
+
+// Update
+$ bundle update fastlane
 ```
 
 ## Run Ruby Code
