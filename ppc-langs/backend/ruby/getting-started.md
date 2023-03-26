@@ -1,8 +1,10 @@
 # Getting Started
 
-## Install
+## rbenv
 
 Самый простой способ управления версиями Ruby на хостовой системе — [rbenv](https://github.com/rbenv/rbenv)
+
+### Install
 
 ```
 $ brew install rbenv
@@ -18,7 +20,7 @@ $ rbenv init -
 $ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 ```
 
-## Set and check Ruby version
+### Set and check Ruby version
 
 ```
 // Set ruby version
@@ -42,7 +44,7 @@ $ rbenv version
 $ rbenv versions
 ```
 
-## Notes
+### Notes
 
 ```
 // Полный путь до исполняемого бинаря
@@ -52,9 +54,13 @@ $ rbenv which gem
 $ rbenv whence gem
 ```
 
-## Gems
+## Dependencies
 
-Gem — сторонний пакет / библиотека Ruby. Работа с зависимостями
+### Gems
+
+Gem — сторонний пакет / библиотека Ruby. **Лучше** управлять зависимостями через **Bundler** (следующий пункт)
+
+Работа с зависимостями:
 
 ```
 // 1. Check target version of your project
@@ -71,7 +77,7 @@ $ gem env home
 $ gem install bundler
 ```
 
-## Bundler
+### Bundler
 
 Все зависимости лучше устанавливать и контролировать через Bundler (например, fastlane)
 
