@@ -1,4 +1,4 @@
-# Getting Started
+# Use Ruby Env and Deps
 
 ## rbenv
 
@@ -54,6 +54,26 @@ $ rbenv which gem
 $ rbenv whence gem
 ```
 
+## Run Ruby Code
+
+irb console:
+
+```
+$ irb
+irb(main):001:0> puts 'Hello Ruby'
+Hello Ruby
+=> nil
+irb(main):002:0>
+```
+
+ruby:
+
+```
+$ ruby -e 'print "Hello Ruby!\n"' -e '1+1'
+$ ruby hello.rb
+$ ./hello.rb
+```
+
 ## Dependencies
 
 ### Gems
@@ -98,22 +118,6 @@ $ bundle install
 $ bundle update fastlane
 ```
 
-## Run Ruby Code
+## Rake
 
-irb console:
-
-```
-$ irb
-irb(main):001:0> puts 'Hello Ruby'
-Hello Ruby
-=> nil
-irb(main):002:0>
-```
-
-ruby:
-
-```
-$ ruby -e 'print "Hello Ruby!\n"' -e '1+1'
-$ ruby hello.rb
-$ ./hello.rb
-```
+Rake — Make-like program.&#x20;

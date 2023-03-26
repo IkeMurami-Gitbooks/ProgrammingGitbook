@@ -331,7 +331,7 @@ org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4
 
 Конфигурации, которые gradle создает по умолчанию (compile и runtime — deprecated) для java gradle plugin:&#x20;
 
-### ![](../../../.gitbook/assets/image.png)
+### ![](../../.gitbook/assets/image.png)
 
 В java library plugin еще появляется конфигурация `api`. Ее отличие от `implementation` в том, что она открывает доступ ко всем зависимым модулям (раньше `compile` так делал — он открывал доступ ко всем дочерним зависимостям, `implementation` так не делает).&#x20;
 
