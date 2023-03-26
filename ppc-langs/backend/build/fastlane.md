@@ -8,9 +8,11 @@
 
 ## Install
 
+Лучше всего устанавливать через Bundler (это все работает во вселенной Ruby, так что не забываем переключить на корректное локальное окружение через rbenv):
+
 ```
-gem install fastlane -NV
-brew cask install fastlane
+bundle add fastlane
+bundle exec fastlane --help
 ```
 
 ## Usage
