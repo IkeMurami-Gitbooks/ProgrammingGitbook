@@ -6,7 +6,7 @@ Struts 2 — один из старейших фреймворков для по
 
 Состоит из следующих концепций:
 
-* **Interceptors** — похожи на [Servlet Filters](https://www.digitalocean.com/community/tutorials/java-servlet-filter-example-tutorial), работают поверх всех запросов к веб-приложению
+* **Interceptors** — похожи на [Servlet Filters](https://www.digitalocean.com/community/tutorials/java-servlet-filter-example-tutorial), работают поверх всех запросов к веб-приложению. Пример конфигурации через struts.xml: [https://struts.apache.org/getting-started/introducing-interceptors](https://struts.apache.org/getting-started/introducing-interceptors)
 * **ValueStack** — область хранения данных для обработки клиентских запросов. Object-Graph Navigation Language (**OGNL**) — Expression Language для доступа к данным и манипуляции с ними в ValueStack.
 * **Action** — обработка клиентских запросов. Struts 2 позволяет реализовать это несколькими способами:
   * Реализуя интерфейс `com.opensymphony.xwork2.Action`
