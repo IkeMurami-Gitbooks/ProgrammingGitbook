@@ -49,4 +49,3 @@ query getMyPost($id: String) {
 
 ![Общий вид запросов](<../../../../.gitbook/assets/изображение (6).png>)
 
-``
