@@ -16,6 +16,7 @@ Docs: [https://developers.facebook.com/docs/certificate-transparency/](https://d
 GET /certificates?query=viator.com&access_token=client_id|client_secret&fields=cert_hash_sha256,domains,issuer_name,subject_name HTTP/2
 Host: graph.facebook.com
 User-Agent: IkeMurami
+Accept: application/json
 Accept-Encoding: gzip, deflate
 
 
