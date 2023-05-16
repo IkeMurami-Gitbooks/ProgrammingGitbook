@@ -115,6 +115,8 @@
 
 ## Programming Languages <a href="#ppc-langs" id="ppc-langs"></a>
 
+* [Testing](ppc-langs/testing/README.md)
+  * [Integration testing](ppc-langs/testing/integration-testing.md)
 * [Security Coding Styles](ppc-langs/security-coding-styles.md)
 * [Learn materials](ppc-langs/learn-materials.md)
 * [Proto](ppc-langs/proto.md)
