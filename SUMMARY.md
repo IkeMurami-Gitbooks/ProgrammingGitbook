@@ -401,6 +401,8 @@
       * [Pytest CLI](ppc-langs/backend/python/testing/pytest-cli.md)
       * [Markers](ppc-langs/backend/python/testing/markers.md)
       * [Fixtures](ppc-langs/backend/python/testing/fixtures.md)
+      * [Plugins](ppc-langs/backend/python/testing/plugins.md)
+      * [Configuration](ppc-langs/backend/python/testing/configuration.md)
       * [Unit tests](ppc-langs/backend/python/testing/unit-tests.md)
     * [Errors](ppc-langs/backend/python/errors.md)
     * [Papers & Books](ppc-langs/backend/python/papers-and-books.md)

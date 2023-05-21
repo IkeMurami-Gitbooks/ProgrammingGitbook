@@ -44,7 +44,9 @@ def tasks_db(tmpdir):
     tasks.stop_tasks_db()
 ```
 
-## Параметр Scope
+## Параметры фикстур
+
+### Параметр Scope
 
 Ниже приведено краткое описание каждого значения _Scope_:
 
@@ -64,3 +66,36 @@ def tasks_db(tmpdir):
 ```python
 @pytest.fixture(scope='function')
 ```
+
+### Параметр Autouse
+
+Если мы хотим, чтобы фикстура применялась к каждому тесту без доп указаний, используем параметр autouse:
+
+```python
+@pytest.fixture(autouse=True)
+```
+
+### Параметр Name
+
+Чтобы переименовать фикстуру:
+
+```python
+import pytest
+
+@pytest.fixture(name='lue')
+def ultimate_answer_to_life_the_universe_and_everything():
+    """Возвращает окончательный ответ."""
+    return 42
+
+def test_everything(lue):
+    """Использует более короткое имя."""
+    assert lue == 42
+```
+
+## Built-in fixtures
+
+* tmpdir, tmpdir\_factory — фикстура для работы с временными директориями (для создания файлов)
+* pytestconfig — фикстура для управления аргументами pytest
+* capsys — работа с stdin и stdout, а так же с отключением захвата этих потоков
+* monkeypatch — позволяет изменить параметры среды и текущий каталог во время теста
+*
