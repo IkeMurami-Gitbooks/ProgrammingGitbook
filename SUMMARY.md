@@ -51,6 +51,7 @@
 * [Архитектура сервисов](tech/arch-services/README.md)
   * [Архитектурные паттерны](tech/arch-services/arkhitekturnye-patterny/README.md)
     * [Papers](tech/arch-services/arkhitekturnye-patterny/papers.md)
+    * [Microservices](tech/arch-services/arkhitekturnye-patterny/microservices.md)
     * [CQRS](tech/arch-services/arkhitekturnye-patterny/cqrs.md)
   * [Telemetry](tech/arch-services/trassirovka-servisov.md)
     * [OpenTelemetry Concepts](tech/arch-services/telemetry/opentelemetry-concepts.md)
