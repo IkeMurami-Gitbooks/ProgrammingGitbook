@@ -344,6 +344,7 @@
         * [Время выполнения операции](ppc-langs/backend/python/packages/basic-packages/timeit.md)
         * [Работа с контекстом](ppc-langs/backend/python/packages/basic-packages/context.md)
         * [Работа с текстом, числами и объектами](ppc-langs/backend/python/packages/basic-packages/datatypes.md)
+        * [Работа с классами](ppc-langs/backend/python/packages/basic-packages/classes.md)
         * [Работа с итераторами](ppc-langs/backend/python/packages/basic-packages/iterators.md)
         * [Работа с функциями](ppc-langs/backend/python/packages/basic-packages/functions.md)
         * [Работа с вводом / выводом](ppc-langs/backend/python/packages/basic-packages/io.md)
