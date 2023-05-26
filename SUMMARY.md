@@ -100,6 +100,7 @@
   * [Базы данных](tech/programs/bazy-dannykh/README.md)
     * [LevelDB](tech/programs/bazy-dannykh/leveldb.md)
   * [Google Products for Developers](tech/programs/google-products-for-developers.md)
+  * [Open source](tech/programs/open-source.md)
   * [Фреймворки](tech/programs/freimvorki.md)
   * [vscode](tech/programs/vscode.md)
   * [Сборка проектов](tech/programs/sborka-proektov.md)
