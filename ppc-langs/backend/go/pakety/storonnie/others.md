@@ -12,3 +12,5 @@ google.golang.org/protobuf
 
 
 mason — какой-то пакет для кодогенерации [https://pub.dev/packages/mason](https://pub.dev/packages/mason). Подробнее в [видео](https://www.youtube.com/watch?v=qjA0JFiPMnQ).
+
+Cryptography: [https://github.com/google/tink/tree/master](https://github.com/google/tink/tree/master)
