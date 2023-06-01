@@ -30,15 +30,7 @@ end
 
 создаст семь эндпоинтов, обрабатываемых контроллером Photos:
 
-| HTTP Verb | Path             | Controller#Action | Used for                                     |
-| --------- | ---------------- | ----------------- | -------------------------------------------- |
-| GET       | /photos          | photos#index      | display a list of all photos                 |
-| GET       | /photos/new      | photos#new        | return an HTML form for creating a new photo |
-| POST      | /photos          | photos#create     | create a new photo                           |
-| GET       | /photos/:id      | photos#show       | display a specific photo                     |
-| GET       | /photos/:id/edit | photos#edit       | return an HTML form for editing a photo      |
-| PATCH/PUT | /photos/:id      | photos#update     | update a specific photo                      |
-| DELETE    | /photos/:id      | photos#destroy    | delete a specific photo                      |
+<table><thead><tr><th width="147">HTTP Verb</th><th width="153">Path</th><th width="183">Controller#Action</th><th>Used for</th></tr></thead><tbody><tr><td>GET</td><td>/photos</td><td>photos#index</td><td>display a list of all photos</td></tr><tr><td>GET</td><td>/photos/new</td><td>photos#new</td><td>return an HTML form for creating a new photo</td></tr><tr><td>POST</td><td>/photos</td><td>photos#create</td><td>create a new photo</td></tr><tr><td>GET</td><td>/photos/:id</td><td>photos#show</td><td>display a specific photo</td></tr><tr><td>GET</td><td>/photos/:id/edit</td><td>photos#edit</td><td>return an HTML form for editing a photo</td></tr><tr><td>PATCH/PUT</td><td>/photos/:id</td><td>photos#update</td><td>update a specific photo</td></tr><tr><td>DELETE</td><td>/photos/:id</td><td>photos#destroy</td><td>delete a specific photo</td></tr></tbody></table>
 
 Так же можно создавать подблок ресурса
 

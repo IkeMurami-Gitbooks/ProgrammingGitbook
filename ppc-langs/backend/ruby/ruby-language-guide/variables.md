@@ -49,20 +49,7 @@ defined? x
 
 Однако, есть список предустановленных глобальных переменных:
 
-| `$@`   | The location of latest error                                    |
-| ------ | --------------------------------------------------------------- |
-| `$_`   | The string last read by `gets`                                  |
-| `$.`   | The line _number_ last read by interpreter                      |
-| `$&`   | The string last matched by regexp                               |
-| `$~`   | The last regexp match, as an array of subexpressions            |
-| `$`_n_ | The _nth_ subexpression in the last match (same as `$~[`_n_`]`) |
-| `$=`   | The case-insensitivity flag                                     |
-| `$/`   | The input record separator                                      |
-| `$\`   | The output record separator                                     |
-| `$0`   | The name of the ruby script file currently executing            |
-| `$*`   | The command line arguments used to invoke the script            |
-| `$$`   | The Ruby interpreter's process ID                               |
-| `$?`   | The exit status of last executed child process                  |
+<table data-header-hidden><thead><tr><th width="163.5">Variable Name</th><th>Variable Value</th></tr></thead><tbody><tr><td><code>$@</code></td><td>The location of latest error</td></tr><tr><td><code>$_</code></td><td>The string last read by <code>gets</code></td></tr><tr><td><code>$.</code></td><td>The line <em>number</em> last read by interpreter</td></tr><tr><td><code>$&#x26;</code></td><td>The string last matched by regexp</td></tr><tr><td><code>$~</code></td><td>The last regexp match, as an array of subexpressions</td></tr><tr><td><code>$</code><em>n</em></td><td>The <em>nth</em> subexpression in the last match (same as <code>$~[</code><em>n</em><code>]</code>)</td></tr><tr><td><code>$=</code></td><td>The case-insensitivity flag</td></tr><tr><td><code>$/</code></td><td>The input record separator</td></tr><tr><td><code>$\</code></td><td>The output record separator</td></tr><tr><td><code>$0</code></td><td>The name of the ruby script file currently executing</td></tr><tr><td><code>$*</code></td><td>The command line arguments used to invoke the script</td></tr><tr><td><code>$$</code></td><td>The Ruby interpreter's process ID</td></tr><tr><td><code>$?</code></td><td>The exit status of last executed child process</td></tr></tbody></table>
 
 ### Identifying a Ruby Variable Type
 
