@@ -17,3 +17,5 @@ gosec включен в semgrep: `semgrep --config "p/gosec"`
 [OnEdge](https://github.com/trailofbits/on-edge) - библиотека для обнаружения неправильного использования паттернов Defer, Panic, Recover.
 
 Golang Code Review: [https://www.elttam.com/blog/golang-codereview/](https://www.elttam.com/blog/golang-codereview/)
+
+Check vulnerabilities in dependencies: [https://go.dev/blog/vuln](https://go.dev/blog/vuln)
