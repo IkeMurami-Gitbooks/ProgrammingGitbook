@@ -372,6 +372,7 @@
         * [SQLAlchemy](ppc-langs/backend/python/packages/packages/databases/sqlalchemy.md)
       * [Асинхронная обработки очередей](ppc-langs/backend/python/packages/asinkhronnaya-obrabotki-ocheredei.md)
       * [Обработка информации](ppc-langs/backend/python/packages/obrabotka-informacii/README.md)
+        * [Работа с графами](ppc-langs/backend/python/packages/obrabotka-informacii/rabota-s-grafami.md)
         * [plist](ppc-langs/backend/python/packages/obrabotka-informacii/plist.md)
         * [HAR](ppc-langs/backend/python/packages/obrabotka-informacii/har.md)
         * [Лингвистика](ppc-langs/backend/python/packages/obrabotka-informacii/lingvistika.md)
