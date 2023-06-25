@@ -622,6 +622,7 @@
 
 ## Others
 
+* [Как оформить свой Github](others/kak-oformit-svoi-github.md)
 * [Правила версионирования](others/pravila-versionirovaniya.md)
 * [Правила оформления коммитов](others/pravila-oformleniya-kommitov.md)
 * [Стили именования переменных и классов](others/stili-imenovaniya-peremennykh-i-klassov.md)
