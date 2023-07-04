@@ -4,6 +4,8 @@
 
 Link: [https://expressjs.com/](https://expressjs.com/)
 
+Минусы: код сложно переиспользовать, код разрастается вместе с ростом проекта
+
 ## Install & Generate project
 
 ```
