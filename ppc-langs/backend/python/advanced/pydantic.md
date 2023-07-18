@@ -67,3 +67,26 @@ record = Record(**{
     'string': ' '.join(string)
 })
 ```
+
+## Pydantic Config + YAML
+
+```python
+import pathlib
+import pydantic
+import typing
+import yaml
+
+
+class MyConfig(pydantic.BaseSettings):
+    some: str
+   
+    class Config:
+        case_sensitive = False
+   
+    @staticmethod
+    def from_yaml(path: str):
+        with pathlib.Path(path).open(mode='r') as input_stream:
+            config = yaml.safe_load(input_stream)
+
+            return MyConfig(**config)
+```
