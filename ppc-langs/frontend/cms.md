@@ -1,10 +1,5 @@
 # CMS
 
-## Webflow
-
-Есть такая штука как Webflow [https://webflow.com](https://webflow.com)\
-Это проект, у которого есть обучающие видео по созданию фронта сайтов, а еще у них конструктор сайтов (website builder). Какие условия — хз.
-
 ## Strapi
 
 Другая CMS — Strapi — [https://strapi.io/](https://strapi.io/)
