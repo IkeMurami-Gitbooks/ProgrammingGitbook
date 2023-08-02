@@ -38,6 +38,8 @@ ChatGPT
 
 ElevenLabs — text to speech: [https://beta.elevenlabs.io/](https://beta.elevenlabs.io/)
 
+Работа с LLM на Python: [https://python.langchain.com/docs/get\_started/introduction.html](https://python.langchain.com/docs/get\_started/introduction.html)
+
 ### text-to-image
 
 Проприетарные модели: DALL-E, Midjourney (доступны в формате Cloud Service)
