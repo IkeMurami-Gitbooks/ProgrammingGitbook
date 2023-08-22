@@ -38,6 +38,6 @@ render -> <li>test   <il>
 {{ value|escape }} — кодировать со стратегией по умолчанию (html)
 ```
 
-Стратегии: html, js, css, не кодировать (raw, false),&#x20;
+Стратегии: html, js, css, url, html\_attr, не кодировать (raw, false),&#x20;
 
 Функции, возвращающие template's, по умолчанию возвращают safe markup. Например: macro и parent ([https://twig.symfony.com/doc/3.x/tags/macro.html](https://twig.symfony.com/doc/3.x/tags/macro.html) и [https://twig.symfony.com/doc/3.x/functions/parent.html](https://twig.symfony.com/doc/3.x/functions/parent.html)).
