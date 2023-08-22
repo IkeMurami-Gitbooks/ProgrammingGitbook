@@ -433,6 +433,7 @@
       * [Symfony](ppc-langs/backend/php/symfony.md)
       * [CodeIgniter](ppc-langs/backend/php/codeigniter.md)
       * [Moodle](ppc-langs/backend/php/moodle.md)
+    * [Libraries](ppc-langs/backend/php/libraries.md)
     * [Security](ppc-langs/backend/php/security.md)
   * [C/C++](ppc-langs/backend/c-c++/README.md)
     * [Security](ppc-langs/backend/c-c++/security.md)
