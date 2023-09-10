@@ -1,8 +1,4 @@
----
-description: Google Framework
----
-
-# Basic
+# Material Design
 
 [Material](https://material.io/guidelines) is a visual design language that is standard on mobile and the web.
 

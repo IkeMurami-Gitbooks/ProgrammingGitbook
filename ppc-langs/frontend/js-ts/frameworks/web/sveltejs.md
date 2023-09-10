@@ -7,3 +7,5 @@
 У него есть REPL (online IDE): [https://svelte.dev/repl/hello-world?version=3.47.0](https://svelte.dev/repl/hello-world?version=3.47.0)
 
 На оф сайте есть инструкция как создать новый проект и как его запустить: [https://svelte.dev/](https://svelte.dev/)
+
+SvelteKit — решает из коробки SSR, Routing, Static Page generation, ...
