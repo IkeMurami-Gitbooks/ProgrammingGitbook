@@ -6,6 +6,10 @@ PyTorch (by Facebook)
 
 TenserFlow (by Google)
 
+GPT3
+
+Keras
+
 ## Tools
 
 `Foolbox` - wrapper над другими пакетами по нейронкам [https://github.com/bethgelab/foolbox](https://github.com/bethgelab/foolbox)
