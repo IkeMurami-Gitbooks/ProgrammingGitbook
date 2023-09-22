@@ -20,6 +20,11 @@ pandas \
 scipy \
 scikit-learn
 
+ART\
+Advertorch\
+CleverHans\
+OpenAI API
+
 ## Projects
 
 LLaMa — языковая модель от Facebook: [https://ai.facebook.com/blog/large-language-model-llama-meta-ai/](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/)
@@ -39,6 +44,10 @@ ChatGPT
 ElevenLabs — text to speech: [https://beta.elevenlabs.io/](https://beta.elevenlabs.io/)
 
 Работа с LLM на Python: [https://python.langchain.com/docs/get\_started/introduction.html](https://python.langchain.com/docs/get\_started/introduction.html)
+
+GAN\
+ZKML\
+differential privacy
 
 ### text-to-image
 
