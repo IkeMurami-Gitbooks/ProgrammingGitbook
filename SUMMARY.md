@@ -451,6 +451,7 @@
       * [Disable stdafx and other features in VS](ppc-langs/backend/c-c++/cases/disable-stdafx-and-other-features-in-vs.md)
       * [Если не компилируются стандартные библиотеки в Visual Studio 2015](ppc-langs/backend/c-c++/cases/esli-ne-kompiliruyutsya-standartnye-biblioteki-v-visual-studio-2015.md)
 * [Frontend](ppc-langs/frontend/README.md)
+  * [Инструменты](ppc-langs/frontend/instrumenty.md)
   * [HTML](ppc-langs/frontend/html/README.md)
     * [About](ppc-langs/frontend/html/about.md)
     * [Введение](ppc-langs/frontend/html/vvedenie.md)
