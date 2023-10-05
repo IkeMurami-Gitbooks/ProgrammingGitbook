@@ -48,6 +48,7 @@
     * [MERN](tech/web/steki-tekhnologii/mern.md)
   * [The World Wide Web Consortium (W3C)](tech/web/the-world-wide-web-consortium-w3c.md)
 * [Архитектура сервисов](tech/arch-services/README.md)
+  * [Построение гипотез](tech/arch-services/postroenie-gipotez.md)
   * [Архитектурные паттерны](tech/arch-services/arkhitekturnye-patterny/README.md)
     * [Papers](tech/arch-services/arkhitekturnye-patterny/papers.md)
     * [Microservices](tech/arch-services/arkhitekturnye-patterny/microservices.md)
