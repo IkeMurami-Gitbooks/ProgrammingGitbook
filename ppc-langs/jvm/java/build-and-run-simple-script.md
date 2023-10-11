@@ -35,3 +35,16 @@ $ java -jar MyJavaClass.jar
 Hello, World!
 $ 
 ```
+
+## Если нужны зависимости
+
+Качаем jar-ники нужных версий в Maven репозитории.
+
+Компилируем с зависимостями:
+
+<pre><code><strong>Windows:
+</strong><strong>    javac -cp ".;/dir/commons.jar;/dir/more_jar_files.jar" MyClass.java
+</strong>Unix:
+    javac -cp ".:/dir/commons.jar:/dir/more_jar_files.jar" MyClass.java
+</code></pre>
+
