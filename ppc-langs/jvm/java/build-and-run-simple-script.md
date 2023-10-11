@@ -48,3 +48,6 @@ $
     javac -cp ".:/dir/commons.jar:/dir/more_jar_files.jar" MyClass.java
 </code></pre>
 
+## OneCompiler
+
+В этом сервисе — [https://onecompiler.com](https://onecompiler.com) — можно онлайн собирать Java-код с зависимостями и исполнять.
