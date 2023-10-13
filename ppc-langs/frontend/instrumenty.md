@@ -6,6 +6,8 @@ My color space — подобрать цвета (на основе правил
 
 Лайфхак: делаем скрин палитры, кидаем в фигму и цвета набираем пипеткой
 
+Подобрать градиент: [https://webgradients.com/](https://webgradients.com/)
+
 ## Работа с текстом
 
 Посмотреть шрифты Google Fonts: [https://fonts.google.com/](https://fonts.google.com/)
@@ -17,6 +19,10 @@ Think, Bolt, Black, ... — это начертание
 ## Работа с иконками
 
 iconfinder: [https://www.iconfinder.com/](https://www.iconfinder.com/)
+
+## Выбор изображений
+
+Чтобы не нарушать авторские права, подбирать изображения можно здесь: [https://webgradients.com/](https://webgradients.com/)
 
 ## Плагины Figma
 
