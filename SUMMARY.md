@@ -483,7 +483,7 @@
       * [Псевдоклассы](ppc-langs/frontend/css/selektory/psevdoklassy.md)
     * [CSS Свойства](ppc-langs/frontend/css/svoistva/README.md)
       * [Цвет](ppc-langs/frontend/css/svoistva/cvet.md)
-      * [Шрифты](ppc-langs/frontend/css/svoistva/shrifty.md)
+      * [Шрифты и типографика](ppc-langs/frontend/css/svoistva/shrifty-i-tipografika.md)
       * [Стилизация абзацев](ppc-langs/frontend/css/svoistva/stilizaciya-abzacev.md)
       * [Блочная модель и отступы](ppc-langs/frontend/css/svoistva/blochnaya-model-i-otstupy.md)
       * [Размеры элементов](ppc-langs/frontend/css/svoistva/razmery-elementov.md)
