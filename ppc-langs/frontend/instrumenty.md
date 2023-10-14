@@ -39,3 +39,9 @@ Humaaans for Figma — другая встроенная библиотека и
 Content Reel — генератор контактных данных&#x20;
 
 Avatars — генератор аватарок
+
+## Работа с HTML и CSS
+
+W3C HTML Validator (хорошо через него прогонять html-документ): [https://validator.w3.org/](https://validator.w3.org/)
+
+W3C CSS Validator [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)
