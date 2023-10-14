@@ -1,5 +1,7 @@
 # Цвет
 
+## Предустановленные цвета
+
 ```css
 div {
     background-color: red;  // Цвет фона
@@ -10,3 +12,19 @@ div {
 ```
 
 Полный перечень цветов: [https://developer.mozilla.org/en-US/docs/Web/CSS/color\_value](https://developer.mozilla.org/en-US/docs/Web/CSS/color\_value)
+
+## RGB палитра
+
+```css
+div {
+    color: rgb(0, 255, 255);
+}
+```
+
+## HEX цвета
+
+```css
+div {
+    color: #343434;
+}
+```
