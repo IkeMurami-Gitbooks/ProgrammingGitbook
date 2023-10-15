@@ -126,3 +126,13 @@ flex-flow: [flex-direction] [flex-wrap]
 ```css
 flex: [flex-grow] [flex-shrink] [flex-basis]
 ```
+
+## Papers and notes
+
+Официальная документация flexbox: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
+
+Наглядно посмотреть свойства flexbox: [https://codepen.io/justd/full/yydezN/](https://codepen.io/justd/full/yydezN/)
+
+Изучение flexbox в формате игры: [https://flexboxfroggy.com/#ru](https://flexboxfroggy.com/#ru)
+
+Тонкости в flexbox: [https://habr.com/ru/articles/329820/](https://habr.com/ru/articles/329820/)
