@@ -125,10 +125,11 @@
 
 ## Programming Languages <a href="#ppc-langs" id="ppc-langs"></a>
 
+* [Learn materials](ppc-langs/learn-materials.md)
+* [Code Quality](ppc-langs/code-quality.md)
+* [Security Coding Styles](ppc-langs/security-coding-styles.md)
 * [Testing](ppc-langs/testing/README.md)
   * [Integration testing](ppc-langs/testing/integration-testing.md)
-* [Security Coding Styles](ppc-langs/security-coding-styles.md)
-* [Learn materials](ppc-langs/learn-materials.md)
 * [Other non programming languages](ppc-langs/other-non-programming-languages/README.md)
   * [YAML](ppc-langs/other-non-programming-languages/yaml.md)
   * [Proto](ppc-langs/other-non-programming-languages/proto.md)
