@@ -47,3 +47,33 @@ $ python greeter_client.py
 Достаточно сложно тестировать gRPC API, не имея исходных proto-файлов.
 
 На сколько этот gRPC клиент универсален? [https://github.com/ktr0731/evans](https://github.com/ktr0731/evans)
+
+grpc\_cli — аналог curl для gRPC-сервисов
+
+```
+Список сервисов на порту:
+$ grpc_cli ls localhost:8080
+
+Подробная информация про сервис:
+$ grpc_cli ls localhost:8080 helloworld.Greeter -l
+
+Подробная информация про метод:
+$ grpc_cli ls localhost:8080 helloworld.Greeter.SayHello -l
+
+Показать типы сообщений:
+$ grpc_cli type localhost:8080 helloworld.HelloRequest
+
+Пример запроса:
+$ grpc_cli call localhost:8080 SayHello "name: 'gRPC CLI'"
+```
+
+Есть интерактивный клиент `cli evans`
+
+Аналог Postman/Insomnia — BloomRPC (но вроде Postman уже умеет в gRPC).
+
+grpcdump — для отлова и декодирования gRPC запросов:
+
+```
+Пример подключения к сервису на порту 8080
+$ grpcdump -i io -p 8080 -proto-path ./grpc/protofiles -proto-files helloworld.prot |
+```
