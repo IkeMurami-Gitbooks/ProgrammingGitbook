@@ -291,6 +291,7 @@
     * [Go Security](ppc-langs/backend/go/go-security.md)
   * [Ruby](ppc-langs/backend/ruby/README.md)
     * [Use Ruby Env and Deps](ppc-langs/backend/ruby/getting-started.md)
+    * [VSCode Ruby extensions](ppc-langs/backend/ruby/vscode-ruby-extensions.md)
     * [Ruby Language Guide](ppc-langs/backend/ruby/ruby-language-guide/README.md)
       * [Comments](ppc-langs/backend/ruby/ruby-language-guide/comments.md)
       * [Variables](ppc-langs/backend/ruby/ruby-language-guide/variables.md)
