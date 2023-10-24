@@ -52,6 +52,7 @@
   * [Архитектурные паттерны](tech/arch-services/arkhitekturnye-patterny/README.md)
     * [Papers](tech/arch-services/arkhitekturnye-patterny/papers.md)
     * [Архитектура проекта](tech/arch-services/arkhitektura-koda/README.md)
+      * [Альтернативы](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/alternativy.md)
       * [MVC](tech/arch-services/arkhitektura-koda/mvc.md)
       * [Hexagonal](tech/arch-services/arkhitektura-koda/hexagonal.md)
     * [Архитектура кода](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/README.md)
