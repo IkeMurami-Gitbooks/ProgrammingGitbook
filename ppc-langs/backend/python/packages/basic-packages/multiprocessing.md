@@ -4,6 +4,8 @@
 
 Про multiprocessing кратко: [http://python-3.ru/page/multiprocessing](http://python-3.ru/page/multiprocessing)
 
+Логика, стоящая за выбором chunksize: [https://stackoverflow.com/questions/53751050/multiprocessing-understanding-logic-behind-chunksize](https://stackoverflow.com/questions/53751050/multiprocessing-understanding-logic-behind-chunksize)
+
 Пример: по задумке — это брут чего-то
 
 ```python
