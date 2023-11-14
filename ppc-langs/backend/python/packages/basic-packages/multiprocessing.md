@@ -12,6 +12,19 @@ CPU-based и I/O-based операции: [https://stackoverflow.com/a/41780357](
 
 Многопоточное выполнение над локальными процессами (например, над файловой системой)
 
+Пример:
+
+```python
+import os
+import itertools
+# Глубоко под копотом Pool из threading то же самое, что и Pool из multiprocessing.pool
+from multiprocessing.dummy import Pool as ThreadPool
+
+pool = ThreadPool(os.cpu_count() * 2)
+results_iterator = pool.imap_unordered(do_something, some_iterator)
+pool.close()
+```
+
 ## multiprocessing
 
 Про multiprocessing кратко: [http://python-3.ru/page/multiprocessing](http://python-3.ru/page/multiprocessing)

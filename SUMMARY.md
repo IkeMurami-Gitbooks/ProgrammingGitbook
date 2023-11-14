@@ -123,6 +123,7 @@
   * [Решение практических проблем ML](tech/biblioteki/reshenie-prakticheskikh-problem-ml.md)
   * [Chrome Cast](tech/biblioteki/chrome-cast.md)
 * [Machine Learning](tech/machine-learning.md)
+* [Dev portals](tech/dev-portals.md)
 * [Разработка игр](tech/razrabotka-igr.md)
 
 ## Programming Languages <a href="#ppc-langs" id="ppc-langs"></a>

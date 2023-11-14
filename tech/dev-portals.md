@@ -1,0 +1,7 @@
+# Dev portals
+
+Не думаешь о DevOps, только создаешь фичи:
+
+* [https://backstage.spotify.com/](https://backstage.spotify.com/)
+  * [https://backstage.io/](https://backstage.io/)
+* [https://plato.avito.tech](https://plato.avito.tech)
