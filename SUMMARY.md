@@ -668,6 +668,7 @@
 * [Скиллы как специалиста](others/skilly-kak-specialista/README.md)
   * [RoadMap для разных направлений](others/skilly-kak-specialista/roadmap-dlya-raznykh-napravlenii.md)
   * [Задачи на программирование](others/skilly-kak-specialista/zadachi-na-programmirovanie.md)
+  * [Алгоритмы](others/skilly-kak-specialista/algoritmy.md)
   * [Разработчик](others/skilly-kak-specialista/razrabotchik.md)
   * [Web-разработчик](others/skilly-kak-specialista/web-razrabotchik.md)
   * [DevOps](others/skilly-kak-specialista/devops.md)
