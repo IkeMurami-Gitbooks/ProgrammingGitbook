@@ -667,6 +667,7 @@
 * [Документация по API по разным языкам в одном месте](others/dokumentaciya-po-api-po-raznym-yazykam-v-odnom-meste.md)
 * [Скиллы как специалиста](others/skilly-kak-specialista/README.md)
   * [RoadMap для разных направлений](others/skilly-kak-specialista/roadmap-dlya-raznykh-napravlenii.md)
+  * [Задачи на программирование](others/skilly-kak-specialista/zadachi-na-programmirovanie.md)
   * [Разработчик](others/skilly-kak-specialista/razrabotchik.md)
   * [Web-разработчик](others/skilly-kak-specialista/web-razrabotchik.md)
   * [DevOps](others/skilly-kak-specialista/devops.md)
