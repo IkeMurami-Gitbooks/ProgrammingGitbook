@@ -55,6 +55,8 @@
       * [Альтернативы](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/alternativy.md)
       * [Feature-Sliced Design](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/feature-sliced-design.md)
       * [MVC](tech/arch-services/arkhitektura-koda/mvc.md)
+      * [DDD | Domain-Driven Design](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/ddd-or-domain-driven-design.md)
+      * [Clean Architecture](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/clean-architecture.md)
       * [Hexagonal](tech/arch-services/arkhitektura-koda/hexagonal.md)
     * [Архитектура кода](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/README.md)
       * [ООП](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/oop.md)
