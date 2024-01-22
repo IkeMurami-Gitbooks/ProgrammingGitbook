@@ -552,6 +552,7 @@
       * [Generic-типы](ppc-langs/frontend/js-ts/typescript/generic-tipy.md)
       * [Декораторы](ppc-langs/frontend/js-ts/typescript/dekoratory.md)
       * [Namespaces](ppc-langs/frontend/js-ts/typescript/namespaces.md)
+      * [Модули](ppc-langs/frontend/js-ts/typescript/moduli.md)
       * [Вспомогательные операторы](ppc-langs/frontend/js-ts/typescript/vspomogatelnye-operatory.md)
       * [Дополнительные инструменты](ppc-langs/frontend/js-ts/typescript/dopolnitelnye-instrumenty.md)
       * [Разные соглашения](ppc-langs/frontend/js-ts/typescript/raznye-soglasheniya.md)
