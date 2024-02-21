@@ -556,6 +556,7 @@
       * [Вспомогательные операторы](ppc-langs/frontend/js-ts/typescript/vspomogatelnye-operatory.md)
       * [Дополнительные инструменты](ppc-langs/frontend/js-ts/typescript/dopolnitelnye-instrumenty.md)
       * [Разные соглашения](ppc-langs/frontend/js-ts/typescript/raznye-soglasheniya.md)
+    * [Libraries](ppc-langs/frontend/js-ts/libraries.md)
     * [Frameworks](ppc-langs/frontend/js-ts/frameworks/README.md)
       * [Web](ppc-langs/frontend/js-ts/frameworks/web/README.md)
         * [React](ppc-langs/frontend/js-ts/frameworks/web/react-js/README.md)
