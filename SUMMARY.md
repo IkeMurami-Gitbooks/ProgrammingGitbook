@@ -62,6 +62,7 @@
       * [ООП](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/oop.md)
     * [Архитектура систем](tech/arch-services/arkhitekturnye-patterny/arkhitektura-sistem/README.md)
       * [Monolith](tech/arch-services/arkhitekturnye-patterny/arkhitektura-sistem/monolith.md)
+      * [API Gateway](tech/arch-services/arkhitekturnye-patterny/arkhitektura-sistem/api-gateway.md)
       * [CQRS](tech/arch-services/arkhitekturnye-patterny/cqrs.md)
       * [Microservices](tech/arch-services/arkhitekturnye-patterny/microservices.md)
       * [Service Mesh](tech/arch-services/service-mesh/README.md)
