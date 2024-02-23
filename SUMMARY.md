@@ -515,7 +515,6 @@
     * [Советы](ppc-langs/frontend/css/sovety.md)
     * [Papers](ppc-langs/frontend/css/papers.md)
   * [JS/TS](ppc-langs/frontend/js-ts/README.md)
-    * [Project Structure](ppc-langs/frontend/js-ts/project-structure.md)
     * [JavaScript](ppc-langs/frontend/js-ts/javascript/README.md)
       * [About](ppc-langs/frontend/js-ts/javascript/about.md)
       * [Async JS](ppc-langs/frontend/js-ts/javascript/async-js.md)
