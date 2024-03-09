@@ -1,4 +1,4 @@
-# Работа с вводом / выводом
+# Работа с файлами и IO
 
 ## pathlib
 
@@ -17,6 +17,17 @@ Path("/my/directory").mkdir(parents=True, exist_ok=True)
 from pathlib import Path
 with Path("/my/directory").open(mode="w") as out_stream:  # default: mode='r'
     out_stream.write("test")
+```
+
+### Работа с временными файлами и временной директорией
+
+```python
+import tempfile
+from pathlib import Path
+
+with tempfile.TemporaryDirectory() as tmpdir:
+    path = Path(tmpdir, 'test.txt')
+    # ...
 ```
 
 ### Список всех файлов в подкаталогах
