@@ -1,5 +1,13 @@
 # Create package
 
+## pyproject.toml
+
+Документация: [https://packaging.python.org/en/latest/guides/writing-pyproject-toml/](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)
+
+Пример
+
+
+
 ## setup.cfg
 
 Пример
