@@ -355,6 +355,7 @@
       * [pydantic](ppc-langs/backend/python/advanced/pydantic.md)
     * [Packages](ppc-langs/backend/python/packages/README.md)
       * [Install packages](ppc-langs/backend/python/packages/install-packages.md)
+      * [Create package](ppc-langs/backend/python/packages/create-package.md)
       * [Public Lists of Python Packages](ppc-langs/backend/python/packages/packages/list.md)
       * [True Python](ppc-langs/backend/python/packages/packages/true-python.md)
       * [Network](ppc-langs/backend/python/packages/network.md)
