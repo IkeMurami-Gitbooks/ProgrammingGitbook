@@ -1,36 +1,4 @@
-# Install packages / Build Frontends
-
-## poetry
-
-Управление пакетами и зависимостями. [https://python-poetry.org/](https://python-poetry.org/)
-
-```
-pip install poetry
-poetry init
-poetry config virtualenvs.in-project true
-
-poetry add some-dep-proj
-poetry install
-
-poetry show --tree
-
-poetry run python main.py --help
-poetry run uvicorn main:app ...
-```
-
-## pip
-
-Установить пакет конкретной версии:\
-1\. Удалить пакет, если уже установлен\
-2\. `pip install -I packet==version`
-
-В процессе разработки пакета нам может потребоваться потестировать работу пакет, для этого мы можем его установить в dev-режиме (editable installation):
-
-```
-python -m pip install --editable .
-```
-
-## pipx
+# pipx
 
 Это пакетный менеджер для приложений. Он создает изолированное окружение для python приложений, которые должны быть запущены из консоли. Например, mitmproxy.&#x20;
 
