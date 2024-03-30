@@ -2,6 +2,8 @@
 
 Документация: [https://packaging.python.org/en/latest/guides/writing-pyproject-toml/](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)
 
+Рекомендуется использовать всегда (даже если пустой). Пустой файл уже [сигнал](https://pip.pypa.io/en/latest/reference/build-system/pyproject-toml/) для pip использовать изолированную среду для сборки (ставит в temp директорию нужную версию python и зависимостей).
+
 ## Блоки
 
 ### \[build-system]
