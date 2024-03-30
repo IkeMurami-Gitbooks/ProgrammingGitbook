@@ -355,6 +355,7 @@
     * [Packaging](ppc-langs/backend/python/packaging/README.md)
       * [Intro](ppc-langs/backend/python/packaging/intro.md)
       * [Install packages / Build Frontends](ppc-langs/backend/python/packaging/install-packages-build-frontends.md)
+      * [Организация кода](ppc-langs/backend/python/packaging/organizaciya-koda.md)
       * [Конфигурация](ppc-langs/backend/python/packaging/konfiguraciya/README.md)
         * [pyproject.toml](ppc-langs/backend/python/packaging/konfiguraciya/pyproject.toml.md)
         * [setup.py](ppc-langs/backend/python/packaging/konfiguraciya/setup.py.md)
