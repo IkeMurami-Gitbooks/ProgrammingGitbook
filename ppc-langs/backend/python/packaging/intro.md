@@ -16,7 +16,7 @@ Guide from PyPA: [https://packaging.python.org/en/latest](https://packaging.pyth
 
 Сборщики состоят из двух частей:
 
-* **Build Frontend** — это инструменты, которые собирают из исходного кода пакет для дистрибуции. Примеры build frontend — `pip` и `build`, `poetry`?. Используют Build Backend's.
+* **Build Frontend** — это инструменты, которые собирают из исходного кода пакет для дистрибуции. Примеры build frontend — `pip` и `build`, `poetry`, `hatch` и др. Используют Build Backend's.
   * Сборка:
 
 ```
@@ -29,6 +29,6 @@ dist/
 └── example_package_YOUR_USERNAME_HERE-0.0.1.tar.gz
 ```
 
-* **Build Backend** — это библиотеки, которые умеют собирать из исходного кода пакет для дистрибуции для разных платформ, окружений и тп. Примеры: `hatch`, `setuptools`, `meson`, `flit` и тд
+* **Build Backend** — это библиотеки, которые умеют собирать из исходного кода пакет для дистрибуции для разных платформ, окружений и тп. Примеры: `hatchling`, `setuptools`, `meson`, `flit`, `poetry-core` и тд
 
 Про [загрузку в PyPI](https://packaging.python.org/en/latest/tutorials/packaging-projects/#uploading-the-distribution-archives) через twine.
