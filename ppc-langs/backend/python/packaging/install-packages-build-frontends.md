@@ -1,4 +1,22 @@
-# Install packages
+# Install packages / Build Frontends
+
+## poetry
+
+Управление пакетами и зависимостями. [https://python-poetry.org/](https://python-poetry.org/)
+
+```
+pip install poetry
+poetry init
+poetry config virtualenvs.in-project true
+
+poetry add some-dep-proj
+poetry install
+
+poetry show --tree
+
+poetry run python main.py --help
+poetry run uvicorn main:app ...
+```
 
 ## pip
 
@@ -37,21 +55,3 @@ pipx install "git+https://github.com/psf/black.git#egg=black[jupyter]"
 ```
 
 Больше примеров на github
-
-## poetry
-
-Управление пакетами и зависимостями. [https://python-poetry.org/](https://python-poetry.org/)
-
-```
-pip install poetry
-poetry init
-poetry config virtualenvs.in-project true
-
-poetry add some-dep-proj
-poetry install
-
-poetry show --tree
-
-poetry run python main.py --help
-poetry run uvicorn main:app ...
-```
