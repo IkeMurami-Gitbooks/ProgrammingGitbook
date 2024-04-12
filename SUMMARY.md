@@ -364,6 +364,7 @@
         * [namespaces](ppc-langs/backend/python/packaging/organizaciya-koda/namespaces.md)
         * [Plugins](ppc-langs/backend/python/packaging/organizaciya-koda/plugins.md)
       * [Конфигурация](ppc-langs/backend/python/packaging/konfiguraciya/README.md)
+        * [Papers](ppc-langs/backend/python/packaging/konfiguraciya/papers.md)
         * [pyproject.toml](ppc-langs/backend/python/packaging/konfiguraciya/pyproject.toml.md)
         * [setup.py](ppc-langs/backend/python/packaging/konfiguraciya/setup.py.md)
         * [setup.cfg](ppc-langs/backend/python/packaging/konfiguraciya/setup.cfg.md)
