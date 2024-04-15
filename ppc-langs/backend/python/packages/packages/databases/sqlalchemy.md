@@ -448,6 +448,25 @@ class CompanyProvider(object):
 
 ## Подсоединяемся к базе
 
+### Transactions
+
+Выполнение делаем через SQLAlchemy используя транзакции (Session): [https://habr.com/ru/articles/597999/](https://habr.com/ru/articles/597999/)
+
+```python
+with Session(engine) as session:
+   user = TableUser(username='test')
+   session.add(user)
+
+   phones = [TablePhone(user=user, number='+31111111111')]
+   session.add_all(phones)
+
+   session.commit()
+
+   return user.id
+```
+
+### databases
+
 Выполнение запросов к базе делаем через пакет databases. Только схему базы в бд создаем через sqlalchemy (из объекта Base).&#x20;
 
 ```python
