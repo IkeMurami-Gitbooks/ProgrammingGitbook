@@ -2,8 +2,8 @@
 
 Frameworks:&#x20;
 
-* hermione (Yandex, open source)
-* playwright (Microsoft, open source)
+* [hermione](https://yandex.ru/dev/hermione/) (Yandex, open source)
+* [playwright](https://playwright.dev/) (Microsoft, open source)
 * cypress (open source)
-* webdriver.io
+* [webdriver.io](https://webdriver.io/) (wdio)
 * nightwatch
