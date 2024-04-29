@@ -51,6 +51,7 @@
   * [Построение гипотез](tech/arch-services/postroenie-gipotez.md)
   * [Архитектурные паттерны](tech/arch-services/arkhitekturnye-patterny/README.md)
     * [Papers](tech/arch-services/arkhitekturnye-patterny/papers.md)
+    * [Инструменты визуализации и моделирования архитектуры](tech/arch-services/arkhitekturnye-patterny/instrumenty-vizualizacii-i-modelirovaniya-arkhitektury.md)
     * [Архитектура проекта](tech/arch-services/arkhitektura-koda/README.md)
       * [Альтернативы](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/alternativy.md)
       * [Feature-Sliced Design](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/feature-sliced-design.md)
