@@ -424,6 +424,7 @@
       * [Pytest CLI](ppc-langs/backend/python/testing/pytest-cli.md)
       * [Markers](ppc-langs/backend/python/testing/markers.md)
       * [Fixtures](ppc-langs/backend/python/testing/fixtures.md)
+      * [Mocking](ppc-langs/backend/python/testing/mocking.md)
       * [Plugins](ppc-langs/backend/python/testing/plugins.md)
       * [Configuration](ppc-langs/backend/python/testing/configuration.md)
       * [Unit tests](ppc-langs/backend/python/testing/unit-tests.md)
