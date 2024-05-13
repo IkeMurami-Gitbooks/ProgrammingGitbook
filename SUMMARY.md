@@ -680,6 +680,7 @@
 
 ## Others
 
+* [Licenses](others/licenses.md)
 * [Как оформить свой Github](others/kak-oformit-svoi-github.md)
 * [Правила версионирования](others/pravila-versionirovaniya.md)
 * [Правила оформления коммитов](others/pravila-oformleniya-kommitov.md)
