@@ -106,6 +106,7 @@
   * [LaTeX + PGF/TikZ](tech/visualization/latex-+-pgf-tikz.md)
 * [Version Control Systems](tech/version-control-systems/README.md)
   * [Git](tech/version-control-systems/git.md)
+  * [Github](tech/version-control-systems/github.md)
 * [Programs](tech/programs/README.md)
   * [Adobe Alternatives](tech/programs/adobe-alternatives.md)
   * [Atlassian](tech/programs/atlassian/README.md)
