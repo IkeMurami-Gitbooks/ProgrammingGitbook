@@ -394,6 +394,7 @@
         * [Tornado](ppc-langs/backend/python/packages/packages/web-frameworks/tornado.md)
       * [Databases](ppc-langs/backend/python/packages/packages/databases/README.md)
         * [boto3](ppc-langs/backend/python/packages/packages/databases/boto3.md)
+        * [Mongo](ppc-langs/backend/python/packages/databases/mongo.md)
         * [SQLAlchemy](ppc-langs/backend/python/packages/packages/databases/sqlalchemy.md)
       * [Асинхронная обработка сообщений / работа с очередями](ppc-langs/backend/python/packages/asinkhronnaya-obrabotki-ocheredei.md)
       * [Обработка информации](ppc-langs/backend/python/packages/obrabotka-informacii/README.md)
