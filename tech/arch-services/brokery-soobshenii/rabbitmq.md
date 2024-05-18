@@ -6,6 +6,8 @@ Get started: [https://www.rabbitmq.com/getstarted.html](https://www.rabbitmq.com
 
 Documentation: [https://www.rabbitmq.com/documentation.html](https://www.rabbitmq.com/documentation.html)
 
+Работает по протоколу AMQP
+
 ## Концепция
 
 **Поставщики (Producers) и подписчики (Consumers)**: поставщик создает новые сообщения/задачи, а подписчики их принимают. В данном примере после загрузки файла http-обработчик создает сообщение для обработчиков. http-обработчик/веб-приложение — это поставщик, а фоновые обработчики — подписчики.
