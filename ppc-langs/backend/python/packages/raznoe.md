@@ -1,5 +1,9 @@
 # Разное
 
+## tenacity
+
+Пакет реализует декоратор для настройки retry-политик: [https://tenacity.readthedocs.io/en/latest/](https://tenacity.readthedocs.io/en/latest/)
+
 ## ptrlib
 
 (For CTF Players) Пакет для работы с криптой, сетью, либами и тд - посмотреть что внутри, к себе перенять core [https://pypi.org/project/ptrlib/](https://pypi.org/project/ptrlib/)
