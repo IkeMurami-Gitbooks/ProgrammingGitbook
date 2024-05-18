@@ -6,6 +6,10 @@ Link: [https://docs.celeryq.dev/en/stable/getting-started/introduction.html](htt
 
 Это фреймворк, который позволяет строить обработку тасков поверх брокеров сообщений, таких как Amazon SQS, RabbitMQ, Redis и др. Как хранилище может использовать кучу всего (например, DynamoDB, MongoDB, Sqlalchemy ORMs, Redis, ...)
 
+## kombu
+
+Реализует несколько протоколов для брокеров сообщений, в том числе и AMQP: [https://github.com/celery/kombu](https://github.com/celery/kombu)
+
 ## pika
 
 Реализует протокол AMQP [https://pika.readthedocs.io/en/stable/](https://pika.readthedocs.io/en/stable/)
