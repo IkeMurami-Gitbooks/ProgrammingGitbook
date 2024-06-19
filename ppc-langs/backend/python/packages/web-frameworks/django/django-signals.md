@@ -45,3 +45,21 @@ def my_callback(sender, **kwargs):
 ```python
 my_signal.send(sender=self.__class__, arg1=1, arg2="test", ...)
 ```
+
+## Полный пример
+
+Например, мы хотим подписаться на событие сохранения нашей модели Django:
+
+```python
+from django.db.models.signals import post_init, post_save
+from django.dispatch import receiver
+
+from my_model import MyModel
+
+
+@receiver(post_save, sender=MyModel)
+def my_receiver(sender, instance, created, **kwargs):
+   # Если кто-то будет сохранять модель MyModel, то этот обработчик вызовется после обновления
+   # проверяем поля instance (это будет типа MyModel), решаем что делать
+   ...
+```
