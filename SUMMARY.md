@@ -392,6 +392,7 @@
         * [Flask](ppc-langs/backend/python/web-frameworks/flask.md)
         * [Django](ppc-langs/backend/python/web-frameworks/django/README.md)
           * [Intro](ppc-langs/backend/python/packages/web-frameworks/django/intro.md)
+          * [Django Admin](ppc-langs/backend/python/packages/web-frameworks/django/django-admin.md)
           * [Django Signals](ppc-langs/backend/python/packages/web-frameworks/django/django-signals.md)
           * [Security](ppc-langs/backend/python/web-frameworks/django/security.md)
         * [Tornado](ppc-langs/backend/python/packages/packages/web-frameworks/tornado.md)
