@@ -60,6 +60,7 @@
       * [Clean Architecture](tech/arch-services/arkhitekturnye-patterny/arkhitektura-proekta/clean-architecture.md)
       * [Hexagonal](tech/arch-services/arkhitektura-koda/hexagonal.md)
     * [Архитектура кода](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/README.md)
+      * [Papers](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/papers.md)
       * [Singleton](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/singleton.md)
       * [Retry](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/retry.md)
       * [Circuit Breaker](tech/arch-services/arkhitekturnye-patterny/arkhitektura-koda/circuit-breaker.md)
