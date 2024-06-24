@@ -1,5 +1,13 @@
 # Flutter CLI
 
+## Flutter Version Manager
+
+Как для node — nvm, так для flutter — [fvm](https://fvm.app/):
+
+```
+fvm flutter ...
+```
+
 ## Create project
 
 ```
