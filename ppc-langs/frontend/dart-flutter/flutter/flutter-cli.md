@@ -1,5 +1,11 @@
 # Flutter CLI
 
+## FlutterGen
+
+Отвечает за кодогенерацию и работу с ассетами в Flutter
+
+link: [https://pub.dev/packages/flutter\_gen](https://pub.dev/packages/flutter\_gen)
+
 ## Flutter Version Manager
 
 Как для node — nvm, так для flutter — [fvm](https://fvm.app/):
