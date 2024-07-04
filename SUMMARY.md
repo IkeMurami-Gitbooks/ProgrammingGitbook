@@ -12,6 +12,7 @@
       * [Конвертация между форматами](tech/api/rest-api/programmy-dlya-proektirovaniya/konvertaciya-mezhdu-formatami.md)
       * [Postman](tech/api/rest-api/programmy-dlya-proektirovaniya/postman.md)
       * [Swagger](tech/api/rest-api/programmy-dlya-proektirovaniya/swagger.md)
+    * [Webhooks](tech/api/rest-api/webhooks.md)
     * [GraphQL](tech/api/rest-api/graphql/README.md)
       * [Введение](tech/api/rest-api/graphql/vvedenie.md)
       * [Introspection](tech/api/rest-api/graphql/introspection.md)
