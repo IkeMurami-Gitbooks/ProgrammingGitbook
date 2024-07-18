@@ -5,3 +5,24 @@
 1. Самостоятельно сбрасывать или переопределять нужные свойства (это часть методологии БЭМ)
 2. Использовать [reset.css](https://meyerweb.com/eric/tools/css/reset/) для сброса всех свойств.
 3. Использовать [normalize.css](https://necolas.github.io/normalize.css/) для привидения всех свойств к одному виду в разных браузерах
+
+## Normalize
+
+```
+npm install normalize.css
+```
+
+Добавляем в глобальные стили:
+
+```css
+/* styles/globals.css */
+@import 'normalize.css';
+```
+
+Подключаем глобальные стили в наше приложение:
+
+```typescript
+import "./globals.css";
+
+...
+```
