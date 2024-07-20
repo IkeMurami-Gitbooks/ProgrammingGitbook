@@ -2,6 +2,14 @@
 
 ## psycopg2
 
+requiremensts:
+
+```
+psycopg2-binary==2.9.9
+```
+
+script:
+
 ```python
 import psycopg2
 
