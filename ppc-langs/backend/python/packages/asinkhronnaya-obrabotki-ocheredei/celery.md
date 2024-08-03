@@ -1,4 +1,4 @@
-# Асинхронная обработка сообщений / работа с очередями
+# Celery
 
 ## Celery Task Queue
 
@@ -9,13 +9,3 @@ Link: [https://docs.celeryq.dev/en/stable/getting-started/introduction.html](htt
 Статьи:
 
 * Как запустить Celery: [https://habr.com/ru/companies/otus/articles/796413/](https://habr.com/ru/companies/otus/articles/796413/)
-
-## kombu
-
-Реализует несколько протоколов для брокеров сообщений, в том числе и AMQP: [https://github.com/celery/kombu](https://github.com/celery/kombu)
-
-## pika
-
-Реализует протокол AMQP [https://pika.readthedocs.io/en/stable/](https://pika.readthedocs.io/en/stable/)
-
-Позволяет работать с брокерами сообщений, которые поддерживают этот протокол (например, RabbitMQ)
