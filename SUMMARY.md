@@ -101,6 +101,7 @@
   * [Автоматизация сборок](tech/arch-services/avtomatizaciya-sborok/README.md)
     * [Makefile](tech/arch-services/avtomatizaciya-sborok/makefile.md)
   * [Платформы для запуска и исполнения произвольных процессов и вычислений](tech/arch-services/platformy-dlya-zapuska-i-ispolneniya-proizvolnykh-processov-i-vychislenii.md)
+  * [Subscriptions](tech/arch-services/subscriptions.md)
   * [Zero Trust](tech/arch-services/zero-trust.md)
 * [Визуализация информации](tech/visualization/README.md)
   * [Design/Совместная разработка интерфейсов](tech/visualization/design.md)
