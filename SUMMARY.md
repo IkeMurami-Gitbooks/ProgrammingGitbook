@@ -378,6 +378,7 @@
         * [setup.cfg](ppc-langs/backend/python/packaging/konfiguraciya/setup.cfg.md)
     * [Packages](ppc-langs/backend/python/packages/README.md)
       * [Public Lists of Python Packages](ppc-langs/backend/python/packages/packages/list.md)
+      * [Linters](ppc-langs/backend/python/packages/linters.md)
       * [True Python](ppc-langs/backend/python/packages/packages/true-python.md)
       * [Network](ppc-langs/backend/python/packages/network.md)
       * [Web](ppc-langs/backend/python/packages/web-1/README.md)
