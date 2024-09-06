@@ -122,3 +122,57 @@ if __name__ == '__main__':
     start()
 
 ```
+
+## Timer
+
+Выполняем задачу периодически, пока не вернется нужный результат:
+
+```python
+from typing import Generic, TypeVar, Callable
+from threading import Timer
+
+
+T = TypeVar('T')
+
+
+class TimerWithResult(Timer, Generic[T]):
+    result: T
+
+    def __init__(self, interval: int, function: Callable[..., T], args=[], kwargs={}):
+        self._original_function = function
+        super(TimerWithResult, self).__init__(
+            interval, self._do_execute, args, kwargs)
+
+    def _do_execute(self, *a, **kw):
+        self.result = self._original_function(*a, **kw)
+
+    def join(self) -> T:
+        super(TimerWithResult, self).join()
+        return self.result
+
+
+def do_something(a: int, b: str, c: bool = True) -> str:
+    print('Try get result')
+    return f'Result: {a} & {b} & {c}'
+
+
+def is_success(result: T) -> bool:
+    return False
+
+
+def wait_result(interval: int, function: Callable[..., T], args=[], kwargs={}) -> T:
+    result = function(*args, **kwargs)
+
+    while not is_success(result):
+        timer = TimerWithResult[T](interval, function, args=args, kwargs=kwargs)
+        timer.start()
+        result = timer.join()
+
+    return result
+
+
+if __name__ == '__main__':
+    result = wait_result(2, do_something, [1, 'abc'], {'c': False})
+    print('TIMER', result)
+
+```
