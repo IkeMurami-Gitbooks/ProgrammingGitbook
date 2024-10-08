@@ -28,3 +28,5 @@ Site: [https://antv-g6.gitee.io/en](https://antv-g6.gitee.io/en)
 ## Mermaid
 
 link: [https://mermaid.js.org/](https://mermaid.js.org/)
+
+Mermaid Live editor: [https://mermaid.live/](https://mermaid.live/)
