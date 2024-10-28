@@ -10,6 +10,18 @@ GPT3
 
 Keras
 
+## AI Assistants
+
+ChatGPT
+
+Perplexity
+
+Claude
+
+## AI IDE
+
+Cursor: [https://www.cursor.com/](https://www.cursor.com/)
+
 ## Tools
 
 `Foolbox` - wrapper над другими пакетами по нейронкам [https://github.com/bethgelab/foolbox](https://github.com/bethgelab/foolbox)
