@@ -42,6 +42,7 @@
       * [Cache API](tech/api/khranenie-dannykh-na-storone-klienta/podrobnee/cache-api.md)
 * [WEB](tech/web/README.md)
   * [Modern Web Application Architecture](tech/web/arkhitektura.md)
+  * [PWA](tech/web/pwa.md)
   * [Стеки технологий](tech/web/steki-tekhnologii/README.md)
     * [JAMstack](tech/web/steki-tekhnologii/jamstack.md)
     * [LAMP](tech/web/steki-tekhnologii/lamp.md)
