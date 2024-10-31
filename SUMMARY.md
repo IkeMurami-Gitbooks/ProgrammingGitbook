@@ -49,9 +49,6 @@
     * [MEAN](tech/web/steki-tekhnologii/mean.md)
     * [MERN](tech/web/steki-tekhnologii/mern.md)
   * [The World Wide Web Consortium (W3C)](tech/web/the-world-wide-web-consortium-w3c.md)
-* [(draft) Product Management](tech/draft-product-management/README.md)
-  * [Проработка идеи нового сервиса](tech/draft-product-management/prorabotka-idei-novogo-servisa.md)
-  * [Построение гипотез](tech/draft-product-management/postroenie-gipotez.md)
 * [Архитектура сервисов](tech/arch-services/README.md)
   * [Архитектурные паттерны](tech/arch-services/arkhitekturnye-patterny/README.md)
     * [Papers](tech/arch-services/arkhitekturnye-patterny/papers.md)
@@ -144,6 +141,14 @@
 * [Machine Learning](tech/machine-learning.md)
 * [Dev portals](tech/dev-portals.md)
 * [Разработка игр](tech/razrabotka-igr.md)
+
+## Management
+
+* [(draft) Product Management](management/draft-product-management/README.md)
+  * [Проработка идеи нового сервиса](management/draft-product-management/prorabotka-idei-novogo-servisa.md)
+  * [Построение гипотез](management/draft-product-management/postroenie-gipotez.md)
+* [Goals management](management/goals-management/README.md)
+  * [OKR](management/goals-management/okr.md)
 
 ## Programming Languages <a href="#ppc-langs" id="ppc-langs"></a>
 
