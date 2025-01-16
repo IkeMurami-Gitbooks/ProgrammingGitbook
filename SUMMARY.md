@@ -152,6 +152,7 @@
 * [Goals management](management/goals-management/README.md)
   * [Определения и тезисы](management/goals-management/opredeleniya-i-tezisy.md)
   * [OKR](management/goals-management/okr.md)
+  * [KPI](management/goals-management/kpi.md)
   * [OKR vs KPI](management/goals-management/okr-vs-kpi.md)
 
 ## Programming Languages <a href="#ppc-langs" id="ppc-langs"></a>
