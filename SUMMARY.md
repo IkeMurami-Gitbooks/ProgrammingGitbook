@@ -150,6 +150,7 @@
   * [Проработка идеи нового сервиса](management/draft-product-management/prorabotka-idei-novogo-servisa.md)
   * [Построение гипотез](management/draft-product-management/postroenie-gipotez.md)
 * [Goals management](management/goals-management/README.md)
+  * [Определения и тезисы](management/goals-management/opredeleniya-i-tezisy.md)
   * [OKR](management/goals-management/okr.md)
   * [OKR vs KPI](management/goals-management/okr-vs-kpi.md)
 
