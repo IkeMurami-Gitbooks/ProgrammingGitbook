@@ -151,6 +151,7 @@
   * [Построение гипотез](management/draft-product-management/postroenie-gipotez.md)
 * [Goals management](management/goals-management/README.md)
   * [OKR](management/goals-management/okr.md)
+  * [OKR vs KPI](management/goals-management/okr-vs-kpi.md)
 
 ## Programming Languages <a href="#ppc-langs" id="ppc-langs"></a>
 
