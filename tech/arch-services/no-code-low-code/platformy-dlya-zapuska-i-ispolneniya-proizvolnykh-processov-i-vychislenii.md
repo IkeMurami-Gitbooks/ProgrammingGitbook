@@ -10,3 +10,4 @@
 * Tempolar – пишем воркеры, а они исполняются в облаке: [https://temporal.io/](https://temporal.io/)
 * Budibase (open source) — строим внутренние сервисы (как Pipedream): [https://budibase.com](https://budibase.com)
 * [https://zapier.com](https://zapier.com)
+* [https://ifttt.com/](https://ifttt.com/)
