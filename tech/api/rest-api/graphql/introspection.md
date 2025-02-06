@@ -4,6 +4,12 @@ description: Извлечение информации и типов
 
 # Introspection
 
+## Playground
+
+Песочница от Apollo: [https://studio.apollographql.com/sandbox/explorer](https://studio.apollographql.com/sandbox/explorer)
+
+Можно указать путь до эндпоинта и в UI смотреть запросы
+
 ## Examples
 
 ### Example1
@@ -61,4 +67,4 @@ POST /graphql
 
 ## Tools
 
-[https://github.com/sorokinpf/graphql\_sample\_sender](https://github.com/sorokinpf/graphql\_sample\_sender)
+[https://github.com/sorokinpf/graphql\_sample\_sender](https://github.com/sorokinpf/graphql_sample_sender)
