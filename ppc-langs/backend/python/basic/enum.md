@@ -1,5 +1,13 @@
 # Enum
 
+## Literal
+
+```python
+from typing import Literal
+
+a: Literal['a', 'b', 'c'] = 'c'
+```
+
 ## Default Value for Enum
 
 ```python
