@@ -30,6 +30,10 @@ Keras
 * Tabnine
 * Refact
 
+## AI for Security Purposes
+
+* LLM для поиска уязвимостей: [https://googleprojectzero.blogspot.com/2024/06/project-naptime.html](https://googleprojectzero.blogspot.com/2024/06/project-naptime.html)
+
 ## Tools
 
 `Foolbox` - wrapper над другими пакетами по нейронкам [https://github.com/bethgelab/foolbox](https://github.com/bethgelab/foolbox)
