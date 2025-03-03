@@ -1,5 +1,9 @@
 # Machine Learning
 
+## Education
+
+* [https://huggingface.co/](https://huggingface.co/)
+
 ## Lead projects
 
 PyTorch (by Facebook)
