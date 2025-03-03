@@ -12,11 +12,20 @@ Keras
 
 ## AI Assistants
 
-ChatGPT
-
-Perplexity
-
-Claude
+* ChatGPT
+* Perplexity
+* Claude
+* Cursor
+* Tabnine
+* Copilot
+* Refact
+* [https://codeassist.google/products/business](https://codeassist.google/products/business)
+* [https://docs.aws.amazon.com/codewhisperer/latest/userguide/what-is-cwspr.html](https://docs.aws.amazon.com/codewhisperer/latest/userguide/what-is-cwspr.html)
+* [https://www.qodo.ai/](https://www.qodo.ai/)
+* [https://www.continue.dev/](https://www.continue.dev/)
+* [https://codeium.com/](https://codeium.com/)
+* [https://replit.com/ai](https://replit.com/ai)
+* [https://sourcegraph.com/cody](https://sourcegraph.com/cody)
 
 ## AI IDE
 
@@ -59,7 +68,7 @@ ChatGPT
 
 ElevenLabs — text to speech: [https://beta.elevenlabs.io/](https://beta.elevenlabs.io/)
 
-Работа с LLM на Python: [https://python.langchain.com/docs/get\_started/introduction.html](https://python.langchain.com/docs/get\_started/introduction.html)
+Работа с LLM на Python: [https://python.langchain.com/docs/get\_started/introduction.html](https://python.langchain.com/docs/get_started/introduction.html)
 
 GAN\
 ZKML\
@@ -77,7 +86,7 @@ Source Code: [https://github.com/Stability-AI/stablediffusion](https://github.co
 
 weights, model card, and code: [https://github.com/CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
 
-An optimized development notebook using the [HuggingFace diffusers library](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/stable\_diffusion.ipynb).
+An optimized development notebook using the [HuggingFace diffusers library](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/stable_diffusion.ipynb).
 
 A public demonstration space can be found [here](https://huggingface.co/spaces/stabilityai/stable-diffusion).
 
