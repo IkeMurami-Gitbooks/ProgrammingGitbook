@@ -704,6 +704,7 @@
     * [TODO: Rollup](ppc-langs/frontend/sborshik-js-ts-prilozhenii/todo-rollup.md)
   * [Компиляторы](ppc-langs/frontend/kompilyatory/README.md)
     * [Babel](ppc-langs/frontend/kompilyatory/babel.md)
+  * [Testing](ppc-langs/frontend/testing.md)
   * [Learning](ppc-langs/frontend/learning.md)
 
 ## Others
