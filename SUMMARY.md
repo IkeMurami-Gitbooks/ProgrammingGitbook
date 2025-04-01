@@ -110,6 +110,7 @@
   * [Работа с данными](tech/visualization/bi.md)
   * [Схемы, графы, рисунки..](tech/visualization/skhemy-grafy-risunki../README.md)
     * [Работа с графами](tech/visualization/skhemy-grafy-risunki../rabota-s-grafami.md)
+    * [Рисуем структуру базы](tech/visualization/skhemy-grafy-risunki../risuem-strukturu-bazy.md)
     * [Miro App](tech/visualization/skhemy-grafy-risunki../miro-app.md)
     * [Рисование детских диаграмм](tech/visualization/skhemy-grafy-risunki../risovanie-detskikh-diagramm.md)
     * [draw.io](tech/visualization/skhemy-grafy-risunki../draw.io.md)
