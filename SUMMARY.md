@@ -171,6 +171,7 @@
 * [Testing](ppc-langs/testing/README.md)
   * [Integration testing](ppc-langs/testing/integration-testing.md)
 * [Other non programming languages](ppc-langs/other-non-programming-languages/README.md)
+  * [CUE](ppc-langs/other-non-programming-languages/cue.md)
   * [YAML](ppc-langs/other-non-programming-languages/yaml.md)
   * [Proto](ppc-langs/other-non-programming-languages/proto.md)
   * [SQL](ppc-langs/other-non-programming-languages/sql/README.md)
