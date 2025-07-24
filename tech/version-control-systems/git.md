@@ -388,6 +388,19 @@ $ git submodule add --name pydep git@github.com:nEST-Projects/burp-extension-jy-
 
 После вызова команды: `git submodule update --init` (если у нас есть `.gitsubmodule` файл; `dependecies` как директория не должна быть проиндексирована) в директорию `dependecies/pydep` затянется проект
 
+### git archive для submodules
+
+```
+pip install git-archive-all
+git-archive-all --prefix "project/" "project.tar.gz"
+
+# Задать пароль
+7z a -p protected-archive.7z project.tar.gz
+
+# Разархивировать
+7z x protected-archive.7z
+```
+
 ## Проблемы
 
 `SSL certificate problem: self signed certificate in certificate chain`\
