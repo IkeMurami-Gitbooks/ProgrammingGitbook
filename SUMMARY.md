@@ -673,6 +673,7 @@
     * [JS Runtime](ppc-langs/frontend/js-ts/js-runtime/README.md)
       * [Node.js](ppc-langs/frontend/js-ts/js-runtime/node.js.md)
       * [Deno](ppc-langs/frontend/js-ts/js-runtime/deno.md)
+    * [Guidelines](ppc-langs/frontend/js-ts/guidelines.md)
     * [Other projects](ppc-langs/frontend/js-ts/other-projects.md)
   * [CMS](ppc-langs/frontend/cms.md)
   * [Особенности WebStorm IDE](ppc-langs/frontend/osobennosti-webstorm-ide.md)
