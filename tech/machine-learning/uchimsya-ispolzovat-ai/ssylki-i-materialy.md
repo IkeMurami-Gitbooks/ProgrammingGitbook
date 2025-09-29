@@ -1,3 +1,4 @@
-# Учимся использовать AI
+# Ссылки и материалы
 
 * [https://huggingface.co/](https://huggingface.co/)
+*
