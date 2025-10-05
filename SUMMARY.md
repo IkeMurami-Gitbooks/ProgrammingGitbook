@@ -148,6 +148,7 @@
   * [Core Tech](tech/machine-learning/core-tech.md)
   * [Практическое использование](tech/machine-learning/prakticheskoe-ispolzovanie/README.md)
     * [Assistants](tech/machine-learning/prakticheskoe-ispolzovanie/assistants.md)
+    * [Vibe-coding](tech/machine-learning/prakticheskoe-ispolzovanie/vibe-coding.md)
     * [Code assistants](tech/machine-learning/prakticheskoe-ispolzovanie/code-assistants.md)
     * [Security](tech/machine-learning/prakticheskoe-ispolzovanie/security.md)
     * [Web & Design](tech/machine-learning/prakticheskoe-ispolzovanie/web-and-design.md)
