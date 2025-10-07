@@ -716,6 +716,7 @@
     * [TODO: Webpack](ppc-langs/frontend/sborshik-js-ts-prilozhenii/webpack.md)
     * [TODO: Parcel](ppc-langs/frontend/sborshik-js-ts-prilozhenii/todo-parcel.md)
     * [TODO: Rollup](ppc-langs/frontend/sborshik-js-ts-prilozhenii/todo-rollup.md)
+  * [Instruments](ppc-langs/frontend/instruments.md)
   * [Компиляторы](ppc-langs/frontend/kompilyatory/README.md)
     * [Babel](ppc-langs/frontend/kompilyatory/babel.md)
   * [Testing](ppc-langs/frontend/testing.md)
