@@ -22,4 +22,4 @@ build-backend = "hatchling.build"
 
 ### \[project]
 
-Блок метаданных.
+Блок метаданных
