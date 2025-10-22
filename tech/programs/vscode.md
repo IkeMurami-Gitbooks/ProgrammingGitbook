@@ -50,3 +50,61 @@ code --add my-folder-1 my-folder-2
   * [JSON crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode) для визуализации JSON структуры
 * [New Relic Code Stream](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream)
 * [VSCode PDF Support](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
+
+## .vscode/settings.json
+
+Пример настроек
+
+```json
+{
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4,
+    "editor.useTabStops": false
+  },
+  "typescript.tsdk": "./src/node_modules/typescript/lib",
+  "i18n-ally.enabledFrameworks": ["vue"],
+  "i18n-ally.localesPaths": ["src/i18n/locales"],
+  "i18n-ally.sortKeys": false,
+  "i18n-ally.keepFulfilled": false,
+  "i18n-ally.keystyle": "nested",
+  "editor.gotoLocation.multipleDefinitions": "goto"
+}
+```
+
+## .vscode/extensions.json
+
+Пример настроек
+
+```json
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
+    "antfu.goto-alias",
+    "visualstudioexptteam.vscodeintellicode",
+    "esbenp.prettier-vscode",
+    "yoavbls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "vue.volar",
+    "lokalise.i18n-ally",
+    "DavidAnson.vscode-markdownlint"
+  ]
+}
+```
