@@ -407,6 +407,7 @@
         * [pyproject.toml](ppc-langs/backend/python/packaging/konfiguraciya/pyproject.toml.md)
         * [setup.py](ppc-langs/backend/python/packaging/konfiguraciya/setup.py.md)
         * [setup.cfg](ppc-langs/backend/python/packaging/konfiguraciya/setup.cfg.md)
+      * [Distribution](ppc-langs/backend/python/packaging/distribution.md)
     * [Packages](ppc-langs/backend/python/packages/README.md)
       * [Public Lists of Python Packages](ppc-langs/backend/python/packages/packages/list.md)
       * [Linters](ppc-langs/backend/python/packages/linters.md)
