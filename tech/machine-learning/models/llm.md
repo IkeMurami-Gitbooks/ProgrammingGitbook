@@ -23,6 +23,8 @@ LMSYS Projects: [https://lmsys.org/projects/](https://lmsys.org/projects/)
 * [DeepSeek](https://api-docs.deepseek.com/quick_start/pricing)
 * Alibaba — [Qwen и QwQ](https://www.alibabacloud.com/help/en/model-studio/models)
   * Здесь можно попробовать Qwen и QwQ: [https://huggingface.co/Qwen](https://huggingface.co/Qwen)
+  * Qwen — основная модель общего назначения
+  * QwQ — reasoning-модель
 
 ## Others
 
