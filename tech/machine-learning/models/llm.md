@@ -22,4 +22,5 @@ LMSYS Projects: [https://lmsys.org/projects/](https://lmsys.org/projects/)
 * xAI — [Grok 4](https://docs.x.ai/docs/models)
 * [DeepSeek](https://api-docs.deepseek.com/quick_start/pricing)
 * Alibaba — [Qwen и QwQ](https://www.alibabacloud.com/help/en/model-studio/models)
+  * Здесь можно попробовать Qwen и QwQ: [https://huggingface.co/Qwen](https://huggingface.co/Qwen)
 
