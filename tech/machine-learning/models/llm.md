@@ -20,7 +20,7 @@ LMSYS Projects: [https://lmsys.org/projects/](https://lmsys.org/projects/)
 * Anthropic — [Claude](https://docs.claude.com/en/docs/about-claude/models/overview)
 * Google — [Gemini](https://ai.google.dev/gemini-api/docs/models)
 * xAI — [Grok 4](https://docs.x.ai/docs/models)
-* [DeepSeek](https://api-docs.deepseek.com/quick_start/pricing)
+* [DeepSeek](https://api-docs.deepseek.com/quick_start/pricing) (на [huggingface](https://huggingface.co/deepseek-ai))
 * Alibaba — [Qwen и QwQ](https://www.alibabacloud.com/help/en/model-studio/models)
   * Здесь можно попробовать Qwen и QwQ: [https://huggingface.co/Qwen](https://huggingface.co/Qwen)
   * Qwen — основная модель общего назначения
