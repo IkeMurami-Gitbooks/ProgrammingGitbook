@@ -166,6 +166,7 @@
       * [image-to-text](tech/machine-learning/models/images/image-to-text.md)
     * [Audio](tech/machine-learning/models/audio/README.md)
       * [ElevenLabs](tech/machine-learning/models/audio/elevenlabs.md)
+      * [Maya Research](tech/machine-learning/models/audio/maya-research.md)
       * [voice-to-text](tech/machine-learning/models/audio/voice-to-text.md)
       * [text-to-voice](tech/machine-learning/models/audio/text-to-voice.md)
   * [Практическое использование](tech/machine-learning/prakticheskoe-ispolzovanie/README.md)
