@@ -38,6 +38,8 @@ MoonshotAI, модель [Kimi](https://www.kimi.com/en/)
   * Здесь можно попробовать Qwen и QwQ: [https://huggingface.co/Qwen](https://huggingface.co/Qwen)
   * Qwen — основная модель общего назначения
   * QwQ — reasoning-модель
+* Perplexity: [https://docs.perplexity.ai/getting-started/pricing#sonar-models-chat-completions](https://docs.perplexity.ai/getting-started/pricing#sonar-models-chat-completions)
+  * Модель Sonar и другие
 
 ## Others
 
