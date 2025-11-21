@@ -6,4 +6,5 @@
 
 Как работать с изображениями: [https://platform.openai.com/docs/api-reference/images](https://platform.openai.com/docs/api-reference/images)
 
-Распознавание изображений: [https://platform.openai.com/docs/guides/images-vision?api-mode=responses\&format=file](https://platform.openai.com/docs/guides/images-vision?api-mode=responses\&format=file)
+Распознавание изображений: [https://platform.openai.com/docs/guides/images-vision](https://platform.openai.com/docs/guides/images-vision)
+

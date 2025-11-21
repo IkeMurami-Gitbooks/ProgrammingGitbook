@@ -115,4 +115,4 @@ wg.Wait()
 
 Как правильно организовать (паттерны) многопоточное приложение:\
 Go Concurrency Pattern: [https://talks.golang.org/2012/concurrency.slide](https://talks.golang.org/2012/concurrency.slide)\
-Advanced Go Concurrency Patterns: [https://talks.golang.org/2013/advconc.slide](https://talks.golang.org/2013/advconc.slide)\
+Advanced Go Concurrency Patterns: [https://talks.golang.org/2013/advconc.slide](https://talks.golang.org/2013/advconc.slide)<br>
