@@ -40,6 +40,9 @@ MoonshotAI, модель [Kimi](https://www.kimi.com/en/)
   * QwQ — reasoning-модель
 * Perplexity: [https://docs.perplexity.ai/getting-started/pricing#sonar-models-chat-completions](https://docs.perplexity.ai/getting-started/pricing#sonar-models-chat-completions)
   * Модель Sonar и другие
+* Zhipu AI: [https://z.ai](https://z.ai/)
+  * Модель GLM: [https://z.ai/blog/glm-4.5](https://z.ai/blog/glm-4.5)
+  * Можно попробовать через OpenRouter / huggingFace
 
 ## Others
 
