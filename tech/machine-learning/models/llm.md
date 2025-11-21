@@ -12,12 +12,15 @@ LMSYS Projects: [https://lmsys.org/projects/](https://lmsys.org/projects/)
 
 MoonshotAI, модель [Kimi](https://www.kimi.com/en/)
 
-[GPT OSS](https://platform.openai.com/docs/models/gpt-oss-20b)
-
 ## Proprietary
 
 * OpenAI
   * Модели: [https://platform.openai.com/docs/models](https://platform.openai.com/docs/models)
+    * gpt-4.1, gpt-5, gpt-5.1 и gpt-5-pro: text and image to text, самые дорогие
+      * 4.1 — можно дообучать на примерах (fine-tuning)
+      * 5-pro — супер рассуждающая
+    * gpt-5-nano — самая дешевая и быстрая версия gpt-5. Подходит для тасков суммаризации и классификации
+    * gpt-5-mini — подороже gpt-5-nano, хороша для хорошо сформулированных задач и точных промптов
 * Anthropic — [Claude](https://docs.claude.com/en/docs/about-claude/models/overview)
   * Claude 3 Opus: мощная и дорогая модель, для сложных задач
   * Claude 3 Sonnet: сбалансированная модель, для масштабируемых сценариев
