@@ -154,6 +154,7 @@
     * [API Proxies](tech/machine-learning/models/api-proxies.md)
     * [llm](tech/machine-learning/models/llm.md)
     * [Others](tech/machine-learning/models/others.md)
+    * [images](tech/machine-learning/models/images.md)
     * [text-to-image](tech/machine-learning/models/text-to-image/README.md)
       * [GPT Image 1](tech/machine-learning/models/text-to-image/gpt-image-1.md)
       * [Stable Diffusion](tech/machine-learning/models/text-to-image/stable-diffusion.md)
