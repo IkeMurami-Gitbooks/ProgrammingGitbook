@@ -151,6 +151,7 @@
       * [DreamBooth](tech/machine-learning/uchimsya-ispolzovat-ai/doobuchenie/dreambooth.md)
       * [ControlNet](tech/machine-learning/uchimsya-ispolzovat-ai/doobuchenie/controlnet.md)
   * [Models](tech/machine-learning/models/README.md)
+    * [API Proxies](tech/machine-learning/models/api-proxies.md)
     * [llm](tech/machine-learning/models/llm.md)
     * [Others](tech/machine-learning/models/others.md)
     * [text-to-image](tech/machine-learning/models/text-to-image/README.md)
