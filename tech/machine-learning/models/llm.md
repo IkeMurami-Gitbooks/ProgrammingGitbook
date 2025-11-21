@@ -10,7 +10,7 @@ LMSYS Projects: [https://lmsys.org/projects/](https://lmsys.org/projects/)
 
 Можно использовать в своих целях: пару месяцев обучения на корпусе (есть есть вычислительные мощности), проверка экспертов, дообучение. Если для себя, то можно взять уже готовые модели, например, Vicuna model
 
-[Kimi](https://www.kimi.com/en/)
+MoonshotAI, модель [Kimi](https://www.kimi.com/en/)
 
 [GPT OSS](https://platform.openai.com/docs/models/gpt-oss-20b)
 
@@ -18,7 +18,15 @@ LMSYS Projects: [https://lmsys.org/projects/](https://lmsys.org/projects/)
 
 * OpenAI — [GPT](https://platform.openai.com/docs/models)
 * Anthropic — [Claude](https://docs.claude.com/en/docs/about-claude/models/overview)
-* Google — [Gemini](https://ai.google.dev/gemini-api/docs/models)
+  * Claude 3 Opus: мощная и дорогая модель, для сложных задач
+  * Claude 3 Sonnet: сбалансированная модель, для масштабируемых сценариев
+  * Claude 3 Haiku: быстрая и компактная модель
+  * Есть свой пакет — `pip install anthropic`
+* Cohere: поддерживает порядка 10 языков, а не только английский
+  * Модели Command R / Command R+
+* Google — [Gemini](https://ai.google.dev/gemini-api/docs/models) (ранее Bard) на основе языковой модели LaMDA
+  * Gemini 2.5 Pro: большое контекстное окно, что делает модель подходящей для задач обработки большого массива данных
+  * Gemini 2.5 Flash: облегченная версия Gemini 2.5 Pro
 * xAI — [Grok 4](https://docs.x.ai/docs/models)
 * [DeepSeek](https://api-docs.deepseek.com/quick_start/pricing) (на [huggingface](https://huggingface.co/deepseek-ai))
 * Alibaba — [Qwen и QwQ](https://www.alibabacloud.com/help/en/model-studio/models)
