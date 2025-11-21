@@ -16,7 +16,8 @@ MoonshotAI, модель [Kimi](https://www.kimi.com/en/)
 
 ## Proprietary
 
-* OpenAI — [GPT](https://platform.openai.com/docs/models)
+* OpenAI
+  * Модели: [https://platform.openai.com/docs/models](https://platform.openai.com/docs/models)
 * Anthropic — [Claude](https://docs.claude.com/en/docs/about-claude/models/overview)
   * Claude 3 Opus: мощная и дорогая модель, для сложных задач
   * Claude 3 Sonnet: сбалансированная модель, для масштабируемых сценариев
