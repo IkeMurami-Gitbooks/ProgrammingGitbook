@@ -1,6 +1,9 @@
 # GPT Image 1
 
-Модель от OpenAI: [https://platform.openai.com/docs/models/gpt-image-1](https://platform.openai.com/docs/models/gpt-image-1)
+Модель от OpenAI:
+
+* Подороже: [https://platform.openai.com/docs/models/gpt-image-1](https://platform.openai.com/docs/models/gpt-image-1)&#x20;
+* Подешевле: [https://platform.openai.com/docs/models/gpt-image-1-mini](https://platform.openai.com/docs/models/gpt-image-1-mini)
 
 Принимает на вход изображения и текст, на выходе отдает изображение
 
