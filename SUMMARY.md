@@ -605,6 +605,7 @@
         * [Proxy](ppc-langs/frontend/js-ts/javascript/guide/proxy.md)
         * [Reflect](ppc-langs/frontend/js-ts/javascript/guide/reflect.md)
       * [Cases](ppc-langs/frontend/js-ts/javascript/cases/README.md)
+        * [Достаем все строки из javascript-файла](ppc-langs/frontend/js-ts/javascript/cases/dostaem-vse-stroki-iz-javascript-faila.md)
         * [Борьба с CORS и Local File Read в браузере](ppc-langs/frontend/js-ts/javascript/cases/borba-s-cors-i-local-file-read-v-brauzere.md)
         * [Корректно нормализируем пути в JS](ppc-langs/frontend/js-ts/javascript/cases/korrektno-normaliziruem-puti-v-js.md)
         * [Тестирование работы с медленными ответами (slow js http response)](ppc-langs/frontend/js-ts/javascript/cases/testirovanie-raboty-s-medlennymi-otvetami-slow-js-http-response.md)
