@@ -21,7 +21,9 @@ MoonshotAI, модель [Kimi](https://www.kimi.com/en/)
       * 5-pro — супер рассуждающая
     * gpt-5-nano — самая дешевая и быстрая версия gpt-5. Подходит для тасков суммаризации и классификации
     * gpt-5-mini — подороже gpt-5-nano, хороша для хорошо сформулированных задач и точных промптов
-    * gpt-oss-20b и gpt-oss-120b — две модели text-to-text с открытыми весами&#x20;
+    * gpt-oss-20b и gpt-oss-120b — две модели text-to-text с открытыми весами
+      * oss-120b сопоставима с [o4-mini](https://platform.openai.com/docs/models/o4-mini)
+      *
 * Anthropic — [Claude](https://docs.claude.com/en/docs/about-claude/models/overview)
   * Claude 3 Opus: мощная и дорогая модель, для сложных задач
   * Claude 3 Sonnet: сбалансированная модель, для масштабируемых сценариев
