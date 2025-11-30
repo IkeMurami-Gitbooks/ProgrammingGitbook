@@ -1,5 +1,11 @@
 # Java Env Manager
 
+## VS Code Extension
+
+Можно устанавливать последние версии Java через расширение [JDK](https://marketplace.visualstudio.com/items?itemName=Oracle.oracle-java). После установки `Settings -> Command Palette -> Download, install and use JDK`.
+
+## jenv
+
 Сложно вручную переключаться между окружениями и помнить, где что установлено.&#x20;
 
 [jenv](https://github.com/jenv/jenv) — инструмент, который позволяет удобно управлять окружениями на компьютере.
@@ -36,4 +42,5 @@ $ jenv add /Library/Java/JavaVirtualMachines/openjdk-18.jdk/Contents/Home/
 </strong><strong>// Set java env
 </strong><strong>$ jenv global  // Установить глобально версию java
 </strong><strong>$ jenv local   // Установить в локальной папке версию java
-</strong><strong>$ jenv shell   // Установить в текущем терминале версию java</strong></code></pre>
+</strong><strong>$ jenv shell   // Установить в текущем терминале версию java
+</strong></code></pre>
