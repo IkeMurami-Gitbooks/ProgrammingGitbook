@@ -1,4 +1,4 @@
-# Instruments
+# Tools
 
 [husky](https://github.com/typicode/husky) — прекоммит хуки для nodejs приложений (скачивание, обновление ресурсов, запуск линтеров и тестов)
 
@@ -7,3 +7,5 @@
 [prettier](https://prettier.io/) — форматтер
 
 openapitools — для генерации спеки
+
+Скриншот-тестирование — [testplane](https://habr.com/ru/companies/yandex/articles/890548/)

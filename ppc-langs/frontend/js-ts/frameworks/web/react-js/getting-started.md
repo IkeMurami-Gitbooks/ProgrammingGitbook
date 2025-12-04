@@ -1,12 +1,6 @@
 # Getting Started
 
-##
-
-## Создать проект
-
-### Чистый React
-
-JS:
+Создаем проект на чистом React
 
 ```
 $ npx create-react-app test-project-name
@@ -14,22 +8,10 @@ $ cd test-project-name
 $ yarn start (or npm start)
 ```
 
-TS:
+В этом случае мы сами решаем вопросы:
 
-```
-$ npx create-react-app test-project-name
-$ cd test-project-name
-$ yarn start (or npm start)
-```
-
-### Next.js
-
-Проект создается с поддержкой typescript, по умолчанию.
-
-```
-$ npx create-next-app
-```
-
-## Разработка
-
-У React компонентный подход: то есть создаем отдельные компоненты, а потом их комбинируем
+* Routing, например:
+  * [react-router](https://reactrouter.com/start/data/custom)
+  * [tanstack router](https://tanstack.com/router/latest)
+* Data Fetching
+  *
