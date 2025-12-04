@@ -1,6 +1,6 @@
 # Getting Started
 
-Сайт фреймворка: [https://react.dev/](https://react.dev/)
+##
 
 ## Создать проект
 
