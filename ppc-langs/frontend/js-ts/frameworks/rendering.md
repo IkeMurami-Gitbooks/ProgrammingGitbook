@@ -21,4 +21,6 @@
 
 В этой статье здорово описано как это работает: [https://tonyalicea.dev/blog/understanding-react-server-components/](https://tonyalicea.dev/blog/understanding-react-server-components/)
 
+Формат сериализации называется Flight. Пересылаемые данные — RSC Payload'ы.
+
 Парсинг RSC Payload'ов: [https://github.com/alvarlagerlof/rsc-parser/tree/main](https://github.com/alvarlagerlof/rsc-parser/tree/main)
