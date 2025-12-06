@@ -651,6 +651,7 @@
           * [Security](ppc-langs/frontend/js-ts/frameworks/web/react-js/security.md)
           * [React Frameworks](ppc-langs/frontend/js-ts/frameworks/web/react-js/react-frameworks/README.md)
             * [React Router](ppc-langs/frontend/js-ts/frameworks/web/react-js/react-frameworks/react-router.md)
+            * [Astro](ppc-langs/frontend/js-ts/frameworks/web/react-js/react-frameworks/astro.md)
             * [Next.js](ppc-langs/frontend/js-ts/frameworks/web/react-js/react-frameworks/next.js.md)
             * [Remix](ppc-langs/frontend/js-ts/frameworks/web/react-js/react-frameworks/remix.md)
             * [Gatsby](ppc-langs/frontend/js-ts/frameworks/web/react-js/react-frameworks/gatsby.md)
