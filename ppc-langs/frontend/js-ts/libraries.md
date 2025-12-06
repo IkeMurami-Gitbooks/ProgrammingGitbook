@@ -7,4 +7,5 @@
 * Библиотеки от [Tanstack](https://tanstack.com/)
   * [@tanstack/virtual](https://tanstack.com/virtual/latest) — пакет для обработки отображения больших списков (и других контейнеров) с прогрузкой
   * [@tanstack/query](https://tanstack.com/query/latest) — пакет для получения данных с кэшированием, с загрузкой в стейт и другими оптимизациями
+* [FormatJS](https://formatjs.io/) — библиотека для настройки i18n в приложении
 * TBD
