@@ -2,6 +2,8 @@
 
 Блог про web-разработку: [https://web.dev/](https://web.dev/)
 
+Паттерны в веб-программировании: [https://www.patterns.dev/#patterns](https://www.patterns.dev/#patterns)
+
 Макеты Figma: [https://t.me/figma2html](https://t.me/figma2html)
 
 Backend APIs: [https://github.com/public-apis/public-apis](https://github.com/public-apis/public-apis)
