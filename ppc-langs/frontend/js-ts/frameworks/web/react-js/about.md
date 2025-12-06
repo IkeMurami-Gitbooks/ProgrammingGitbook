@@ -7,3 +7,9 @@
 ### React Compiler
 
 React добавил новый dev-инструмент — [React Compiler](https://react.dev/learn/react-compiler/introduction). Он автоматически на этапе сборки оптимизирует компоненты React (memoize components). Таким образом, можно писать компоненты без memoization, а компилятор сам оптимизирует компоненты для перерисовки (re-render).
+
+## Learn
+
+* [https://tonyalicea.dev/](https://tonyalicea.dev/)
+  * [https://dontimitate.dev/courses/react/](https://dontimitate.dev/courses/react/)
+*
