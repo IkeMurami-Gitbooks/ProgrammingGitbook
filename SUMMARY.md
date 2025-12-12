@@ -176,6 +176,7 @@
     * [Code assistants](tech/machine-learning/prakticheskoe-ispolzovanie/code-assistants.md)
     * [Security](tech/machine-learning/prakticheskoe-ispolzovanie/security.md)
     * [Web & Design](tech/machine-learning/prakticheskoe-ispolzovanie/web-and-design.md)
+  * [Инструменты около AI/LLM](tech/machine-learning/instrumenty-okolo-ai-llm.md)
 * [Dev portals](tech/dev-portals.md)
 * [Разработка игр](tech/razrabotka-igr.md)
 
