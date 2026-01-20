@@ -36,6 +36,12 @@ set global versions:
 
 ```
 pyenv global 3.9.16 2.7.18
+```
+
+check python versions:
+
+```
+pyenv global
 python --version
 python2 --version
 python3 --version
