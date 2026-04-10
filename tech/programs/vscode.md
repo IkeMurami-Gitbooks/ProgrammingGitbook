@@ -48,6 +48,7 @@ code --add my-folder-1 my-folder-2
   * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
   * [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
   * [JSON crack](https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode) для визуализации JSON структуры
+  * [Mermaid preview](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) — для визуализации mermaid диаграм
 * [New Relic Code Stream](https://marketplace.visualstudio.com/items?itemName=CodeStream.codestream)
 * [VSCode PDF Support](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
