@@ -127,6 +127,8 @@
     * [Jira](tech/programs/atlassian/jira.md)
     * [Confluence](tech/programs/atlassian/confluence.md)
   * [Базы данных](tech/programs/bazy-dannykh/README.md)
+    * [DuckDB](tech/programs/bazy-dannykh/duckdb.md)
+    * [Redis](tech/programs/bazy-dannykh/redis.md)
     * [LevelDB](tech/programs/bazy-dannykh/leveldb.md)
   * [Google Products for Developers](tech/programs/google-products-for-developers.md)
   * [Open source](tech/programs/open-source.md)
