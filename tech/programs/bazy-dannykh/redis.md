@@ -2,6 +2,8 @@
 
 Примеры: [https://github.com/IkeMurami/dockerize-that/tree/master/Databases/Redis](https://github.com/IkeMurami/dockerize-that/tree/master/Databases/Redis)
 
+Паттерны над redis: [https://redis.io/docs/latest/develop/clients/patterns/](https://redis.io/docs/latest/develop/clients/patterns/)
+
 Клиенты:
 
 * JS/TS
