@@ -1,5 +1,5 @@
 # Books
 
-{% file src="../../.gitbook/assets/Black Hat Go.pdf" %}
+{% file src="../../../.gitbook/assets/Black Hat Go.pdf" %}
 Black Hat Go
 {% endfile %}
