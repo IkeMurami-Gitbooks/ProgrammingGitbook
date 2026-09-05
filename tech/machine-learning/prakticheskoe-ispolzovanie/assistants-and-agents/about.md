@@ -1,4 +1,4 @@
-# Assistants and Agents
+# About
 
 ## AI Assistants
 
