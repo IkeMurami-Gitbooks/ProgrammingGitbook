@@ -26,3 +26,9 @@ Docs: [https://code.claude.com/docs/en/vs-code](https://code.claude.com/docs/en/
 * `/status` — проверить статус подключения
 * `/mcp` — настройка mcp подключений
 
+#### Добавить mcp
+
+```
+claude mcp add --scope user --transport stdio|http|... name https://mcp.notion.com/mcp
+```
+

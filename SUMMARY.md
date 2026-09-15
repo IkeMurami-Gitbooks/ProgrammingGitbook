@@ -176,6 +176,7 @@
     * [Assistants and Agents](tech/machine-learning/prakticheskoe-ispolzovanie/assistants-and-agents/README.md)
       * [About](tech/machine-learning/prakticheskoe-ispolzovanie/assistants-and-agents/about.md)
       * [Claude Code](tech/machine-learning/prakticheskoe-ispolzovanie/assistants-and-agents/claude-code.md)
+      * [Codex](tech/machine-learning/prakticheskoe-ispolzovanie/assistants-and-agents/codex.md)
     * [Vibe-coding](tech/machine-learning/prakticheskoe-ispolzovanie/vibe-coding.md)
     * [Code assistants](tech/machine-learning/prakticheskoe-ispolzovanie/code-assistants.md)
     * [Security](tech/machine-learning/prakticheskoe-ispolzovanie/security.md)
