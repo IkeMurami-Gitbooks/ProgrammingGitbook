@@ -14,6 +14,8 @@ code --install-extension Anthropic.claude-code
 code --list-extensions | grep claude-code
 ```
 
+Docs: [https://code.claude.com/docs/en/vs-code](https://code.claude.com/docs/en/vs-code)
+
 ### Настройка подключения
 
 Настройки claude хранятся в `~/.claude/settings.json`.
@@ -22,3 +24,5 @@ code --list-extensions | grep claude-code
 
 * `/model` — выбор модели
 * `/status` — проверить статус подключения
+* `/mcp` — настройка mcp подключений
+
