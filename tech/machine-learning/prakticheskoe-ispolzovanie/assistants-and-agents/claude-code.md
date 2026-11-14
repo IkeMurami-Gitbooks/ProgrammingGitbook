@@ -28,6 +28,8 @@ Docs: [https://code.claude.com/docs/en/vs-code](https://code.claude.com/docs/en/
 
 #### Добавить mcp
 
+docs: [https://code.claude.com/docs/ru/mcp](https://code.claude.com/docs/ru/mcp)
+
 ```
 claude mcp add --scope user --transport stdio|http|... name https://mcp.notion.com/mcp
 ```
