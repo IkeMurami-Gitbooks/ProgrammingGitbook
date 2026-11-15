@@ -1,5 +1,7 @@
 # Integration testing
 
+Проверяют взаимодействие частей системы
+
 Frameworks:&#x20;
 
 * [hermione](https://yandex.ru/dev/hermione/) (Yandex, open source)
@@ -7,3 +9,4 @@ Frameworks:&#x20;
 * cypress (open source)
 * [webdriver.io](https://webdriver.io/) (wdio)
 * nightwatch
+
