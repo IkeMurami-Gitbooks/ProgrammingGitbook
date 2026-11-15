@@ -200,7 +200,6 @@
 
 * [Learn materials](ppc-langs/learn-materials.md)
 * [Качество кода](ppc-langs/kachestvo-koda/README.md)
-  * [Общее](ppc-langs/kachestvo-koda/obshee.md)
   * [Форматирование](ppc-langs/kachestvo-koda/formatirovanie.md)
   * [Линтинг](ppc-langs/kachestvo-koda/linting.md)
   * [Проверка типов и статический анализ](ppc-langs/kachestvo-koda/proverka-tipov-i-staticheskii-analiz.md)
